@@ -39,5 +39,6 @@
     "vim.cursorStylePerMode.normal": "block",
     "workbench.colorTheme": "Kimbie Dark",
     "git.ignoreMissingGitWarning": true,
-    "python.jediEnabled": false
+    "python.jediEnabled": false,
+    "window.zoomLevel": -1
 }
