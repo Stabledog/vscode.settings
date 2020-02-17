@@ -7,8 +7,8 @@
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
     "vim.searchHighlightColor": "#ff7b00a1",
-    "http.proxy": "http://proxy.bloomberg.com:81",
-    "http.proxyStrictSSL": false,
+//    "http.proxy": "http://proxy.bloomberg.com:81",
+ //   "http.proxyStrictSSL": false,
     "terminal.integrated.cursorBlinking": true,
     //"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
@@ -40,5 +40,5 @@
     "workbench.colorTheme": "Kimbie Dark",
     "git.ignoreMissingGitWarning": true,
     "python.jediEnabled": false,
-    "window.zoomLevel": -1
+    "window.zoomLevel": 1
 }
