@@ -11,8 +11,8 @@
     "http.proxyStrictSSL": false,
     "terminal.integrated.cursorBlinking": true,
     //"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-    //"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
-    "terminal.integrated.shell.windows": "c:\\Windows\\System32\\Bash.exe",
+    "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
+    //"terminal.integrated.shell.windows": "c:\\Windows\\System32\\Bash.exe",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
@@ -22,6 +22,10 @@
     },
 
     "terminal.integrated.shellArgs.windows": [ "-l"],
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-w>": false
+    },
     "vim.insertModeKeyBindings": [
         {
             "before":  ["j", "k"],
@@ -36,9 +40,11 @@
         }
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
-    "vim.cursorStylePerMode.normal": "block",
     "workbench.colorTheme": "Quiet Light",
     "files.associations": {
         "taskrc": "shellscript"
     }
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "python.jediEnabled": false,
+    "window.zoomLevel": 1
 }
