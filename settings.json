@@ -37,5 +37,5 @@
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
-    "workbench.colorTheme": "Quiet Light"
+    "workbench.colorTheme": "Tomorrow Night Blue"
 }
