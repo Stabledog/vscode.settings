@@ -22,6 +22,10 @@
     },
 
     "terminal.integrated.shellArgs.windows": [ "-l"],
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-w>": false
+    },
     "vim.insertModeKeyBindings": [
         {
             "before":  ["j", "k"],
@@ -37,5 +41,6 @@
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
-    "workbench.colorTheme": "Tomorrow Night Blue"
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "window.zoomLevel": 1
 }
