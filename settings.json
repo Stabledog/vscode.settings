@@ -22,6 +22,10 @@
     },
 
     "terminal.integrated.shellArgs.windows": [ "-l"],
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-w>": false
+    },
     "vim.insertModeKeyBindings": [
         {
             "before":  ["j", "k"],
