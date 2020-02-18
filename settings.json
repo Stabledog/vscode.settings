@@ -41,6 +41,9 @@
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
-    "workbench.colorTheme": "Solarized Dark",
-    "window.zoomLevel": 2
+    "workbench.colorTheme": "Tomorrow Night Blue",
+    "window.zoomLevel": 1,
+    "files.associations": {
+        "taskrc": "shellscript"
+    }
 }
