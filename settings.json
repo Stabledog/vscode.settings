@@ -40,10 +40,9 @@
         }
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
-    "workbench.colorTheme": "Quiet Light",
     "files.associations": {
         "taskrc": "shellscript"
-    }
+    },
     "workbench.colorTheme": "Tomorrow Night Blue",
     "python.jediEnabled": false,
     "window.zoomLevel": 1
