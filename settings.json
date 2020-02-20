@@ -41,8 +41,11 @@
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
-    "workbench.colorTheme": "Kimbie Dark",
     "git.ignoreMissingGitWarning": true,
+    "files.associations": {
+        "taskrc": "shellscript"
+    }
+    "workbench.colorTheme": "Tomorrow Night Blue",
     "python.jediEnabled": false,
     "window.zoomLevel": 1
 }
