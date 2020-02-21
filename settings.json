@@ -1,4 +1,8 @@
 {
+    "files.associations": {
+        "taskrc": "shellscript",
+        "*.jrnl": "markdown"
+    },
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -40,10 +44,11 @@
         }
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
-    "files.associations": {
-        "taskrc": "shellscript"
-    },
     "workbench.colorTheme": "Tomorrow Night Blue",
     "python.jediEnabled": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false
 }
