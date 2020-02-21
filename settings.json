@@ -44,10 +44,7 @@
     "git.ignoreMissingGitWarning": true,
     "files.associations": {
         "taskrc": "shellscript"
-    }
+    },
     "workbench.colorTheme": "Tomorrow Night Blue",
-    "window.zoomLevel": 1,
-    "files.associations": {
-        "taskrc": "shellscript"
-    }
+    "window.zoomLevel": 1
 }
