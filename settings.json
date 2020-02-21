@@ -46,6 +46,8 @@
         "taskrc": "shellscript"
     }
     "workbench.colorTheme": "Tomorrow Night Blue",
-    "python.jediEnabled": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "files.associations": {
+        "taskrc": "shellscript"
+    }
 }
