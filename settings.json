@@ -46,5 +46,10 @@
         "taskrc": "shellscript"
     },
     "workbench.colorTheme": "Tomorrow Night Blue",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "liveServer.settings.donotVerifyTags": true
 }
