@@ -43,5 +43,9 @@
     {
         "key": "ctrl+h",
         "command": "workbench.action.previousEditorInGroup"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
     }
 ]
