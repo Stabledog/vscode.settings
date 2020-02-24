@@ -52,7 +52,7 @@
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "git.ignoreMissingGitWarning": true,
-    "window.zoomLevel": 3,
+    "window.zoomLevel": 1,
     "editor.multiCursorModifier": "ctrlCmd",
     "workbench.sideBar.location": "right",
     "liveServer.settings.donotVerifyTags": true,

@@ -9,6 +9,16 @@
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
+        "key":"ctrl+a l",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        "key":"ctrl+a h",
+        "command": "workbench.action.focusNextGroup",
+        "when": "!terminalFocus"
+    },
+    {
         "key": "ctrl+a h",
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
@@ -38,11 +48,11 @@
     },
     {
         "key": "ctrl+l",
-        "command": "workbench.action.focusNextGroup"
+        "command": "workbench.action.nextEditorInGroup"
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.action.focusPreviousGroup"
+        "command": "workbench.action.previousEditorInGroup"
     },
     {
         "key": "ctrl+m",
