@@ -50,7 +50,6 @@
         }
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
-    "window.zoomLevel": 0,
     "vim.cursorStylePerMode.normal": "block",
     "git.ignoreMissingGitWarning": true,
     "window.zoomLevel": 3,
