@@ -11,8 +11,8 @@
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
     "vim.searchHighlightColor": "#ff7b00a1",
-//    "http.proxy": "http://proxy.bloomberg.com:81",
- //   "http.proxyStrictSSL": false,
+    //    "http.proxy": "http://proxy.bloomberg.com:81",
+    //   "http.proxyStrictSSL": false,
     "terminal.integrated.cursorBlinking": true,
     //"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     //"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
@@ -20,6 +20,11 @@
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
+    "vim.cursorStylePerMode.insert": "block-outline",
+    "vim.cursorStylePerMode.normal": "block",
+    "git.ignoreMissingGitWarning": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.sideBar.location": "right",
     "workbench.colorCustomizations": {
         "window.activeBorder":"#00ff00",
         "window.inactiveBorder": "#ff0000"
@@ -49,17 +54,12 @@
             ]
         }
     ],
-    "vim.cursorStylePerMode.insert": "block-outline",
-    "vim.cursorStylePerMode.normal": "block",
-    "git.ignoreMissingGitWarning": true,
-    "window.zoomLevel": 1,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "workbench.sideBar.location": "right",
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
     "liveServer.settings.donotVerifyTags": true,
     "python.jediEnabled": false,
     "breadcrumbs.enabled": false,
     "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
-    "terminal.integrated.scrollback": 30000
+    "terminal.integrated.scrollback": 30000,
+    "window.zoomLevel": 1
 }
