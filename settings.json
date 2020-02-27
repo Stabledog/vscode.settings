@@ -86,5 +86,6 @@
     "editor.minimap.enabled": false,
     "window.zoomLevel": 1,
     "materialTheme.accent": "Indigo",
-    "workbench.colorTheme": "Community Material Theme High Contrast"
+    "workbench.colorTheme": "Community Material Theme High Contrast",
+    "gitlens.currentLine.enabled": false
 }
