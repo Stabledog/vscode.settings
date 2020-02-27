@@ -87,7 +87,7 @@
     "gitlens.hovers.avatars": false,
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.changes": false,
-    "gitlens.hovers.annotations.enabled": false
+    "gitlens.hovers.annotations.enabled": false,
     "workbench.colorTheme": "Community Material Theme High Contrast",
     "gitlens.currentLine.enabled": false
 }
