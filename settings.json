@@ -83,7 +83,7 @@
     "editor.renderControlCharacters": false,
     "liveServer.settings.donotVerifyTags": true,
     "python.jediEnabled": false,
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
     "editor.minimap.enabled": false,
     "window.zoomLevel": 1,
     "materialTheme.accent": "Orange",
