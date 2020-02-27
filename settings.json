@@ -69,6 +69,14 @@
         {
             "before": ["s"],
             "commands": [":w"]
+        },
+        {
+            "before": ["<leader>", "1"],
+            "commands": ["editor.action.commentLine"]
+        },
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["workbench.action.quickOpen"]
         }
     ],
     "editor.renderWhitespace": "none",
