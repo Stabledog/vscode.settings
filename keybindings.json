@@ -68,19 +68,9 @@
         "when": "listFocus && !inputFocus"
     },
     {
-        "key": ", 1",
-        "command": "editor.action.commentLine",
-        "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
-    },
-    {
         "key": "ctrl+/",
         "command": "-editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": ", n",
-        "command": "workbench.action.quickOpen",
-        "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
     },
     {
         "key": "ctrl+e",

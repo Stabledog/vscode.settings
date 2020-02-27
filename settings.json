@@ -69,6 +69,14 @@
         {
             "before": ["s"],
             "commands": [":w"]
+        },
+        {
+            "before": ["<leader>", "1"],
+            "commands": ["editor.action.commentLine"]
+        },
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["workbench.action.quickOpen"]
         }
     ],
     "editor.renderWhitespace": "none",
@@ -87,7 +95,7 @@
     "gitlens.hovers.avatars": false,
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.changes": false,
-    "gitlens.hovers.annotations.enabled": false
+    "gitlens.hovers.annotations.enabled": false,
     "workbench.colorTheme": "Community Material Theme High Contrast",
     "gitlens.currentLine.enabled": false
 }
