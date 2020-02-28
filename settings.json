@@ -96,7 +96,7 @@
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.changes": false,
     "gitlens.hovers.annotations.enabled": false,
-    "workbench.colorTheme": "Community Material Theme High Contrast",
+    "workbench.colorTheme": "Community Material Theme Ocean",
     "gitlens.currentLine.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true
 }
