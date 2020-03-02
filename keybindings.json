@@ -75,5 +75,10 @@
     {
         "key": "ctrl+e",
         "command": "-workbench.action.quickOpen"
+    },
+    { // Similar to the :![cmd]  in vim:, use the 'filter text' extension
+        "key":"ctrl+/",
+        "command": "extension.filterTextInplace"
     }
+
 ]
