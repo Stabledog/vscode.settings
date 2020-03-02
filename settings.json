@@ -77,6 +77,14 @@
         {
             "before": ["<leader>", "n"],
             "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["j"],
+            "after": ["g","j"]
+        },
+        {
+            "before": ["k"],
+            "after": ["g","k"]
         }
     ],
     "editor.renderWhitespace": "none",
@@ -97,5 +105,6 @@
     "gitlens.hovers.annotations.changes": false,
     "gitlens.hovers.annotations.enabled": false,
     "workbench.colorTheme": "Community Material Theme High Contrast",
-    "gitlens.currentLine.enabled": false
+    "gitlens.currentLine.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true
 }
