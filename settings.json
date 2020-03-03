@@ -15,8 +15,8 @@
     //   "http.proxyStrictSSL": false,
     "terminal.integrated.cursorBlinking": true,
     //"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
-    //"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
-    "terminal.integrated.shell.windows": "c:\\Windows\\System32\\Bash.exe",
+    "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
+    //"terminal.integrated.shell.windows": "c:\\Windows\\System32\\Bash.exe",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
@@ -105,6 +105,25 @@
     "gitlens.hovers.annotations.changes": false,
     "gitlens.hovers.annotations.enabled": false,
     "workbench.colorTheme": "Community Material Theme High Contrast",
+    "workbench.iconTheme": "material-icon-theme",
     "gitlens.currentLine.enabled": false,
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "remotefs.remote":  {
+        "gnrl_home": {
+            "scheme": "sftp",
+            "host":"devsftp.bloomberg.com",
+            "port":2222,
+            "username":"lmatheson4",
+            "privateKeyPath": "/c/.ssh/id_rsa.openssh",
+            "rootPath":"/home18/lmatheson4"
+        },
+        "gnrl_mbig": {
+            "scheme": "sftp",
+            "host":"devsftp.bloomberg.com",
+            "port":2222,
+            "username":"lmatheson4",
+            "privateKeyPath": "/c/.ssh/id_rsa.openssh",
+            "rootPath":"/bb/mbigd/mbig497"
+        }
+    }
 }
