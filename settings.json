@@ -1,4 +1,5 @@
 {
+    // corp_desktop settings:
     "files.associations": {
         "*taskrc": "shellscript",
         "*.jrnl": "markdown"

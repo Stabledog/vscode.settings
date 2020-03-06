@@ -1,4 +1,5 @@
 // Place key bindings in this file to override the defaults
+// corp_desktop:
 [
     {
         "key": "ctrl+a j",
