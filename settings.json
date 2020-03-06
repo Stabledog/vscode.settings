@@ -102,8 +102,7 @@
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.changes": false,
     "gitlens.hovers.annotations.enabled": false,
-    "workbench.colorTheme": "Quiet Light",
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
     "gitlens.currentLine.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "remotefs.remote":  {
