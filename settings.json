@@ -11,8 +11,6 @@
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
     "vim.searchHighlightColor": "#ff7b00a1",
-    //    "http.proxy": "http://proxy.bloomberg.com:81",
-    //   "http.proxyStrictSSL": false,
     "terminal.integrated.cursorBlinking": true,
     //"terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\Bash.exe",
     "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
@@ -107,21 +105,13 @@
     "gitlens.currentLine.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "remotefs.remote":  {
-        "gnrl_home": {
+        "wsl_home": {
             "scheme": "sftp",
-            "host":"devsftp.bloomberg.com",
+            "host":"127.0.0.1",
             "port":2222,
             "username":"lmatheson4",
-            "privateKeyPath": "c:\\.ssh\\id_rsa.openssh",
-            "rootPath":"/home18/lmatheson4"
-        },
-        "gnrl_mbig": {
-            "scheme": "sftp",
-            "host":"devsftp.bloomberg.com",
-            "port":2222,
-            "username":"lmatheson4",
-            "privateKeyPath": "c:\\.ssh\\id_rsa.openssh",
-            "rootPath":"/bb/mbigd/mbig497"
+            "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
+            "rootPath":"/home/lmatheson4"
         }
     },
     "editor.cursorStyle": "block",
@@ -132,5 +122,6 @@
     "editor.folding": false,
     "editor.lineNumbers": "relative",
     "editor.mouseWheelZoom": true,
-    "editor.parameterHints.enabled": false
+    "editor.parameterHints.enabled": false,
+    "editor.multiCursorModifier": "alt"
 }
