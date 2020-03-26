@@ -102,8 +102,7 @@
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.changes": false,
     "gitlens.hovers.annotations.enabled": false,
-    "workbench.colorTheme": "Community Material Theme High Contrast",
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "gitlens.currentLine.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "remotefs.remote":  {
@@ -142,5 +141,8 @@
     "editor.lineNumbers": "relative",
     "editor.mouseWheelZoom": true,
     "editor.parameterHints.enabled": false,
-    "editor.multiCursorModifier": "alt"
+    "editor.multiCursorModifier": "alt",
+    "remote.WSL.debug": true,
+    "workbench.colorTheme": "Slack Theme Dark Mode",
+    "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe"
 }
