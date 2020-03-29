@@ -91,7 +91,7 @@
     "python.jediEnabled": false,
     "breadcrumbs.enabled": true,
     "editor.minimap.enabled": false,
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 2,
     "materialTheme.accent": "Orange",
     "gitlens.statusBar.enabled": false,
     "gitlens.mode.statusBar.enabled": false,
