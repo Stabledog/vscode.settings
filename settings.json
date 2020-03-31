@@ -75,6 +75,10 @@
             "commands": ["workbench.action.quickOpen"]
         },
         {
+            "before": ["="],
+            "commands": ["workbench.action.tasks.build"]
+        },
+        {
             "before": ["j"],
             "after": ["g","j"]
         },
@@ -100,7 +104,6 @@
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.changes": false,
     "gitlens.hovers.annotations.enabled": false,
-    "workbench.colorTheme": "Community Material Theme High Contrast",
     "workbench.iconTheme": "eq-material-theme-icons",
     "gitlens.currentLine.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
@@ -127,5 +130,13 @@
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
-    "wordcounter.wpm": 110
+    "wordcounter.wpm": 110,
+    "editWithShell.shell.linux": "/bin/bash",
+    "editWithShell.shell.osx": "/bin/bash",
+    "editWithShell.processEntireTextIfNoneSelected": true,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "latex-workshop.view.pdf.viewer": "browser",
+    "terminal.integrated.shell.linux": "/bin/bash"
 }
