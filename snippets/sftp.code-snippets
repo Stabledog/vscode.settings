@@ -16,7 +16,7 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"Generate an SFTP Config": {
+	"Create SFTP DEV push config": {
 		"scope": "json",
 		"prefix": "conf",
 		"body": [
@@ -28,7 +28,7 @@
 				"  \"username\": \"lmatheson4\",",
 				"  \"protocol\": \"sftp\",",
 				"  \"privateKeyPath\": \"/c/.ssh/id_rsa.openssh\",",
-				"  \"remotePath\": \"/home/$2/$4\",",
+				"  \"remotePath\": \"/home18/lmatheson4/$4\",",
 				"  \"uploadOnSave\": true,",
 				"  \"ignore\": [",
 					  "    \"**/.vscode/**\",",
@@ -38,6 +38,6 @@
 				"  ]",
 			"}"
 		],
-		"description": "Generate an SFTP config file for remote synchronization"
+		"description": "Create SFTP config file for sync to DEV"
 	}
 }
