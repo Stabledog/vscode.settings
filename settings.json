@@ -12,10 +12,7 @@
     "vim.leader": ",",
     "vim.useSystemClipboard": true,
     "vim.searchHighlightColor": "#ff7b00a1",
-    //    "http.proxy": "http://proxy.bloomberg.com:81",
-    //   "http.proxyStrictSSL": false,
     "terminal.integrated.cursorBlinking": true,
-    //"terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\Bash.exe",
     "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
@@ -50,40 +47,40 @@
         "editor.findMatchBorder": "#5C6BC0",
         "selection.background": "#5C6BC040"
     },
-
     "terminal.integrated.scrollback": 30000,
-    "terminal.integrated.shellArgs.windows": [ "-l"],
+    "terminal.integrated.shellArgs.windows": [
+        "-l"
+    ],
     "vim.handleKeys": {
         "<C-d>": true,
         "<C-w>": false
     },
     "vim.insertModeKeyBindings": [
         {
-            "before":  ["j", "k"],
-            "after": ["<Esc>"]
+            "before": [ "j", "k" ],
+            "after": [ "<Esc>" ]
         }
     ],
-
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["s"],
-            "commands": [":w"]
+            "before": [ "s" ],
+            "commands": [ ":w" ]
         },
         {
-            "before": ["<leader>", "1"],
-            "commands": ["editor.action.commentLine"]
+            "before": [ "<leader>", "1" ],
+            "commands": [ "editor.action.commentLine" ]
         },
         {
-            "before": ["<leader>", "n"],
-            "commands": ["workbench.action.quickOpen"]
+            "before": [ "<leader>", "n" ],
+            "commands": [ "workbench.action.quickOpen" ]
         },
         {
-            "before": ["j"],
-            "after": ["g","j"]
+            "before": [ "j" ],
+            "after": [ "g", "j" ]
         },
         {
-            "before": ["k"],
-            "after": ["g","k"]
+            "before": [ "k" ],
+            "after": [ "g", "k" ]
         }
     ],
     "editor.renderWhitespace": "none",
@@ -106,31 +103,30 @@
     "workbench.iconTheme": "material-icon-theme",
     "gitlens.currentLine.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
-    "remotefs.remote":  {
+    "remotefs.remote": {
         "gnrl_home": {
             "scheme": "sftp",
-            "host":"devsftp.bloomberg.com",
-            "port":2222,
-            "username":"lmatheson4",
-            "privateKeyPath": "c:\\.ssh\\id_rsa.openssh",
-            "rootPath":"/home18/lmatheson4"
+            "host": "devsftp.bloomberg.com",
+            "port": 2222,
+            "username": "lmatheson4",
+            "privateKeyPath": "/c/.ssh/id_rsa.openssh",
+            "rootPath": "/home18/lmatheson4"
         },
         "gnrl_mbig": {
             "scheme": "sftp",
-            "host":"devsftp.bloomberg.com",
-            "port":2222,
-            "username":"lmatheson4",
-            "privateKeyPath": "c:\\.ssh\\id_rsa.openssh",
-            "rootPath":"/bb/mbigd/mbig497"
+            "host": "devsftp.bloomberg.com",
+            "port": 2222,
+            "username": "lmatheson4",
+            "privateKeyPath": "/c/.ssh/id_rsa.openssh",
+            "rootPath": "/bb/mbigd/mbig497"
         },
         "wsl_home": {
             "scheme": "sftp",
-            "host":"127.0.0.1",
-            "port":2222,
-            "username":"lmatheson4",
-            //#"privateKeyPath": "c:\\.ssh\\id_rsa.openssh",
+            "host": "127.0.0.1",
+            "port": 2222,
+            "username": "lmatheson4",
             "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
-            "rootPath":"/home/lmatheson4"
+            "rootPath": "/home/lmatheson4"
         }
     },
     "editor.cursorStyle": "block",
@@ -144,6 +140,11 @@
     "editor.parameterHints.enabled": false,
     "editor.multiCursorModifier": "alt",
     "remote.WSL.debug": true,
-    "workbench.colorTheme": "Slack Theme Dark Mode",
-    "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe"
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "telemetry.enableTelemetry": false
 }
+
