@@ -90,7 +90,7 @@
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
     "liveServer.settings.donotVerifyTags": true,
-    "python.jediEnabled": false,
+    "python.jediEnabled": true,
     "breadcrumbs.enabled": true,
     "editor.minimap.enabled": false,
     "window.zoomLevel": 1,
@@ -104,17 +104,17 @@
     "gitlens.hovers.currentLine.enabled": false,
     "gitlens.hovers.annotations.changes": false,
     "gitlens.hovers.annotations.enabled": false,
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "gitlens.currentLine.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "remotefs.remote":  {
         "wsl_home": {
             "scheme": "sftp",
-            "host":"127.0.0.1",
-            "port":2222,
-            "username":"lmatheson4",
+            "host": "127.0.0.1",
+            "port": 2222,
+            "username": "lmatheson4",
             "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
-            "rootPath":"/home/lmatheson4"
+            "rootPath": "/home/lmatheson4"
         }
     },
     "editor.cursorStyle": "block",
