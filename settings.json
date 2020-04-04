@@ -86,7 +86,7 @@
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
     "liveServer.settings.donotVerifyTags": true,
-    "python.jediEnabled": false,
+    "python.jediEnabled": true,
     "breadcrumbs.enabled": true,
     "editor.minimap.enabled": false,
     "window.zoomLevel": 1,
