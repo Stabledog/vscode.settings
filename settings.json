@@ -22,7 +22,7 @@
     "vim.useSystemClipboard": true,
     "vim.searchHighlightColor": "#ff7b00a1",
     "terminal.integrated.cursorBlinking": true,
-    //"terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\Bash.exe",
+   
     "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
@@ -128,7 +128,7 @@
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
-    "latex-workshop.view.pdf.viewer": "browser",
+    "late
     "terminal.integrated.shell.linux": "/bin/bash",
     "workbench.colorTheme": "Shades of Purple"
 }
