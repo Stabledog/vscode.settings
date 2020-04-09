@@ -95,6 +95,7 @@
     "gitlens.hovers.annotations.changes": false,
     "gitlens.hovers.annotations.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.fontAliasing":"true",
     "gitlens.currentLine.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "remotefs.remote":  {
@@ -129,5 +130,5 @@
     },
     "latex-workshop.view.pdf.viewer": "browser",
     "terminal.integrated.shell.linux": "/bin/bash",
-    "workbench.colorTheme": "Tomorrow Night Blue"
+    "workbench.colorTheme": "Shades of Purple"
 }
