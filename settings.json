@@ -50,6 +50,8 @@
 
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.shellArgs.windows": [ "-l"],
+    "terminal.integrated.shellArgs.linux": ["--rcfile","~/.wsl.rc"],
+
     "vim.handleKeys": {
         "<C-d>": true,
         "<C-w>": false
