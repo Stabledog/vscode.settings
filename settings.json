@@ -23,34 +23,11 @@
     "workbench.sideBar.location": "right",
     "workbench.colorCustomizations": {
         "window.activeBorder": "#00ff00",
-        "window.inactiveBorder": "#ff0000",
-        "activityBarBadge.background": "#5C6BC0",
-        "activityBar.activeBorder": "#5C6BC0",
-        "list.activeSelectionForeground": "#5C6BC0",
-        "list.inactiveSelectionForeground": "#5C6BC0",
-        "list.highlightForeground": "#5C6BC0",
-        "scrollbarSlider.activeBackground": "#5C6BC050",
-        "editorSuggestWidget.highlightForeground": "#5C6BC0",
-        "textLink.foreground": "#5C6BC0",
-        "progressBar.background": "#5C6BC0",
-        "pickerGroup.foreground": "#5C6BC0",
-        "tab.activeBorder": "#5C6BC0",
-        "notificationLink.foreground": "#5C6BC0",
-        "editorWidget.resizeBorder": "#5C6BC0",
-        "editorWidget.border": "#5C6BC0",
-        "settings.modifiedItemIndicator": "#5C6BC0",
-        "settings.headerForeground": "#5C6BC0",
-        "panelTitle.activeBorder": "#5C6BC0",
-        "breadcrumb.activeSelectionForeground": "#5C6BC0",
-        "menu.selectionForeground": "#5C6BC0",
-        "menubar.selectionForeground": "#5C6BC0",
-        "editor.findMatchBorder": "#5C6BC0",
-        "selection.background": "#5C6BC040"
+        "window.inactiveBorder": "#ff0000"
     },
     "terminal.integrated.scrollback": 30000,
-    "terminal.integrated.shellArgs.windows": [
-        "-l"
-    ],
+    "terminal.integrated.shellArgs.windows": [ "-l" ],
+    "terminal.integrated.shellArgs.linux": ["--rcfile","~/.wsl.rc"],
     "vim.handleKeys": {
         "<C-d>": true,
         "<C-w>": false
@@ -140,11 +117,12 @@
     "editor.parameterHints.enabled": false,
     "editor.multiCursorModifier": "alt",
     "remote.WSL.debug": true,
-    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "workbench.colorTheme": "Cobalt2",
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "diffEditor.renderSideBySide": true
 }
 
