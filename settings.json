@@ -3,6 +3,16 @@
         "*taskrc": "shellscript",
         "*.jrnl": "markdown"
     },
+    "shebang.associations": [
+        {
+            "pattern": "^#!/bin/bash$",
+            "language": "shellscript"
+        },
+        {
+            "pattern": "^.* vim: filetype=sh :$",
+            "language": "shellscript"
+        }
+    ],
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
