@@ -1,133 +1,167 @@
 {
-    "files.associations": {
-        "*taskrc": "shellscript",
-        "*.jrnl": "markdown"
-    },
-    "shebang.associations": [
-        {
-            "pattern": "^#!/bin/bash$",
-            "language": "shellscript"
-        },
-        {
-            "pattern": "^.* vim: filetype=sh :$",
-            "language": "shellscript"
-        }
-    ],
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "vim.easymotion": true,
-    "vim.hlsearch": true,
-    "vim.leader": ",",
-    "vim.useSystemClipboard": true,
-    "vim.searchHighlightColor": "#ff7b00a1",
-    "terminal.integrated.cursorBlinking": true,
-   
-    "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
-    "terminal.integrated.env.windows": {
-        "CHERE_INVOKING": "1"
-    },
-    "vim.cursorStylePerMode.insert": "block-outline",
-    "vim.cursorStylePerMode.normal": "block",
-    "git.ignoreMissingGitWarning": true,
-    "workbench.sideBar.location": "right",
-    "workbench.colorCustomizations": {
-        "window.activeBorder": "#00ff00",
-        "window.inactiveBorder": "#ff0000"
-    },
-
-    "terminal.integrated.scrollback": 30000,
-    "terminal.integrated.shellArgs.windows": [ "-l"],
-    "terminal.integrated.shellArgs.linux": ["--rcfile","~/.wsl.rc"],
-
-    "vim.handleKeys": {
-        "<C-d>": true,
-        "<C-w>": false
-    },
-    "vim.insertModeKeyBindings": [
-        {
-            "before":  ["j", "k"],
-            "after": ["<Esc>"]
-        }
-    ],
-
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["s"],
-            "commands": [":w"]
-        },
-        {
-            "before": ["<leader>", "1"],
-            "commands": ["editor.action.commentLine"]
-        },
-        {
-            "before": ["<leader>", "n"],
-            "commands": ["workbench.action.quickOpen"]
-        },
-        {
-            "before": ["="],
-            "commands": ["workbench.action.tasks.build"]
-        },
-        {
-            "before": ["j"],
-            "after": ["g","j"]
-        },
-        {
-            "before": ["k"],
-            "after": ["g","k"]
-        }
-    ],
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
-    "liveServer.settings.donotVerifyTags": true,
-    "python.jediEnabled": true,
-    "breadcrumbs.enabled": true,
-    "editor.minimap.enabled": false,
-    "window.zoomLevel": 1,
-    "materialTheme.accent": "Orange",
-    "gitlens.statusBar.enabled": false,
-    "gitlens.mode.statusBar.enabled": false,
-    "gitlens.hovers.enabled": false,
-    "gitlens.hovers.currentLine.details": false,
-    "gitlens.hovers.currentLine.changes": false,
-    "gitlens.hovers.avatars": false,
-    "gitlens.hovers.currentLine.enabled": false,
-    "gitlens.hovers.annotations.changes": false,
-    "gitlens.hovers.annotations.enabled": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.fontAliasing":"true",
-    "gitlens.currentLine.enabled": false,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "remotefs.remote":  {
-        "wsl_home": {
-            "scheme": "sftp",
-            "host": "127.0.0.1",
-            "port": 2222,
-            "username": "lmatheson4",
-            "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
-            "rootPath": "/home/lmatheson4"
-        }
-    },
-    "editor.cursorStyle": "block",
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 200,
-    "editor.dragAndDrop": false,
-    "editor.emptySelectionClipboard": false,
-    "editor.folding": false,
-    "editor.lineNumbers": "relative",
-    "editor.mouseWheelZoom": true,
-    "editor.parameterHints.enabled": false,
-    "editor.multiCursorModifier": "alt",
-    "wordcounter.count_chars": false,
-    "wordcounter.count_paragraphs": false,
-    "wordcounter.include_eol_chars": false,
-    "wordcounter.wpm": 110,
-    "editWithShell.shell.linux": "/bin/bash",
-    "editWithShell.shell.osx": "/bin/bash",
-    "editWithShell.processEntireTextIfNoneSelected": true,
-    "remote.extensionKind": {
-        "ms-azuretools.vscode-docker": "workspace"
-    },
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "workbench.colorTheme": "Shades of Purple"
+	"breadcrumbs.enabled": true,
+	"editWithShell.processEntireTextIfNoneSelected": true,
+	"editWithShell.shell.linux": "/bin/bash",
+	"editWithShell.shell.osx": "/bin/bash",
+	"editor.cursorStyle": "block",
+	"editor.dragAndDrop": false,
+	"editor.emptySelectionClipboard": false,
+	"editor.folding": false,
+	"editor.lineNumbers": "relative",
+	"editor.minimap.enabled": false,
+	"editor.mouseWheelZoom": true,
+	"editor.multiCursorModifier": "alt",
+	"editor.parameterHints.enabled": false,
+	"editor.renderControlCharacters": false,
+	"editor.renderWhitespace": "none",
+	"editor.wordWrap": "bounded",
+	"editor.wordWrapColumn": 200,
+	"files.associations": {
+		"*taskrc": "shellscript",
+		"*.jrnl": "markdown"
+	},
+	"files.eol": "\n",
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"git.ignoreMissingGitWarning": true,
+	"gitlens.currentLine.enabled": false,
+	"gitlens.hovers.annotations.changes": false,
+	"gitlens.hovers.annotations.enabled": false,
+	"gitlens.hovers.avatars": false,
+	"gitlens.hovers.currentLine.changes": false,
+	"gitlens.hovers.currentLine.details": false,
+	"gitlens.hovers.currentLine.enabled": false,
+	"gitlens.hovers.enabled": false,
+	"gitlens.mode.statusBar.enabled": false,
+	"gitlens.statusBar.enabled": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"materialTheme.accent": "Orange",
+	"python.jediEnabled": true,
+	"remote.extensionKind": {
+		"ms-azuretools.vscode-docker": "workspace"
+	},
+	"remotefs.remote": {
+		"wsl_home": {
+			"scheme": "sftp",
+			"host": "127.0.0.1",
+			"port": 2222,
+			"username": "lmatheson4",
+			"privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
+			"rootPath": "/home/lmatheson4"
+		}
+	},
+	"shebang.associations": [
+		{
+			"pattern": "^#!/bin/bash$",
+			"language": "shellscript"
+		},
+		{
+			"pattern": "^.* vim: filetype=sh :$",
+			"language": "shellscript"
+		}
+	],
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.env.windows": {
+		"CHERE_INVOKING": "1"
+	},
+	"terminal.integrated.scrollback": 30000,
+	"terminal.integrated.shell.linux": "/bin/bash",
+	"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
+	"terminal.integrated.shellArgs.linux": [
+		"--rcfile",
+		"~/.wsl.rc"
+	],
+	"terminal.integrated.shellArgs.windows": [
+		"-l"
+	],
+	"vim.cursorStylePerMode.insert": "block-outline",
+	"vim.cursorStylePerMode.normal": "block",
+	"vim.easymotion": true,
+	"vim.handleKeys": {
+		"<C-d>": true,
+		"<C-w>": false
+	},
+	"vim.hlsearch": true,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": [
+				"j",
+				"k"
+			],
+			"after": [
+				"<Esc>"
+			]
+		}
+	],
+	"vim.leader": ",",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"s"
+			],
+			"commands": [
+				":w"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"1"
+			],
+			"commands": [
+				"editor.action.commentLine"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"n"
+			],
+			"commands": [
+				"workbench.action.quickOpen"
+			]
+		},
+		{
+			"before": [
+				"="
+			],
+			"commands": [
+				"workbench.action.tasks.build"
+			]
+		},
+		{
+			"before": [
+				"j"
+			],
+			"after": [
+				"g",
+				"j"
+			]
+		},
+		{
+			"before": [
+				"k"
+			],
+			"after": [
+				"g",
+				"k"
+			]
+		}
+	],
+	"vim.searchHighlightColor": "#ff7b00a1",
+	"vim.useSystemClipboard": true,
+	"window.zoomLevel": 1,
+	"wordcounter.count_chars": false,
+	"wordcounter.count_paragraphs": false,
+	"wordcounter.include_eol_chars": false,
+	"wordcounter.wpm": 110,
+	"workbench.colorCustomizations": {
+		"window.activeBorder": "#00ff00",
+		"window.inactiveBorder": "#ff0000"
+	},
+	"workbench.colorTheme": "Shades of Purple",
+	"workbench.fontAliasing": "true",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.sideBar.location": "right"
 }
