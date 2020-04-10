@@ -1,6 +1,8 @@
 {
 	"breadcrumbs.enabled": true,
-	"diffEditor.renderSideBySide": true,
+	"editWithShell.processEntireTextIfNoneSelected": true,
+	"editWithShell.shell.linux": "/bin/bash",
+	"editWithShell.shell.osx": "/bin/bash",
 	"editor.cursorStyle": "block",
 	"editor.dragAndDrop": false,
 	"editor.emptySelectionClipboard": false,
@@ -72,6 +74,7 @@
 		"CHERE_INVOKING": "1"
 	},
 	"terminal.integrated.scrollback": 30000,
+	"terminal.integrated.shell.linux": "/bin/bash",
 	"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
 	"terminal.integrated.shellArgs.linux": [
 		"--rcfile",
@@ -129,6 +132,14 @@
 		},
 		{
 			"before": [
+				"="
+			],
+			"commands": [
+				"workbench.action.tasks.build"
+			]
+		},
+		{
+			"before": [
 				"j"
 			],
 			"after": [
@@ -150,11 +161,16 @@
 	"vim.useSystemClipboard": true,
 	"vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
 	"window.zoomLevel": 1,
+	"wordcounter.count_chars": false,
+	"wordcounter.count_paragraphs": false,
+	"wordcounter.include_eol_chars": false,
+	"wordcounter.wpm": 110,
 	"workbench.colorCustomizations": {
 		"window.activeBorder": "#00ff00",
 		"window.inactiveBorder": "#ff0000"
 	},
-	"workbench.colorTheme": "Cobalt2",
+	"workbench.colorTheme": "Shades of Purple",
+	"workbench.fontAliasing": "true",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "right"
 }
