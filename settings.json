@@ -33,7 +33,7 @@
     "workbench.sideBar.location": "right",
     "workbench.colorCustomizations": {
         "window.activeBorder": "#00ff00",
-        "window.inactiveBorder": "#ff0000",
+        "window.inactiveBorder": "#ff0000"
     },
 
     "terminal.integrated.scrollback": 30000,
@@ -128,7 +128,6 @@
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
-    "late
     "terminal.integrated.shell.linux": "/bin/bash",
     "workbench.colorTheme": "Shades of Purple"
 }
