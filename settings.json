@@ -4,6 +4,8 @@
 	"editWithShell.processEntireTextIfNoneSelected": true,
 	"editWithShell.shell.linux": "/bin/bash",
 	"editWithShell.shell.osx": "/bin/bash",
+	"editor.autoClosingQuotes":"never",
+	"editor.autoClosingBrackets": "never",
 	"editor.cursorStyle": "block",
 	"editor.dragAndDrop": false,
 	"editor.emptySelectionClipboard": false,
@@ -170,8 +172,9 @@
 		"window.activeBorder": "#00ff00",
 		"window.inactiveBorder": "#ff0000"
 	},
-	"workbench.colorTheme": "Shades of Purple",
 	"workbench.fontAliasing": "true",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.sideBar.location": "right"
+	"workbench.sideBar.location": "right",
+	"workbench.colorTheme": "Shades of Purple",
+	"workbench.startupEditor": "newUntitledFile"
 }
