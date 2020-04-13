@@ -1,128 +1,161 @@
 {
-    // master:
-    "files.associations": {
-        "*taskrc": "shellscript",
-        "*.jrnl": "markdown"
-    },
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "vim.easymotion": true,
-    "vim.hlsearch": true,
-    "vim.leader": ",",
-    "vim.useSystemClipboard": true,
-    "vim.searchHighlightColor": "#ff7b00a1",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
-    "terminal.integrated.env.windows": {
-        "CHERE_INVOKING": "1"
-    },
-    "vim.cursorStylePerMode.insert": "block-outline",
-    "vim.cursorStylePerMode.normal": "block",
-    "git.ignoreMissingGitWarning": true,
-    "workbench.sideBar.location": "right",
-    "workbench.colorCustomizations": {
-        "window.activeBorder": "#00ff00",
-        "window.inactiveBorder": "#ff0000"
-    },
-    "terminal.integrated.scrollback": 30000,
-    "terminal.integrated.shellArgs.windows": [ "-l" ],
-    "terminal.integrated.shellArgs.linux": ["--rcfile","~/.wsl.rc"],
-    "vim.handleKeys": {
-        "<C-d>": true,
-        "<C-w>": false
-    },
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [ "j", "k" ],
-            "after": [ "<Esc>" ]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [ "s" ],
-            "commands": [ ":w" ]
-        },
-        {
-            "before": [ "<leader>", "1" ],
-            "commands": [ "editor.action.commentLine" ]
-        },
-        {
-            "before": [ "<leader>", "n" ],
-            "commands": [ "workbench.action.quickOpen" ]
-        },
-        {
-            "before": [ "j" ],
-            "after": [ "g", "j" ]
-        },
-        {
-            "before": [ "k" ],
-            "after": [ "g", "k" ]
-        }
-    ],
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
-    "liveServer.settings.donotVerifyTags": true,
-    "python.jediEnabled": true,
-    "breadcrumbs.enabled": true,
-    "editor.minimap.enabled": false,
-    "window.zoomLevel": 1,
-    "materialTheme.accent": "Orange",
-    "gitlens.statusBar.enabled": false,
-    "gitlens.mode.statusBar.enabled": false,
-    "gitlens.hovers.enabled": false,
-    "gitlens.hovers.currentLine.details": false,
-    "gitlens.hovers.currentLine.changes": false,
-    "gitlens.hovers.avatars": false,
-    "gitlens.hovers.currentLine.enabled": false,
-    "gitlens.hovers.annotations.changes": false,
-    "gitlens.hovers.annotations.enabled": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "gitlens.currentLine.enabled": false,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "remotefs.remote": {
-        "gnrl_home": {
-            "scheme": "sftp",
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "username": "lmatheson4",
-            "privateKeyPath": "/c/.ssh/id_rsa.openssh",
-            "rootPath": "/home18/lmatheson4"
-        },
-        "gnrl_mbig": {
-            "scheme": "sftp",
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "username": "lmatheson4",
-            "privateKeyPath": "/c/.ssh/id_rsa.openssh",
-            "rootPath": "/bb/mbigd/mbig497"
-        },
-        "wsl_home": {
-            "scheme": "sftp",
-            "host": "127.0.0.1",
-            "port": 2222,
-            "username": "lmatheson4",
-            "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
-            "rootPath": "/home/lmatheson4"
-        }
-    },
-    "editor.cursorStyle": "block",
-    "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 200,
-    "editor.dragAndDrop": false,
-    "editor.emptySelectionClipboard": false,
-    "editor.folding": false,
-    "editor.lineNumbers": "relative",
-    "editor.mouseWheelZoom": true,
-    "editor.parameterHints.enabled": false,
-    "editor.multiCursorModifier": "alt",
-    "remote.WSL.debug": true,
-    "workbench.colorTheme": "Cobalt2",
-    "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "remote.extensionKind": {
-        "ms-azuretools.vscode-docker": "workspace"
-    },
-    "telemetry.enableTelemetry": false,
-    "diffEditor.renderSideBySide": true
+	"breadcrumbs.enabled": true,
+	"diffEditor.renderSideBySide": true,
+	"editor.cursorStyle": "block",
+	"editor.dragAndDrop": false,
+	"editor.emptySelectionClipboard": false,
+	"editor.folding": false,
+	"editor.lineNumbers": "relative",
+	"editor.minimap.enabled": false,
+	"editor.mouseWheelZoom": true,
+	"editor.multiCursorModifier": "alt",
+	"editor.parameterHints.enabled": false,
+	"editor.renderControlCharacters": false,
+	"editor.renderWhitespace": "none",
+	"editor.wordWrap": "bounded",
+	"editor.wordWrapColumn": 200,
+	"files.associations": {
+		"*taskrc": "shellscript",
+		"*.jrnl": "markdown"
+	},
+	"files.eol": "\n",
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true,
+	"git.ignoreMissingGitWarning": true,
+	"gitlens.currentLine.enabled": false,
+	"gitlens.hovers.annotations.changes": false,
+	"gitlens.hovers.annotations.enabled": false,
+	"gitlens.hovers.avatars": false,
+	"gitlens.hovers.currentLine.changes": false,
+	"gitlens.hovers.currentLine.details": false,
+	"gitlens.hovers.currentLine.enabled": false,
+	"gitlens.hovers.enabled": false,
+	"gitlens.mode.statusBar.enabled": false,
+	"gitlens.statusBar.enabled": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"materialTheme.accent": "Orange",
+	"python.jediEnabled": true,
+	"remote.WSL.debug": true,
+	"remote.extensionKind": {
+		"ms-azuretools.vscode-docker": "workspace"
+	},
+	"remotefs.remote": {
+		"gnrl_home": {
+			"scheme": "sftp",
+			"host": "devsftp.bloomberg.com",
+			"port": 2222,
+			"username": "lmatheson4",
+			"privateKeyPath": "/c/.ssh/id_rsa.openssh",
+			"rootPath": "/home18/lmatheson4"
+		},
+		"gnrl_mbig": {
+			"scheme": "sftp",
+			"host": "devsftp.bloomberg.com",
+			"port": 2222,
+			"username": "lmatheson4",
+			"privateKeyPath": "/c/.ssh/id_rsa.openssh",
+			"rootPath": "/bb/mbigd/mbig497"
+		},
+		"wsl_home": {
+			"scheme": "sftp",
+			"host": "127.0.0.1",
+			"port": 2222,
+			"username": "lmatheson4",
+			"privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
+			"rootPath": "/home/lmatheson4"
+		}
+	},
+	"telemetry.enableTelemetry": false,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.env.windows": {
+		"CHERE_INVOKING": "1"
+	},
+	"terminal.integrated.scrollback": 30000,
+	"terminal.integrated.shell.linux": "/bin/bash",
+	"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
+	"terminal.integrated.shellArgs.linux": [
+		"--rcfile",
+		"~/.wsl.rc"
+	],
+	"terminal.integrated.shellArgs.windows": [
+		"-l"
+	],
+	"vim.cursorStylePerMode.insert": "block-outline",
+	"vim.cursorStylePerMode.normal": "block",
+	"vim.easymotion": true,
+	"vim.handleKeys": {
+		"<C-d>": true,
+		"<C-w>": false
+	},
+	"vim.hlsearch": true,
+	"vim.insertModeKeyBindings": [
+		{
+			"before": [
+				"j",
+				"k"
+			],
+			"after": [
+				"<Esc>"
+			]
+		}
+	],
+	"vim.leader": ",",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"s"
+			],
+			"commands": [
+				":w"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"1"
+			],
+			"commands": [
+				"editor.action.commentLine"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"n"
+			],
+			"commands": [
+				"workbench.action.quickOpen"
+			]
+		},
+		{
+			"before": [
+				"j"
+			],
+			"after": [
+				"g",
+				"j"
+			]
+		},
+		{
+			"before": [
+				"k"
+			],
+			"after": [
+				"g",
+				"k"
+			]
+		}
+	],
+	"vim.searchHighlightColor": "#ff7b00a1",
+	"vim.useSystemClipboard": true,
+	"vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+	"window.zoomLevel": 1,
+	"workbench.colorCustomizations": {
+		"window.activeBorder": "#00ff00",
+		"window.inactiveBorder": "#ff0000"
+	},
+	"workbench.colorTheme": "Cobalt2",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.sideBar.location": "right"
 }
-
