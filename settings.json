@@ -129,7 +129,7 @@
 	],
 	"vim.searchHighlightColor": "#ff7b00a1",
 	"vim.useSystemClipboard": true,
-	"window.zoomLevel": 2,
+	"window.zoomLevel": 1,
 	"workbench.colorCustomizations": {
 		"window.activeBorder": "#00ff00",
 		"window.inactiveBorder": "#ff0000",
@@ -156,6 +156,7 @@
 		"editor.findMatchBorder": "#5C6BC0",
 		"selection.background": "#5C6BC040"
 	},
-	"workbench.colorTheme": "Material Theme Darker High Contrast",
-	"workbench.sideBar.location": "right"
+	"workbench.colorTheme": "Shades of Purple",
+	"workbench.sideBar.location": "right",
+	"workbench.startupEditor": "newUntitledFile"
 }
