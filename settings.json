@@ -16,7 +16,7 @@
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
     "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "files.associations": {
@@ -164,7 +164,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
