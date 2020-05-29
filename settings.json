@@ -16,7 +16,7 @@
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
     "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "files.associations": {
@@ -177,5 +177,10 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Shades of Purple",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "cmake.configureOnOpen": false,
+    "docker.dockerodeOptions": {
+         "host": "http://127.0.0.1",
+         "port": 2375
+    }
 }
