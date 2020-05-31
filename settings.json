@@ -14,7 +14,8 @@
 	"editor.glyphMargin": true,
 	"editor.letterSpacing": 0.3,
 	"editor.lineHeight": 20,
-	"editor.lineNumbers": "relative",
+	//#"editor.lineNumbers": "relative",
+	"editor.lineNumbers": "on",
 	"editor.minimap.enabled": false,
 	"editor.mouseWheelZoom": true,
 	"editor.multiCursorModifier": "alt",
@@ -159,7 +160,7 @@
 	],
 	"vim.searchHighlightColor": "#ff7b00a1",
 	"vim.useSystemClipboard": true,
-	"window.zoomLevel": 2,
+	"window.zoomLevel": 0,
 	"wordcounter.count_chars": false,
 	"wordcounter.count_paragraphs": false,
 	"wordcounter.include_eol_chars": false,
@@ -194,5 +195,6 @@
 	"workbench.fontAliasing": "true",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "right",
-	"workbench.startupEditor": "newUntitledFile"
+	"workbench.startupEditor": "newUntitledFile",
+	"git.confirmSync": false
 }

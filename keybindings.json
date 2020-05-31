@@ -6,16 +6,20 @@
         "command": "workbench.action.terminal.focus"
     },
     {
+        "key": "ctrl+a b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
         "key": "ctrl+a k",
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
-        "key":"ctrl+a l",
+        "key": "ctrl+a l",
         "command": "workbench.action.focusPreviousGroup",
         "when": "!terminalFocus"
     },
     {
-        "key":"ctrl+a h",
+        "key": "ctrl+a h",
         "command": "workbench.action.focusNextGroup",
         "when": "!terminalFocus"
     },
@@ -78,8 +82,7 @@
         "command": "-workbench.action.quickOpen"
     },
     { // Similar to the :![cmd]  in vim:, use the 'filter text' extension
-        "key":"ctrl+/",
+        "key": "ctrl+/",
         "command": "extension.filterTextInplace"
     }
-
 ]
