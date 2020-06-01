@@ -6,6 +6,10 @@
         "command": "workbench.action.terminal.focus"
     },
     {
+        "key": "ctrl+a b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
         "key": "ctrl+a k",
         "command": "workbench.action.focusActiveEditorGroup"
     },
