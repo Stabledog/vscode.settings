@@ -84,6 +84,16 @@
     { // Similar to the :![cmd]  in vim:, use the 'filter text' extension
         "key":"ctrl+/",
         "command": "extension.filterTextInplace"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "markdown.showPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "editorLangId == 'markdown'"
     }
 
 ]
