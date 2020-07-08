@@ -1,6 +1,11 @@
 {
     "breadcrumbs.enabled": true,
+    "cmake.configureOnOpen": false,
     "diffEditor.renderSideBySide": true,
+    "docker.dockerodeOptions": {
+         "host": "http://127.0.0.1",
+         "port": 2375
+    },
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -41,6 +46,7 @@
     "liveServer.settings.donotVerifyTags": true,
     "materialTheme.accent": "Orange",
     "python.jediEnabled": true,
+    "python.languageServer": "Jedi",
     "remote.WSL.debug": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
@@ -76,6 +82,7 @@
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
+    "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.shell.linux": "/bin/bash",
 	"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
@@ -164,7 +171,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": -2,
+    "window.zoomLevel": -1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -178,10 +185,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Shades of Purple",
-    "workbench.startupEditor": "newUntitledFile",
-    "cmake.configureOnOpen": false,
-    "docker.dockerodeOptions": {
-         "host": "http://127.0.0.1",
-         "port": 2375
-    }
+    "workbench.startupEditor": "newUntitledFile"
 }
+
