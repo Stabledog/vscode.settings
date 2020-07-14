@@ -16,6 +16,7 @@
     "editor.emptySelectionClipboard": false,
     "editor.folding": false,
     "editor.lineNumbers": "relative",
+	"editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
