@@ -2,10 +2,7 @@
     "breadcrumbs.enabled": true,
     "cmake.configureOnOpen": false,
     "diffEditor.renderSideBySide": true,
-    "docker.dockerodeOptions": {
-         "host": "http://127.0.0.1",
-         "port": 2375
-    },
+    "docker.host": "tcp://127.0.0.1:2375",
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -52,13 +49,18 @@
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
+    "remote.SSH.lockfilesInTmp": true,
+    "remote.SSH.path": "c:\\windows\\system32\\openssh\\ssh.exe",
+    "remote.SSH.remotePlatform": {
+        "stable.burner": "linux"
+    },
     "remotefs.remote": {
         "gnrl_home": {
             "scheme": "sftp",
             "host": "devsftp.bloomberg.com",
             "port": 2222,
             "username": "lmatheson4",
-            "privateKeyPath": "/c/.ssh/id_rsa.openssh",
+            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
             "rootPath": "/home18/lmatheson4"
         },
         "gnrl_mbig": {
@@ -66,7 +68,7 @@
             "host": "devsftp.bloomberg.com",
             "port": 2222,
             "username": "lmatheson4",
-            "privateKeyPath": "/c/.ssh/id_rsa.openssh",
+            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
             "rootPath": "/bb/mbigd/mbig497"
         },
         "wsl_home": {
@@ -172,7 +174,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -185,7 +187,7 @@
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.startupEditor": "newUntitledFile"
 }
 
