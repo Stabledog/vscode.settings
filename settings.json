@@ -12,8 +12,6 @@
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
     "editor.folding": false,
-    "editor.lineNumbers": "relative",
-	"editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
@@ -52,7 +50,8 @@
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "c:\\windows\\system32\\openssh\\ssh.exe",
     "remote.SSH.remotePlatform": {
-        "stable.burner": "linux"
+        "stable.burner": "linux",
+        "stable.home": "linux"
     },
     "remotefs.remote": {
         "gnrl_home": {
@@ -174,7 +173,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
