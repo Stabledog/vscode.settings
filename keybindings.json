@@ -111,6 +111,11 @@
         "key": "ctrl+shift+v",
         "command": "-markdown-preview-enhanced.openPreview",
         "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-extension.vim_ctrl+j",
+        "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
     }
 
 ]
