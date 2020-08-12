@@ -3,6 +3,7 @@
 	"editWithShell.processEntireTextIfNoneSelected": true,
 	"editWithShell.shell.linux": "/bin/bash",
 	"editWithShell.shell.osx": "/bin/bash",
+	"editor.accessibilitySupport": "off",
 	"editor.autoClosingQuotes": "never",
 	"editor.cursorStyle": "block",
 	"editor.dragAndDrop": false,
@@ -32,6 +33,7 @@
 	"files.eol": "\n",
 	"files.insertFinalNewline": true,
 	"files.trimTrailingWhitespace": true,
+	"git.confirmSync": false
 	"git.ignoreMissingGitWarning": true,
 	"gitlens.currentLine.enabled": false,
 	"gitlens.hovers.annotations.changes": false,
@@ -48,7 +50,13 @@
 	"materialTheme.accent": "Lime",
 	"python.jediEnabled": true,
 	"remote.extensionKind": {
-		"ms-azuretools.vscode-docker": "workspace"
+		"ms-azuretools.vscode-docker": "workspace",
+		"ms-vscode-remote.remote-ssh": "ui"
+	},
+	//"remote.SSH.configFile": "/c/Projects/ssh_wsl/config",
+	"remote.SSH.configFile": "c:/Users/lesma/.ssh/config",
+	"remote.SSH.remotePlatform": {
+		"stage.dreamhost": "linux"
 	},
 	"remotefs.remote": {
 		"wsl_home": {
@@ -160,7 +168,7 @@
 	],
 	"vim.searchHighlightColor": "#ff7b00a1",
 	"vim.useSystemClipboard": true,
-	"window.zoomLevel": -1,
+	"window.zoomLevel": 2,
 	"wordcounter.count_chars": false,
 	"wordcounter.count_paragraphs": false,
 	"wordcounter.include_eol_chars": false,
@@ -196,5 +204,4 @@
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "right",
 	"workbench.startupEditor": "newUntitledFile",
-	"git.confirmSync": false
 }
