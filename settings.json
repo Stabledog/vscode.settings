@@ -1,10 +1,16 @@
 {
 	"breadcrumbs.enabled": true,
+    "diffEditor.renderSideBySide": true,
+    "docker.dockerodeOptions": {
+         "host": "http://127.0.0.1",
+         "port": 2375
+    },
 	"editWithShell.processEntireTextIfNoneSelected": true,
 	"editWithShell.shell.linux": "/bin/bash",
 	"editWithShell.shell.osx": "/bin/bash",
 	"editor.accessibilitySupport": "off",
 	"editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never",
 	"editor.cursorStyle": "block",
 	"editor.dragAndDrop": false,
 	"editor.emptySelectionClipboard": false,
@@ -15,7 +21,7 @@
 	"editor.glyphMargin": true,
 	"editor.letterSpacing": 0.3,
 	"editor.lineHeight": 20,
-	//"editor.lineNumbers": "relative",
+	"editor.lineNumbers": "relative",
 	"editor.lineNumbers": "on",
 	"editor.minimap.enabled": false,
 	"editor.mouseWheelZoom": true,
@@ -49,6 +55,8 @@
 	"liveServer.settings.donotVerifyTags": true,
 	"materialTheme.accent": "Lime",
 	"python.jediEnabled": true,
+    "python.languageServer": "Jedi",
+    "remote.WSL.debug": true,
 	"remote.extensionKind": {
 		"ms-azuretools.vscode-docker": "workspace",
 		"ms-vscode-remote.remote-ssh": "ui"
