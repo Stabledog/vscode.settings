@@ -1,16 +1,16 @@
 {
 	"breadcrumbs.enabled": true,
-    "diffEditor.renderSideBySide": true,
-    "docker.dockerodeOptions": {
-         "host": "http://127.0.0.1",
-         "port": 2375
-    },
+	"diffEditor.renderSideBySide": true,
+	"docker.dockerodeOptions": {
+		"host": "http://127.0.0.1",
+		"port": 2375
+	},
 	"editWithShell.processEntireTextIfNoneSelected": true,
 	"editWithShell.shell.linux": "/bin/bash",
 	"editWithShell.shell.osx": "/bin/bash",
 	"editor.accessibilitySupport": "off",
 	"editor.autoClosingQuotes": "never",
-    "editor.autoClosingBrackets": "never",
+	"editor.autoClosingBrackets": "never",
 	"editor.cursorStyle": "block",
 	"editor.dragAndDrop": false,
 	"editor.emptySelectionClipboard": false,
@@ -39,7 +39,7 @@
 	"files.eol": "\n",
 	"files.insertFinalNewline": true,
 	"files.trimTrailingWhitespace": true,
-	"git.confirmSync": false
+	"git.confirmSync": false,
 	"git.ignoreMissingGitWarning": true,
 	"gitlens.currentLine.enabled": false,
 	"gitlens.hovers.annotations.changes": false,
@@ -55,8 +55,8 @@
 	"liveServer.settings.donotVerifyTags": true,
 	"materialTheme.accent": "Lime",
 	"python.jediEnabled": true,
-    "python.languageServer": "Jedi",
-    "remote.WSL.debug": true,
+	"python.languageServer": "Jedi",
+	"remote.WSL.debug": true,
 	"remote.extensionKind": {
 		"ms-azuretools.vscode-docker": "workspace",
 		"ms-vscode-remote.remote-ssh": "ui"
@@ -176,7 +176,7 @@
 	],
 	"vim.searchHighlightColor": "#ff7b00a1",
 	"vim.useSystemClipboard": true,
-	"window.zoomLevel": 2,
+	"window.zoomLevel": 1,
 	"wordcounter.count_chars": false,
 	"wordcounter.count_paragraphs": false,
 	"wordcounter.include_eol_chars": false,
