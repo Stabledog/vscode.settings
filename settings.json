@@ -54,6 +54,14 @@
         "stable.home": "linux"
     },
     "remotefs.remote": {
+        "gnrl_bb": {
+            "scheme": "sftp",
+            "host": "devsftp.bloomberg.com",
+            "port": 2222,
+            "username": "lmatheson4",
+            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
+            "rootPath": "/bb"
+        },
         "gnrl_home": {
             "scheme": "sftp",
             "host": "devsftp.bloomberg.com",
@@ -77,6 +85,14 @@
             "username": "lmatheson4",
             "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
             "rootPath": "/home/lmatheson4"
+        },
+        "stage_dreamhost": {
+            "scheme": "sftp",
+            "host": "john-witherspoon.dreamhost.com",
+            "port": 22,
+            "username": "debweb_docker",
+            "privateKeyPath": "/c/Projects/eqac/.ssh/debweb_docker",
+            "rootPath":"/home/debweb_docker"
         }
     },
     "telemetry.enableTelemetry": false,
@@ -173,7 +189,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
