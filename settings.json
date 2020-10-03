@@ -97,58 +97,79 @@
     },
     "shellLauncher.shells.linux": [
         {
-            "label": "Ubuntu 18.04",
+            "label": "1. wsl (local)" ,
             "shell": "/bin/bash",
             "args": [
                 "-l"
             ]
         },
         {
-            "label": "stage_dreamhost",
+            "label": "2. Stableburner (internet)",
+            "shell": "/usr/bin/ssh",
+            "args":[
+                "stable.home"
+            ]
+        },
+        {
+            "label": "3. Dreamhost (stage)",
             "shell": "/usr/bin/ssh",
             "args": [ "stage.dreamhost" ]
         },
         {
-            "label": "Cygwin",
+            "label": "4. Cygwin",
             "shell": "/c/cygwin/bin/bash.exe",
             "args": [
                 "-l"
             ]
         },
         {
+            "label": "5. cmd.exe",
             "shell": "/c/Windows/System32/cmd.exe",
-            "label": "cmd.exe",
             "args": [
                 "/k",
                 "cd /d %HOME%"
             ]
         },
         {
+            "label": "6. PowerShell",
             "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
-            "label": "PowerShell"
         },
         {
+            "label": "7. Git-bash",
             "shell": "/c/Program Files/Git/bin/bash.exe",
-            "label": "Git-bash"
         },
     ],
     "shellLauncher.shells.windows": [
-
         {
-            "shell": "C:\\Windows\\System32\\cmd.exe",
-            "label": "cmd.exe"
-        },
-        {
-            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-            "label": "PowerShell"
-        },
-        {
-            "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
-            "label": "Git-bash"
-        },
-        {
+            "label": "1. wsl (local)",
             "shell": "C:\\Windows\\System32\\bash.exe",
-            "label": "WSL"
+            "args": [ "-l" ]
+        },
+        {
+            "label": "2. Stableburner (internet)",
+            "shell": "c:\\Windows\\System32\\OpenSSH\\ssh.exe",
+            "args":[
+                "stable.home"
+            ]
+        },
+        {
+            "label": "3. Cygwin",
+            "shell": "c:\\cygwin\\bin\\bash.exe",
+            "args": [
+                "-l"
+            ]
+        },
+        {
+            "label": "4. cmd.exe",
+            "shell": "C:\\Windows\\System32\\cmd.exe",
+        },
+        {
+            "label": "5. PowerShell",
+            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        },
+        {
+            "label": "6. Git-bash",
+            "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
         }
     ],
     "telemetry.enableTelemetry": false,
