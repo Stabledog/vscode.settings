@@ -114,6 +114,41 @@
             "args": [
                 "-l"
             ]
+        },
+        {
+            "shell": "/c/Windows/System32/cmd.exe",
+            "label": "cmd.exe",
+            "args": [
+                "/k",
+                "cd /d %HOME%"
+            ]
+        },
+        {
+            "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+            "label": "PowerShell"
+        },
+        {
+            "shell": "/c/Program Files/Git/bin/bash.exe",
+            "label": "Git-bash"
+        },
+    ],
+    "shellLauncher.shells.windows": [
+
+        {
+            "shell": "C:\\Windows\\System32\\cmd.exe",
+            "label": "cmd.exe"
+        },
+        {
+            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "label": "PowerShell"
+        },
+        {
+            "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "label": "Git-bash"
+        },
+        {
+            "shell": "C:\\Windows\\System32\\bash.exe",
+            "label": "WSL"
         }
     ],
     "telemetry.enableTelemetry": false,
