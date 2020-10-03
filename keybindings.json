@@ -116,6 +116,9 @@
         "key": "ctrl+j",
         "command": "-extension.vim_ctrl+j",
         "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "shellLauncher.launch"
     }
-
 ]
