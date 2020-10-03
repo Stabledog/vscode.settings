@@ -91,10 +91,31 @@
             "host": "john-witherspoon.dreamhost.com",
             "port": 22,
             "username": "debweb_docker",
-            "privateKeyPath": "/c/Projects/eqac/.ssh/debweb_docker",
+            "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
             "rootPath":"/home/debweb_docker"
         }
     },
+    "shellLauncher.shells.linux": [
+        {
+            "label": "Ubuntu 18.04",
+            "shell": "/bin/bash",
+            "args": [
+                "-l"
+            ]
+        },
+        {
+            "label": "stage_dreamhost",
+            "shell": "/usr/bin/ssh",
+            "args": [ "stage.dreamhost" ]
+        },
+        {
+            "label": "Cygwin",
+            "shell": "/c/cygwin/bin/bash.exe",
+            "args": [
+                "-l"
+            ]
+        }
+    ],
     "telemetry.enableTelemetry": false,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.env.windows": {
