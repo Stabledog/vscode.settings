@@ -116,14 +116,28 @@
             "args": [ "stage.dreamhost" ]
         },
         {
-            "label": "4. Cygwin",
+            "label": "4. Git-bash",
+            "shell": "/c/Program Files/Git/bin/bash.exe",
+        },
+        {
+            "label": "5.  tmux attach",
+            "shell": "/usr/bin/tmux",
+            "args": [ "attach", "-t", "vscode" ]
+        },
+        {
+            "label": "6.  tmux (new session)",
+            "shell": "/usr/bin/tmux",
+            "args": ["new","-s","vscode"]
+        },
+        {
+            "label": "Cygwin",
             "shell": "/c/cygwin/bin/bash.exe",
             "args": [
                 "-l"
             ]
         },
         {
-            "label": "5. cmd.exe",
+            "label": "cmd.exe",
             "shell": "/c/Windows/System32/cmd.exe",
             "args": [
                 "/k",
@@ -131,12 +145,8 @@
             ]
         },
         {
-            "label": "6. PowerShell",
+            "label": "PowerShell",
             "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
-        },
-        {
-            "label": "7. Git-bash",
-            "shell": "/c/Program Files/Git/bin/bash.exe",
         },
     ],
     "shellLauncher.shells.windows": [
