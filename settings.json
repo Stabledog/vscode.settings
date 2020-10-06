@@ -98,6 +98,7 @@
     "shellLauncher.shells.linux": [
         {
             "label": "1. wsl (local)" ,
+            "launchName": "Wsl (local)",
             "shell": "/bin/bash",
             "args": [
                 "-l"
@@ -105,6 +106,7 @@
         },
         {
             "label": "2. Stableburner (internet)",
+            "launchName": "Stable.home",
             "shell": "/usr/bin/ssh",
             "args":[
                 "stable.home"
@@ -112,25 +114,36 @@
         },
         {
             "label": "3. Dreamhost (stage)",
+            "launchName": "stage.dreamhost",
             "shell": "/usr/bin/ssh",
             "args": [ "stage.dreamhost" ]
         },
         {
             "label": "4. Git-bash",
+            "launchName": "Git-bash",
             "shell": "/c/Program Files/Git/bin/bash.exe",
         },
         {
             "label": "5.  tmux attach",
+            "launchName": "Tmux (attach)",
             "shell": "/usr/bin/tmux",
             "args": [ "attach", "-t", "vscode" ]
         },
         {
             "label": "6.  tmux (new session)",
+            "launchName": "Tmux (new session)",
             "shell": "/usr/bin/tmux",
             "args": ["new","-s","vscode"]
         },
         {
+            "label": "7. njlxdev4",
+            "launchName": "njlxdev4",
+            "shell": "/usr/bin/ssh",
+            "args": [ "-Y", "-2", "-t", "lmatheson4@v5devgateway.bdns.bloomberg.com", "inline", "njlxdev4" ]
+        },
+        {
             "label": "Cygwin",
+            "launchName": "Cygwin",
             "shell": "/c/cygwin/bin/bash.exe",
             "args": [
                 "-l"
@@ -138,6 +151,7 @@
         },
         {
             "label": "cmd.exe",
+            "launchName":  "cmd.exe",
             "shell": "/c/Windows/System32/cmd.exe",
             "args": [
                 "/k",
@@ -146,17 +160,20 @@
         },
         {
             "label": "PowerShell",
+            "launchName": "PowerShell",
             "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
         },
     ],
     "shellLauncher.shells.windows": [
         {
             "label": "1. wsl (local)",
+            "launchName": "wsl (local)",
             "shell": "C:\\Windows\\System32\\bash.exe",
             "args": [ "-l" ]
         },
         {
             "label": "2. Stableburner (internet)",
+            "launchName": "Stable.home",
             "shell": "c:\\Windows\\System32\\OpenSSH\\ssh.exe",
             "args":[
                 "stable.home"
@@ -276,7 +293,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -289,7 +306,7 @@
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "Monokai",
     "workbench.startupEditor": "newUntitledFile"
 }
 
