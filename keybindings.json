@@ -44,6 +44,10 @@
         "when": "terminalFocus"
     },
     {
+        "key": "ctrl+a t",
+        "command": "shellLauncher.launch"
+    },
+    {
         "key": "ctrl+a x",
         "command": "workbench.action.terminal.kill"
     },
@@ -130,9 +134,5 @@
         "key": "ctrl+j",
         "command": "-extension.vim_ctrl+j",
         "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
-    },
-    {
-        "key": "ctrl+shift+t",
-        "command": "shellLauncher.launch"
     }
-]
+}
