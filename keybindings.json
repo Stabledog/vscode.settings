@@ -2,31 +2,8 @@
 // master:
 [
     {
-        "key": "ctrl+a n",
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+a p",
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+a j",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
         "key": "ctrl+a b",
         "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "ctrl+a k",
-        "command": "workbench.action.focusActiveEditorGroup"
-    },
-    {
-        "key":"ctrl+a l",
-        "command": "workbench.action.focusPreviousGroup",
-        "when": "!terminalFocus"
     },
     {
         "key":"ctrl+a h",
@@ -39,9 +16,36 @@
         "when": "terminalFocus"
     },
     {
+        "key": "ctrl+a j",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+a k",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
         "key": "ctrl+a l",
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
+    },
+    {
+        "key":"ctrl+a l",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+a n",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+a p",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+a x",
+        "command": "workbench.action.terminal.kill"
     },
     {
         "key": "ctrl+a z",
@@ -102,7 +106,7 @@
     },
     {
         "key": "ctrl+shift+v",
-        "command": "-markdown.showPreview",
+        "command": "-markdown.showPreview"
     },
     {
         "key": "ctrl+k",
