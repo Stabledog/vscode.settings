@@ -213,8 +213,8 @@
         "~/.wsl.rc"
     ],
     "terminal.integrated.shellArgs.windows": [
-       "--rcfile",
-       "~/.cygwin.rc"
+        "--rcfile",
+        "~/.cygwin.rc"
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
@@ -293,20 +293,22 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": 1,
-    "wordcounter.count_chars": false,
-    "wordcounter.count_paragraphs": false,
-    "wordcounter.include_eol_chars": false,
-    "wordcounter.wpm": 110,
+    "window.zoomLevel": 2,
     "workbench.colorCustomizations": {
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
+    "workbench.colorTheme": "Codesong",
     "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.pinnedTabSizing": "compact",
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Monokai",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "wordcounter.count_chars": false,
+    "wordcounter.count_paragraphs": false,
+    "wordcounter.include_eol_chars": false,
+    "wordcounter.wpm": 110,
+    "zzzz_endmarker": 0
 }
 
