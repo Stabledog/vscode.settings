@@ -93,6 +93,15 @@
             "username": "debweb_docker",
             "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
             "rootPath":"/home/debweb_docker"
+        },
+        "prod_dreamhost": {
+            "scheme": "sftp",
+            "host": "john-witherspoon.dreamhost.com",
+            "port": 22,
+            "username": "debvap",
+            //#"privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/id_rsa-debvap",
+            "privateKeyPath": "/home/lmatheson4/.ssh/id_lesma",
+            "rootPath":"/home/debvap"
         }
     },
     "shellLauncher.shells.linux": [
