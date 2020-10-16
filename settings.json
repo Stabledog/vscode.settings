@@ -41,6 +41,7 @@
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
     "materialTheme.accent": "Orange",
+    "php.validate.enable": false,
     "python.jediEnabled": true,
     "python.languageServer": "Jedi",
     "remote.WSL.debug": true,
@@ -92,7 +93,7 @@
             "port": 22,
             "username": "debweb_docker",
             "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
-            "rootPath":"/home/debweb_docker"
+            "rootPath": "/home/debweb_docker"
         },
         "prod_dreamhost": {
             "scheme": "sftp",
@@ -101,13 +102,13 @@
             "username": "debvap",
             //#"privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/id_rsa-debvap",
             "privateKeyPath": "/home/lmatheson4/.ssh/id_lesma",
-            "rootPath":"/home/debvap"
+            "rootPath": "/home/debvap"
         }
     },
     "shellLauncher.shells.linux": [
         {
-            "label": "1. wsl (local)" ,
-            "launchName": "Wsl (local)",
+            "label": "1. 🔸wsl (local)",
+            "launchName": "🔸Wsl (local)",
             "shell": "/bin/bash",
             "args": [
                 "-l"
@@ -117,7 +118,7 @@
             "label": "2. Stableburner (internet)",
             "launchName": "Stable.home",
             "shell": "/usr/bin/ssh",
-            "args":[
+            "args": [
                 "stable.home"
             ]
         },
@@ -125,7 +126,9 @@
             "label": "3. Dreamhost (stage)",
             "launchName": "stage.dreamhost",
             "shell": "/usr/bin/ssh",
-            "args": [ "stage.dreamhost" ]
+            "args": [
+                "stage.dreamhost"
+            ]
         },
         {
             "label": "4. Git-bash",
@@ -136,19 +139,34 @@
             "label": "5.  tmux attach",
             "launchName": "Tmux (attach)",
             "shell": "/usr/bin/tmux",
-            "args": [ "attach", "-t", "vscode" ]
+            "args": [
+                "attach",
+                "-t",
+                "vscode"
+            ]
         },
         {
             "label": "6.  tmux (new session)",
             "launchName": "Tmux (new session)",
             "shell": "/usr/bin/tmux",
-            "args": ["new","-s","vscode"]
+            "args": [
+                "new",
+                "-s",
+                "vscode"
+            ]
         },
         {
-            "label": "7. njlxdev4",
-            "launchName": "njlxdev4",
+            "label": "7. ⚡ njlxdev4",
+            "launchName": "⚡ njlxdev4",
             "shell": "/usr/bin/ssh",
-            "args": [ "-Y", "-2", "-t", "lmatheson4@v5devgateway.bdns.bloomberg.com", "inline", "njlxdev4" ]
+            "args": [
+                "-Y",
+                "-2",
+                "-t",
+                "lmatheson4@v5devgateway.bdns.bloomberg.com",
+                "inline",
+                "njlxdev4"
+            ]
         },
         {
             "label": "Cygwin",
@@ -160,7 +178,7 @@
         },
         {
             "label": "cmd.exe",
-            "launchName":  "cmd.exe",
+            "launchName": "cmd.exe",
             "shell": "/c/Windows/System32/cmd.exe",
             "args": [
                 "/k",
@@ -178,18 +196,21 @@
             "label": "1. wsl (local)",
             "launchName": "wsl (local)",
             "shell": "C:\\Windows\\System32\\bash.exe",
-            "args": [ "-l" ]
+            "args": [
+                "-l"
+            ]
         },
         {
             "label": "2. Stableburner (internet)",
             "launchName": "Stable.home",
             "shell": "c:\\Windows\\System32\\OpenSSH\\ssh.exe",
-            "args":[
+            "args": [
                 "stable.home"
             ]
         },
         {
             "label": "3. Cygwin",
+            "launchName": "Cygwin",
             "shell": "c:\\cygwin\\bin\\bash.exe",
             "args": [
                 "-l"
@@ -197,14 +218,17 @@
         },
         {
             "label": "4. cmd.exe",
+            "launchName": "cmd.exe",
             "shell": "C:\\Windows\\System32\\cmd.exe",
         },
         {
             "label": "5. PowerShell",
+            "launchName": "Powershell",
             "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         },
         {
             "label": "6. Git-bash",
+            "launchName": "git-bash",
             "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
         }
     ],
@@ -216,7 +240,7 @@
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.shell.linux": "/bin/bash",
-	"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
+    "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
     "terminal.integrated.shellArgs.linux": [
         "--rcfile",
         "~/.wsl.rc"
@@ -320,4 +344,3 @@
     "wordcounter.wpm": 110,
     "zzzz_endmarker": 0
 }
-
