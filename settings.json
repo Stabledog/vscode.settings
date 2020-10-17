@@ -290,7 +290,7 @@
 		"selection.background": "#7CB34240"
 	},
 	"workbench.colorTheme": "Shades of Purple",
-	"workbench.fontAliasing": "true",
+	"workbench.fontAliasing": true,
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "right",
 	"workbench.startupEditor": "newUntitledFile",
