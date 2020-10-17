@@ -50,7 +50,8 @@
 	"gitlens.statusBar.enabled": false,
 	"liveServer.settings.donotShowInfoMsg": true,
 	"liveServer.settings.donotVerifyTags": true,
-	"materialTheme.accent": "Lime",
+    "materialTheme.accent": "Orange",
+    "php.validate.enable": false,
 	"python.jediEnabled": true,
 	"python.languageServer": "Jedi",
 	"remote.WSL.debug": true,
@@ -78,12 +79,22 @@
             "port": 22,
             "username": "debweb_docker",
             "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
-            "rootPath":"/home/debweb_docker"
+            "rootPath": "/home/debweb_docker"
+        },
+        "prod_dreamhost": {
+            "scheme": "sftp",
+            "host": "john-witherspoon.dreamhost.com",
+            "port": 22,
+            "username": "debvap",
+            "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/id_rsa-debvap",
+            //"privateKeyPath": "/home/lmatheson4/.ssh/id_lesma",
+            "rootPath": "/home/debvap"
         }
 	},
     "shellLauncher.shells.linux": [
         {
-            "label": "1. wsl (local)" ,
+            "label": "1. 🔸wsl (local)",
+            "launchName": "🔸Wsl (local)",
             "shell": "/bin/bash",
             "args": [
                 "-l"
@@ -91,55 +102,66 @@
         },
         {
             "label": "2. Stableburner (internet)",
+            "launchName": "Stable.home",
             "shell": "/usr/bin/ssh",
-            "args":[
+            "args": [
                 "stable.home"
             ]
         },
         {
             "label": "3. Dreamhost (stage)",
+            "launchName": "stage.dreamhost",
             "shell": "/usr/bin/ssh",
-            "args": [ "stage.dreamhost" ]
+            "args": [
+                "stage.dreamhost"
+            ]
         },
         {
-            "label": "4. Cygwin",
+            "label": "4. Git-bash",
+            "launchName": "Git-bash",
+            "shell": "/c/Program Files/Git/bin/bash.exe"
+        },
+        {
+            "label": "5.  tmux attach",
+            "launchName": "Tmux (attach)",
+            "shell": "/usr/bin/tmux",
+            "args": [
+                "attach",
+                "-t",
+                "vscode"
+            ]
+        },
+        {
+            "label": "6.  tmux (new session)",
+            "launchName": "Tmux (new session)",
+            "shell": "/usr/bin/tmux",
+            "args": [
+                "new",
+                "-s",
+                "vscode"
+            ]
+        },
+        {
+            "label": "Cygwin",
+            "launchName": "Cygwin",
             "shell": "/c/cygwin/bin/bash.exe",
             "args": [
                 "-l"
             ]
-        },
-        {
-            "label": "5. cmd.exe",
-            "shell": "/c/Windows/System32/cmd.exe",
-            "args": [
-                "/k",
-                "cd /d %HOME%"
-            ]
-        },
-        {
-            "label": "6. PowerShell",
-            "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
-        },
-        {
-            "label": "7. Git-bash",
-            "shell": "/c/Program Files/Git/bin/bash.exe"
         }
     ],
     "shellLauncher.shells.windows": [
         {
             "label": "1. wsl (local)",
+            "launchName": "wsl (local)",
             "shell": "C:\\Windows\\System32\\bash.exe",
-            "args": [ "-l" ]
-        },
-        {
-            "label": "2. Stableburner (internet)",
-            "shell": "c:\\Windows\\System32\\OpenSSH\\ssh.exe",
-            "args":[
-                "stable.home"
+            "args": [
+                "-l"
             ]
         },
         {
             "label": "3. Cygwin",
+            "launchName": "Cygwin",
             "shell": "c:\\cygwin\\bin\\bash.exe",
             "args": [
                 "-l"
@@ -147,31 +169,26 @@
         },
         {
             "label": "4. cmd.exe",
+            "launchName": "cmd.exe",
             "shell": "C:\\Windows\\System32\\cmd.exe"
         },
         {
             "label": "5. PowerShell",
+            "launchName": "Powershell",
             "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
         },
         {
             "label": "6. Git-bash",
+            "launchName": "git-bash",
             "shell": "C:\\Program Files\\Git\\bin\\bash.exe"
-        }
-    ],
-	"shebang.associations": [
-		{
-			"pattern": "^#!/bin/bash$",
-			"language": "shellscript"
-		},
-		{
-			"pattern": "^.* vim: filetype=sh :$",
-			"language": "shellscript"
 		}
 	],
+
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.env.windows": {
 		"CHERE_INVOKING": "1"
 	},
+
 	"terminal.integrated.scrollback": 30000,
 	"terminal.integrated.shell.linux": "/bin/bash",
 	"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
@@ -180,7 +197,8 @@
 		"~/.wsl.rc"
 	],
 	"terminal.integrated.shellArgs.windows": [
-		"-l"
+        "--rcfile",
+        "~/.cygwin.rc"
 	],
 	"vim.cursorStylePerMode.insert": "block-outline",
 	"vim.cursorStylePerMode.normal": "block",
@@ -289,9 +307,12 @@
 		"editor.findMatchBorder": "#7CB342",
 		"selection.background": "#7CB34240"
 	},
-	"workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Codesong",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.pinnedTabSizing": "compact",
 	"workbench.fontAliasing": true,
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "right",
 	"workbench.startupEditor": "newUntitledFile",
+    "zzzz_endmarker": 0
 }
