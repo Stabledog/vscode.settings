@@ -123,7 +123,7 @@
         {
             "label": "4. Git-bash",
             "launchName": "Git-bash",
-            "shell": "/c/Program Files/Git/bin/bash.exe",
+            "shell": "/c/Program Files/Git/bin/bash.exe"
         },
         {
             "label": "5.  tmux attach",
@@ -179,7 +179,7 @@
             "label": "PowerShell",
             "launchName": "PowerShell",
             "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
-        },
+        }
     ],
     "shellLauncher.shells.windows": [
         {
@@ -209,17 +209,17 @@
         {
             "label": "4. cmd.exe",
             "launchName": "cmd.exe",
-            "shell": "C:\\Windows\\System32\\cmd.exe",
+            "shell": "C:\\Windows\\System32\\cmd.exe"
         },
         {
             "label": "5. PowerShell",
             "launchName": "Powershell",
-            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
         },
         {
             "label": "6. Git-bash",
             "launchName": "git-bash",
-            "shell": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "shell": "C:\\Program Files\\Git\\bin\\bash.exe"
         }
     ],
     "telemetry.enableTelemetry": false,
