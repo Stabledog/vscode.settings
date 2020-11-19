@@ -2,7 +2,10 @@
     "breadcrumbs.enabled": true,
     "cmake.configureOnOpen": false,
     "diffEditor.renderSideBySide": true,
-    "docker.host": "tcp://127.0.0.1:2375",
+    "docker.dockerodeOptions": {
+        "host":"127.0.0.1",
+        "port":2375
+    },
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -34,6 +37,7 @@
     "php.validate.enable": false,
     "python.jediEnabled": true,
     "python.languageServer": "Jedi",
+    "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "remote.WSL.debug": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
@@ -178,7 +182,7 @@
         {
             "label": "PowerShell",
             "launchName": "PowerShell",
-            "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+            "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
         }
     ],
     "shellLauncher.shells.windows": [
@@ -326,7 +330,7 @@
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "left",
+    "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
