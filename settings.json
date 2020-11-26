@@ -2,6 +2,7 @@
     "breadcrumbs.enabled": true,
     "cmake.configureOnOpen": false,
     "diffEditor.renderSideBySide": true,
+    "debug.javascript.usePreview": false,
     "docker.dockerodeOptions": {
         "host":"127.0.0.1",
         "port":2375
@@ -105,7 +106,8 @@
             "launchName": "🔸Wsl (local)",
             "shell": "/bin/bash",
             "args": [
-                "-l"
+                "--rcfile",
+                "~/.wsl.rc"
             ]
         },
         {
@@ -191,7 +193,8 @@
             "launchName": "wsl (local)",
             "shell": "C:\\Windows\\System32\\bash.exe",
             "args": [
-                "-l"
+                "--rcfile",
+                "~/.wsl.rc"
             ]
         },
         {
@@ -240,8 +243,7 @@
         "~/.wsl.rc"
     ],
     "terminal.integrated.shellArgs.windows": [
-        "--rcfile",
-        "~/.cygwin.rc"
+        "-l"
     ],
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
