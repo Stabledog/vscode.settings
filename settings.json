@@ -10,6 +10,7 @@
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
+    "editor.acceptSuggestionOnEnter": "off",
     "editor.autoClosingQuotes": "never",
     "editor.autoClosingBrackets": "never",
     "editor.cursorStyle": "block",
@@ -323,6 +324,10 @@
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "window.zoomLevel": 1,
+    "wordcounter.count_chars": false,
+    "wordcounter.count_paragraphs": false,
+    "wordcounter.include_eol_chars": false,
+    "wordcounter.wpm": 110,
     "workbench.colorCustomizations": {
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
@@ -332,11 +337,9 @@
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
+    "workbench.sideBar.location": "left",
     "workbench.startupEditor": "newUntitledFile",
-    "wordcounter.count_chars": false,
-    "wordcounter.count_paragraphs": false,
-    "wordcounter.include_eol_chars": false,
-    "wordcounter.wpm": 110,
-    "zzzz_endmarker": 0
+    "workbench.editorAssociations": [],
+    "workbench.tree.indent": 16,
+    "zzzz--------------endmarker--------------------": 0
 }
