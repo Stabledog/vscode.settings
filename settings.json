@@ -323,7 +323,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -332,19 +332,14 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Codesong",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "left",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": [],
     "workbench.tree.indent": 16,
     "zzzz--------------endmarker--------------------": 0,
     "logViewer.logLevel": "debug"
