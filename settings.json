@@ -2,6 +2,7 @@
     "breadcrumbs.enabled": true,
     "cmake.configureOnOpen": false,
     "debug.javascript.usePreview": false,
+    "debug.saveBeforeStart":"none",
     "diffEditor.renderSideBySide": true,
     "docker.dockerodeOptions": {
         "host": "127.0.0.1",
@@ -15,15 +16,18 @@
     "editor.autoClosingQuotes": "never",
     "editor.cursorStyle": "block",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
     "editor.folding": false,
+    "editor.fontFamily": "Consolas",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
     "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 4,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "files.associations": {
@@ -34,6 +38,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.ignoreMissingGitWarning": true,
+    "html.autoClosingTags": false,
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveServer.settings.donotShowInfoMsg": true,
@@ -331,7 +336,6 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -350,12 +354,17 @@
         {
             "filenamePattern": "*.md",
             "viewType": "default"
+        },
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
         }
     ],
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "left",
+    "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
+    "window.zoomLevel": 1
 }
