@@ -2,7 +2,7 @@
     "breadcrumbs.enabled": true,
     "cmake.configureOnOpen": false,
     "debug.javascript.usePreview": false,
-    "debug.saveBeforeStart":"none",
+    "debug.saveBeforeStart": "none",
     "diffEditor.renderSideBySide": true,
     "docker.dockerodeOptions": {
         "host": "127.0.0.1",
@@ -30,6 +30,7 @@
     "editor.tabSize": 4,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
+    "extensions.autoUpdate": false,
     "files.associations": {
         "*.jrnl": "markdown",
         "*taskrc": "shellscript"
@@ -43,12 +44,17 @@
     "jupyter.interactiveWindowMode": "perFile",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
+    "liveshare.connectionMode": "relay",
+    "liveshare.anonymousGuestApproval": "reject",
+    "liveshare.allowedDomains": [
+        "bloomberg.com"
+    ],
     "logViewer.logLevel": "debug",
     "materialTheme.accent": "Orange",
     "php.validate.enable": false,
     "prettier.tabWidth": 4,
     "python.jediEnabled": true,
-    "python.languageServer": "Jedi",
+    "python.languageServer": "Pylance",
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "c:\\windows\\system32\\openssh\\ssh.exe",
@@ -259,6 +265,7 @@
     "terminal.integrated.shellArgs.windows": [
         "-l"
     ],
+    "terminal.integrated.tabs.enabled": false,
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -347,9 +354,9 @@
     "workbench.colorTheme": "Light High Contrast Theme",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
-    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.highlightModifiedTabs": false,
     "workbench.editor.pinnedTabSizing": "compact",
-    "workbench.editor.wrapTabs": true,
+    "workbench.editor.wrapTabs": false,
     "workbench.editorAssociations": [
         {
             "filenamePattern": "*.md",
@@ -365,6 +372,6 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "zzzz--------------endmarker--------------------": 0
 }
