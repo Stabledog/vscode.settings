@@ -4,10 +4,6 @@
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
     "diffEditor.renderSideBySide": true,
-    "docker.dockerodeOptions": {
-        "host": "127.0.0.1",
-        "port": 2375
-    },
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -116,6 +112,7 @@
             "username": "lmatheson4"
         }
     },
+    "security.workspace.trust.untrustedFiles": "open",
     "shellLauncher.shells.linux": [
         {
             "args": [
@@ -247,25 +244,36 @@
     ],
     "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
-    "terminal.external.linuxExec": "tmux",
+    "terminal.external.linuxExec": "/bin/bash",
+    "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.enablePersistentSessions": true,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
     "terminal.integrated.flowControl": false,
+    "terminal.integrated.inheritEnv": true,
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/bin/bash",
+            "args": [
+                "--rcfile",
+                "/home/lmatheson4/.wsl.rc"
+            ]
+        }
+    },
+    "terminal.integrated.profiles.windows": {
+        "bash": {
+            "path": "c:\\cygwin\\bin\\bash.exe",
+            "args": [
+                "-l"
+            ]
+        }
+    },
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 30000,
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
-    "terminal.integrated.shellArgs.linux": [
-        "--rcfile",
-        "~/.wsl.rc"
-    ],
-    "terminal.integrated.shellArgs.windows": [
-        "-l"
-    ],
-    "terminal.integrated.tabs.enabled": false,
+    "terminal.integrated.tabs.hideCondition": "never",
+    "terminal.external.windowsExec": "c:\\cygwin\\Cygwin.bat",
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -343,6 +351,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+    "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -351,27 +360,24 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Light High Contrast Theme",
+    "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.wrapTabs": false,
-    "workbench.editorAssociations": [
-        {
-            "filenamePattern": "*.md",
-            "viewType": "default"
-        },
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.md": "default",
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "window.zoomLevel": 2,
-    "zzzz--------------endmarker--------------------": 0
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "zzzz--------------endmarker--------------------": 0,
+    "remote.WSL.fileWatcher.polling": true,
 }
