@@ -1,3 +1,383 @@
 {
-    "window.zoomLevel": 2
+    "breadcrumbs.enabled": true,
+    "cmake.configureOnOpen": false,
+    "debug.javascript.usePreview": false,
+    "debug.saveBeforeStart": "none",
+    "diffEditor.renderSideBySide": true,
+    "editWithShell.processEntireTextIfNoneSelected": true,
+    "editWithShell.shell.linux": "/bin/bash",
+    "editWithShell.shell.osx": "/bin/bash",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.cursorStyle": "block",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.detectIndentation": false,
+    "editor.dragAndDrop": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.folding": false,
+    "editor.fontFamily": "Consolas",
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.parameterHints.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 4,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 200,
+    "extensions.autoUpdate": false,
+    "files.associations": {
+        "*.jrnl": "markdown",
+        "*taskrc": "shellscript"
+    },
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.ignoreMissingGitWarning": true,
+    "html.autoClosingTags": false,
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.interactiveWindowMode": "perFile",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveshare.connectionMode": "relay",
+    "liveshare.anonymousGuestApproval": "reject",
+    "liveshare.allowedDomains": [
+        "bloomberg.com"
+    ],
+    "logViewer.logLevel": "debug",
+    "materialTheme.accent": "Orange",
+    "php.validate.enable": false,
+    "prettier.tabWidth": 4,
+    "python.jediEnabled": true,
+    "python.languageServer": "Pylance",
+    "rapid.typeGeneration.implementation": "@rapid/typescript-project",
+    "remote.SSH.lockfilesInTmp": true,
+    "remote.SSH.path": "c:\\windows\\system32\\openssh\\ssh.exe",
+    "remote.SSH.remotePlatform": {
+        "stable.burner": "linux",
+        "stable.home": "linux"
+    },
+    "remote.WSL.debug": true,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "remotefs.remote": {
+        "gnrl_bb": {
+            "host": "devsftp.bloomberg.com",
+            "port": 2222,
+            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
+            "rootPath": "/bb",
+            "scheme": "sftp",
+            "username": "lmatheson4"
+        },
+        "gnrl_home": {
+            "host": "devsftp.bloomberg.com",
+            "port": 2222,
+            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
+            "rootPath": "/home18/lmatheson4",
+            "scheme": "sftp",
+            "username": "lmatheson4"
+        },
+        "gnrl_mbig": {
+            "host": "devsftp.bloomberg.com",
+            "port": 2222,
+            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
+            "rootPath": "/bb/mbigd/mbig497",
+            "scheme": "sftp",
+            "username": "lmatheson4"
+        },
+        "prod_dreamhost": {
+            "host": "john-witherspoon.dreamhost.com",
+            "port": 22,
+            "privateKeyPath": "/home/lmatheson4/.ssh/id_lesma",
+            "rootPath": "/home/debvap",
+            "scheme": "sftp",
+            "username": "debvap"
+        },
+        "stage_dreamhost": {
+            "host": "john-witherspoon.dreamhost.com",
+            "port": 22,
+            "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
+            "rootPath": "/home/debweb_docker",
+            "scheme": "sftp",
+            "username": "debweb_docker"
+        },
+        "wsl_home": {
+            "host": "127.0.0.1",
+            "port": 2222,
+            "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
+            "rootPath": "/home/lmatheson4",
+            "scheme": "sftp",
+            "username": "lmatheson4"
+        }
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "shellLauncher.shells.linux": [
+        {
+            "args": [
+                "--rcfile",
+                "~/.wsl.rc"
+            ],
+            "label": "1. \ud83d\udd38wsl (local)",
+            "launchName": "\ud83d\udd38Wsl (local)",
+            "shell": "/bin/bash"
+        },
+        {
+            "args": [
+                "stable.home"
+            ],
+            "label": "2. Stableburner (internet)",
+            "launchName": "Stable.home",
+            "shell": "/usr/bin/ssh"
+        },
+        {
+            "args": [
+                "stage.dreamhost"
+            ],
+            "label": "3. Dreamhost (stage)",
+            "launchName": "stage.dreamhost",
+            "shell": "/usr/bin/ssh"
+        },
+        {
+            "label": "4. Git-bash",
+            "launchName": "Git-bash",
+            "shell": "/c/Program Files/Git/bin/bash.exe"
+        },
+        {
+            "args": [
+                "attach",
+                "-t",
+                "vscode"
+            ],
+            "label": "5.  tmux attach",
+            "launchName": "Tmux (attach)",
+            "shell": "/usr/bin/tmux"
+        },
+        {
+            "args": [
+                "new",
+                "-s",
+                "vscode"
+            ],
+            "label": "6.  tmux (new session)",
+            "launchName": "Tmux (new session)",
+            "shell": "/usr/bin/tmux"
+        },
+        {
+            "args": [
+                "-Y",
+                "-2",
+                "-t",
+                "lmatheson4@v5devgateway.bdns.bloomberg.com",
+                "inline",
+                "njlxdev4"
+            ],
+            "label": "7. \u26a1 njlxdev4",
+            "launchName": "\u26a1 njlxdev4",
+            "shell": "/usr/bin/ssh"
+        },
+        {
+            "args": [
+                "-l"
+            ],
+            "label": "Cygwin",
+            "launchName": "Cygwin",
+            "shell": "/c/cygwin/bin/bash.exe"
+        },
+        {
+            "args": [
+                "/k",
+                "cd /d %HOME%"
+            ],
+            "label": "cmd.exe",
+            "launchName": "cmd.exe",
+            "shell": "/c/Windows/System32/cmd.exe"
+        },
+        {
+            "label": "PowerShell",
+            "launchName": "PowerShell",
+            "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
+        }
+    ],
+    "shellLauncher.shells.windows": [
+        {
+            "args": [
+                "--rcfile",
+                "~/.wsl.rc"
+            ],
+            "label": "1. wsl (local)",
+            "launchName": "wsl (local)",
+            "shell": "C:\\Windows\\System32\\bash.exe"
+        },
+        {
+            "args": [
+                "stable.home"
+            ],
+            "label": "2. Stableburner (internet)",
+            "launchName": "Stable.home",
+            "shell": "c:\\Windows\\System32\\OpenSSH\\ssh.exe"
+        },
+        {
+            "args": [
+                "-l"
+            ],
+            "label": "3. Cygwin",
+            "launchName": "Cygwin",
+            "shell": "c:\\cygwin\\bin\\bash.exe"
+        },
+        {
+            "label": "4. cmd.exe",
+            "launchName": "cmd.exe",
+            "shell": "C:\\Windows\\System32\\cmd.exe"
+        },
+        {
+            "label": "5. PowerShell",
+            "launchName": "Powershell",
+            "shell": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+        },
+        {
+            "label": "6. Git-bash",
+            "launchName": "git-bash",
+            "shell": "C:\\Program Files\\Git\\bin\\bash.exe"
+        }
+    ],
+    "telemetry.enableTelemetry": false,
+    "terminal.explorerKind": "external",
+    "terminal.external.linuxExec": "/bin/bash",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.enablePersistentSessions": true,
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1"
+    },
+    "terminal.integrated.flowControl": false,
+    "terminal.integrated.inheritEnv": true,
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "/bin/bash",
+            "args": [
+                "--rcfile",
+                "/home/lmatheson4/.wsl.rc"
+            ]
+        }
+    },
+    "terminal.integrated.profiles.windows": {
+        "bash": {
+            "path": "c:\\cygwin\\bin\\bash.exe",
+            "args": [
+                "-l"
+            ]
+        }
+    },
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.scrollback": 30000,
+    "terminal.integrated.tabs.hideCondition": "never",
+    "terminal.external.windowsExec": "c:\\cygwin\\Cygwin.bat",
+    "vim.cursorStylePerMode.insert": "block-outline",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-w>": false
+    },
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "after": [
+                "<Esc>"
+            ],
+            "before": [
+                "j",
+                "k"
+            ]
+        }
+    ],
+    "vim.leader": ",",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s"
+            ],
+            "commands": [
+                ":w"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "="
+            ],
+            "commands": [
+                "workbench.action.tasks.build"
+            ]
+        },
+        {
+            "after": [
+                "g",
+                "j"
+            ],
+            "before": [
+                "j"
+            ]
+        },
+        {
+            "after": [
+                "g",
+                "k"
+            ],
+            "before": [
+                "k"
+            ]
+        }
+    ],
+    "vim.searchHighlightColor": "#ff7b00a1",
+    "vim.useSystemClipboard": true,
+    "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+    "window.zoomLevel": 2,
+    "wordcounter.count_chars": false,
+    "wordcounter.count_paragraphs": false,
+    "wordcounter.include_eol_chars": false,
+    "wordcounter.wpm": 110,
+    "workbench.colorCustomizations": {
+        "window.activeBorder": "#00ff00",
+        "window.inactiveBorder": "#ff0000"
+    },
+    "workbench.colorTheme": "Shades of Purple",
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.highlightModifiedTabs": false,
+    "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.wrapTabs": false,
+    "workbench.editorAssociations": {
+        "*.md": "default",
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "workbench.fontAliasing": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 16,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "zzzz--------------endmarker--------------------": 0,
+    "remote.WSL.fileWatcher.polling": true,
 }
