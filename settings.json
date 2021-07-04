@@ -48,6 +48,7 @@
 	"gitlens.hovers.enabled": false,
 	"gitlens.mode.statusBar.enabled": false,
 	"gitlens.statusBar.enabled": false,
+	"latex-workshop.message.update.show": false,
 	"liveServer.settings.donotShowInfoMsg": true,
 	"liveServer.settings.donotVerifyTags": true,
     "materialTheme.accent": "Orange",
@@ -197,8 +198,7 @@
 		"~/.wsl.rc"
 	],
 	"terminal.integrated.shellArgs.windows": [
-        "--rcfile",
-        "~/.cygwin.rc"
+        "-l"
 	],
 	"vim.cursorStylePerMode.insert": "block-outline",
 	"vim.cursorStylePerMode.normal": "block",
@@ -307,12 +307,12 @@
 		"editor.findMatchBorder": "#7CB342",
 		"selection.background": "#7CB34240"
 	},
-    "workbench.colorTheme": "Codesong",
+    "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.pinnedTabSizing": "compact",
 	"workbench.fontAliasing": true,
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "right",
 	"workbench.startupEditor": "newUntitledFile",
-    "zzzz_endmarker": 0
+	"zzzz_endmarker": 0,
 }
