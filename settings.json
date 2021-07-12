@@ -1,4 +1,10 @@
 {
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "breadcrumbs.enabled": true,
     "cmake.configureOnOpen": false,
     "debug.javascript.usePreview": false,
@@ -8,6 +14,7 @@
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.accessibilitySupport": "off",
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "editor.cursorStyle": "block",
@@ -40,18 +47,23 @@
     "jupyter.interactiveWindowMode": "perFile",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
-    "liveshare.connectionMode": "relay",
-    "liveshare.anonymousGuestApproval": "reject",
     "liveshare.allowedDomains": [
         "bloomberg.com"
     ],
+    "liveshare.anonymousGuestApproval": "reject",
+    "liveshare.connectionMode": "relay",
     "logViewer.logLevel": "debug",
     "materialTheme.accent": "Orange",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
     "php.validate.enable": false,
     "prettier.tabWidth": 4,
     "python.jediEnabled": true,
     "python.languageServer": "Pylance",
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
+    "redhat.telemetry.enabled": false,
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "c:\\windows\\system32\\openssh\\ssh.exe",
     "remote.SSH.remotePlatform": {
@@ -59,6 +71,7 @@
         "stable.home": "linux"
     },
     "remote.WSL.debug": true,
+    "remote.WSL.fileWatcher.polling": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
@@ -245,6 +258,7 @@
     "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
+    "terminal.external.windowsExec": "c:\\cygwin\\Cygwin.bat",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.enablePersistentSessions": true,
@@ -255,25 +269,24 @@
     "terminal.integrated.inheritEnv": true,
     "terminal.integrated.profiles.linux": {
         "bash": {
-            "path": "/bin/bash",
             "args": [
                 "--rcfile",
                 "/home/lmatheson4/.wsl.rc"
-            ]
+            ],
+            "path": "/bin/bash"
         }
     },
     "terminal.integrated.profiles.windows": {
         "bash": {
-            "path": "c:\\cygwin\\bin\\bash.exe",
             "args": [
                 "-l"
-            ]
+            ],
+            "path": "c:\\cygwin\\bin\\bash.exe"
         }
     },
     "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.tabs.hideCondition": "never",
-    "terminal.external.windowsExec": "c:\\cygwin\\Cygwin.bat",
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -351,15 +364,12 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
+    "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
     "workbench.colorCustomizations": {
-        "terminal.background": "#090300",
-        "terminal.foreground": "#A5A2A2",
-        "terminalCursor.background": "#A5A2A2",
-        "terminalCursor.foreground": "#A5A2A2",
         "terminal.ansiBlack": "#090300",
         "terminal.ansiBlue": "#01A0E4",
         "terminal.ansiBrightBlack": "#5C5855",
@@ -376,33 +386,27 @@
         "terminal.ansiRed": "#DB2D20",
         "terminal.ansiWhite": "#A5A2A2",
         "terminal.ansiYellow": "#FDED02",
+        "terminal.background": "#090300",
+        "terminal.foreground": "#A5A2A2",
+        "terminalCursor.background": "#A5A2A2",
+        "terminalCursor.foreground": "#A5A2A2",
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Light High Contrast Theme",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.wrapTabs": false,
     "workbench.editorAssociations": {
-        "*.md": "default",
-        "*.ipynb": "jupyter-notebook"
+        "*.ipynb": "jupyter-notebook",
+        "*.md": "default"
     },
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "zzzz--------------endmarker--------------------": 0,
-    "remote.WSL.fileWatcher.polling": true,
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "redhat.telemetry.enabled": false,
-    "window.zoomLevel": 2
+    "zzzz--------------endmarker--------------------": 0
 }
