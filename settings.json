@@ -35,23 +35,70 @@
 	"materialTheme.accent": "Orange",
 	"python.jediEnabled": false,
 	"remotefs.remote": {
-		"gnrl_home": {
-			"scheme": "sftp",
-			"host": "devsftp.bloomberg.com",
-			"port": 2222,
-			"username": "lmatheson4",
-			"privateKeyPath": "c:\\.ssh\\id_rsa.openssh",
-			"rootPath": "/home18/lmatheson4"
-		},
-		"gnrl_mbig": {
-			"scheme": "sftp",
-			"host": "devsftp.bloomberg.com",
-			"port": 2222,
-			"username": "lmatheson4",
-			"privateKeyPath": "c:\\.ssh\\id_rsa.openssh",
-			"rootPath": "/bb/mbigd/mbig497"
-		}
+        "stage_dreamhost": {
+            "scheme": "sftp",
+            "host": "john-witherspoon.dreamhost.com",
+            "port": 22,
+            "username": "debweb_docker",
+            "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
+            "rootPath":"/home/debweb_docker"
+        }
 	},
+    "shellLauncher.shells.linux": [
+        {
+            "label": "1. wsl (local)" ,
+            "shell": "/bin/bash",
+            "args": [
+                "-l"
+            ]
+        },
+        {
+            "label": "2. Stableburner (internet)",
+            "shell": "/usr/bin/ssh",
+            "args":[
+                "stable.home"
+            ]
+        },
+        {
+            "label": "3. Dreamhost (stage)",
+            "shell": "/usr/bin/ssh",
+            "args": [ "stage.dreamhost" ]
+        },
+        {
+            "label": "4. Git-bash",
+            "shell": "/c/Program Files/Git/bin/bash.exe"
+        },
+        {
+            "label": "5.  tmux attach",
+            "shell": "/usr/bin/tmux",
+            "args": [ "attach", "-t", "vscode" ]
+        },
+        {
+            "label": "6.  tmux (new session)",
+            "shell": "/usr/bin/tmux",
+            "args": ["new","-s","vscode"]
+        },
+        {
+            "label": "Cygwin",
+            "shell": "/c/cygwin/bin/bash.exe",
+            "args": [
+                "-l"
+            ]
+        },
+        {
+            "label": "cmd.exe",
+            "shell": "/c/Windows/System32/cmd.exe",
+            "args": [
+                "/k",
+                "cd /d %HOME%"
+            ]
+        },
+        {
+            "label": "PowerShell",
+            "shell": "/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
+        }
+    ],
+    "telemetry.enableTelemetry": false,
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.env.windows": {
 		"CHERE_INVOKING": "1"
@@ -158,5 +205,7 @@
 	},
 	"workbench.colorTheme": "Shades of Purple",
 	"workbench.sideBar.location": "right",
-	"workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+	"python.languageServer": "Microsoft",
+	"python.pythonPath": "/usr/local/bin/python3.8"
 }
