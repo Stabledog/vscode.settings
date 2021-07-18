@@ -1,121 +1,119 @@
 {
-	"breadcrumbs.enabled": true,
+    "breadcrumbs.enabled": true,
     "cmake.configureOnOpen": false,
-	"diffEditor.renderSideBySide": true,
+    "diffEditor.renderSideBySide": true,
     "docker.host": "tcp://127.0.0.1:2375",
-	"editWithShell.processEntireTextIfNoneSelected": true,
-	"editWithShell.shell.linux": "/bin/bash",
-	"editWithShell.shell.osx": "/bin/bash",
-	"editor.accessibilitySupport": "off",
-	"editor.autoClosingQuotes": "never",
-	"editor.autoClosingBrackets": "never",
-	"editor.cursorStyle": "block",
-	"editor.dragAndDrop": false,
-	"editor.emptySelectionClipboard": false,
-	"editor.folding": false,
-	"editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-	"editor.fontLigatures": true,
-	"editor.fontWeight": "400",
-	"editor.glyphMargin": true,
-	"editor.letterSpacing": 0.3,
-	"editor.lineHeight": 20,
-	"editor.lineNumbers": "relative",
-	"editor.minimap.enabled": false,
-	"editor.mouseWheelZoom": true,
-	"editor.multiCursorModifier": "alt",
-	"editor.parameterHints.enabled": false,
-	"editor.renderControlCharacters": false,
-	"editor.renderWhitespace": "none",
-	"editor.semanticHighlighting.enabled": false,
-	"editor.wordWrap": "bounded",
-	"editor.wordWrapColumn": 200,
-	"files.associations": {
-		"*taskrc": "shellscript",
-		"*.jrnl": "markdown"
-	},
-	"files.eol": "\n",
-	"files.insertFinalNewline": true,
-	"files.trimTrailingWhitespace": true,
-	"git.confirmSync": false,
-	"git.ignoreMissingGitWarning": true,
-	"gitlens.currentLine.enabled": false,
-	"gitlens.hovers.annotations.changes": false,
-	"gitlens.hovers.annotations.enabled": false,
-	"gitlens.hovers.avatars": false,
-	"gitlens.hovers.currentLine.changes": false,
-	"gitlens.hovers.currentLine.details": false,
-	"gitlens.hovers.currentLine.enabled": false,
-	"gitlens.hovers.enabled": false,
-	"gitlens.mode.statusBar.enabled": false,
-	"gitlens.statusBar.enabled": false,
-	"latex-workshop.message.update.show": false,
-	"liveServer.settings.donotShowInfoMsg": true,
-	"liveServer.settings.donotVerifyTags": true,
+    "editWithShell.processEntireTextIfNoneSelected": true,
+    "editWithShell.shell.linux": "/bin/bash",
+    "editWithShell.shell.osx": "/bin/bash",
+    "editor.accessibilitySupport": "off",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.cursorStyle": "block",
+    "editor.dragAndDrop": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.folding": false,
+    "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+    "editor.glyphMargin": true,
+    "editor.letterSpacing": 0.3,
+    "editor.lineHeight": 20,
+    "editor.lineNumbers": "relative",
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.parameterHints.enabled": false,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "none",
+    "editor.semanticHighlighting.enabled": false,
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 200,
+    "files.associations": {
+        "*.jrnl": "markdown",
+        "*taskrc": "shellscript"
+    },
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
+    "git.ignoreMissingGitWarning": true,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.annotations.changes": false,
+    "gitlens.hovers.annotations.enabled": false,
+    "gitlens.hovers.avatars": false,
+    "gitlens.hovers.currentLine.changes": false,
+    "gitlens.hovers.currentLine.details": false,
+    "gitlens.hovers.currentLine.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.mode.statusBar.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "latex-workshop.message.update.show": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
     "materialTheme.accent": "Orange",
     "php.validate.enable": false,
-	"python.jediEnabled": true,
-	"python.languageServer": "Jedi",
-	"remote.WSL.debug": true,
-	"remote.extensionKind": {
-		"ms-azuretools.vscode-docker": "workspace",
-		"ms-vscode-remote.remote-ssh": "ui"
-	},
-	//"remote.SSH.configFile": "/c/Projects/ssh_wsl/config",
-	"remote.SSH.configFile": "c:/Users/lesma/.ssh/config",
-	"remote.SSH.remotePlatform": {
-		"stage.dreamhost": "linux"
-	},
-	"remotefs.remote": {
-		"wsl_home": {
-			"scheme": "sftp",
-			"host": "127.0.0.1",
-			"port": 2222,
-			"username": "lmatheson4",
-			"privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
-			"rootPath": "/home/lmatheson4"
-		},
-        "stage_dreamhost": {
-            "scheme": "sftp",
-            "host": "john-witherspoon.dreamhost.com",
-            "port": 22,
-            "username": "debweb_docker",
-            "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
-            "rootPath": "/home/debweb_docker"
-        },
+    "python.jediEnabled": true,
+    "python.languageServer": "Jedi",
+    "remote.SSH.configFile": "c:/Users/lesma/.ssh/config",
+    "remote.SSH.remotePlatform": {
+        "stage.dreamhost": "linux"
+    },
+    "remote.WSL.debug": true,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace",
+        "ms-vscode-remote.remote-ssh": "ui"
+    },
+    "remotefs.remote": {
         "prod_dreamhost": {
-            "scheme": "sftp",
             "host": "john-witherspoon.dreamhost.com",
             "port": 22,
-            "username": "debvap",
             "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/id_rsa-debvap",
-            //"privateKeyPath": "/home/lmatheson4/.ssh/id_lesma",
-            "rootPath": "/home/debvap"
+            "rootPath": "/home/debvap",
+            "scheme": "sftp",
+            "username": "debvap"
+        },
+        "stage_dreamhost": {
+            "host": "john-witherspoon.dreamhost.com",
+            "port": 22,
+            "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
+            "rootPath": "/home/debweb_docker",
+            "scheme": "sftp",
+            "username": "debweb_docker"
+        },
+        "wsl_home": {
+            "host": "127.0.0.1",
+            "port": 2222,
+            "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
+            "rootPath": "/home/lmatheson4",
+            "scheme": "sftp",
+            "username": "lmatheson4"
         }
-	},
+    },
     "shellLauncher.shells.linux": [
         {
-            "label": "1. 🔸wsl (local)",
-            "launchName": "🔸Wsl (local)",
-            "shell": "/bin/bash",
             "args": [
                 "-l"
-            ]
+            ],
+            "label": "1. \ud83d\udd38wsl (local)",
+            "launchName": "\ud83d\udd38Wsl (local)",
+            "shell": "/bin/bash"
         },
         {
-            "label": "2. Stableburner (internet)",
-            "launchName": "Stable.home",
-            "shell": "/usr/bin/ssh",
             "args": [
                 "stable.home"
-            ]
+            ],
+            "label": "2. Stableburner (internet)",
+            "launchName": "Stable.home",
+            "shell": "/usr/bin/ssh"
         },
         {
-            "label": "3. Dreamhost (stage)",
-            "launchName": "stage.dreamhost",
-            "shell": "/usr/bin/ssh",
             "args": [
                 "stage.dreamhost"
-            ]
+            ],
+            "label": "3. Dreamhost (stage)",
+            "launchName": "stage.dreamhost",
+            "shell": "/usr/bin/ssh"
         },
         {
             "label": "4. Git-bash",
@@ -123,50 +121,50 @@
             "shell": "/c/Program Files/Git/bin/bash.exe"
         },
         {
-            "label": "5.  tmux attach",
-            "launchName": "Tmux (attach)",
-            "shell": "/usr/bin/tmux",
             "args": [
                 "attach",
                 "-t",
                 "vscode"
-            ]
+            ],
+            "label": "5.  tmux attach",
+            "launchName": "Tmux (attach)",
+            "shell": "/usr/bin/tmux"
         },
         {
-            "label": "6.  tmux (new session)",
-            "launchName": "Tmux (new session)",
-            "shell": "/usr/bin/tmux",
             "args": [
                 "new",
                 "-s",
                 "vscode"
-            ]
+            ],
+            "label": "6.  tmux (new session)",
+            "launchName": "Tmux (new session)",
+            "shell": "/usr/bin/tmux"
         },
         {
-            "label": "Cygwin",
-            "launchName": "Cygwin",
-            "shell": "/c/cygwin/bin/bash.exe",
             "args": [
                 "-l"
-            ]
+            ],
+            "label": "Cygwin",
+            "launchName": "Cygwin",
+            "shell": "/c/cygwin/bin/bash.exe"
         }
     ],
     "shellLauncher.shells.windows": [
         {
+            "args": [
+                "-l"
+            ],
             "label": "1. wsl (local)",
             "launchName": "wsl (local)",
-            "shell": "C:\\Windows\\System32\\bash.exe",
-            "args": [
-                "-l"
-            ]
+            "shell": "C:\\Windows\\System32\\bash.exe"
         },
         {
-            "label": "3. Cygwin",
-            "launchName": "Cygwin",
-            "shell": "c:\\cygwin\\bin\\bash.exe",
             "args": [
                 "-l"
-            ]
+            ],
+            "label": "3. Cygwin",
+            "launchName": "Cygwin",
+            "shell": "c:\\cygwin\\bin\\bash.exe"
         },
         {
             "label": "4. cmd.exe",
@@ -182,137 +180,135 @@
             "label": "6. Git-bash",
             "launchName": "git-bash",
             "shell": "C:\\Program Files\\Git\\bin\\bash.exe"
-		}
-	],
-
-	"terminal.integrated.cursorBlinking": true,
-	"terminal.integrated.env.windows": {
-		"CHERE_INVOKING": "1"
-	},
-
-	"terminal.integrated.scrollback": 30000,
-	"terminal.integrated.shell.linux": "/bin/bash",
-	"terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
-	"terminal.integrated.shellArgs.linux": [
-		"--rcfile",
-		"~/.wsl.rc"
-	],
-	"terminal.integrated.shellArgs.windows": [
+        }
+    ],
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1"
+    },
+    "terminal.integrated.scrollback": 30000,
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
+    "terminal.integrated.shellArgs.linux": [
+        "--rcfile",
+        "~/.wsl.rc"
+    ],
+    "terminal.integrated.shellArgs.windows": [
         "-l"
-	],
-	"vim.cursorStylePerMode.insert": "block-outline",
-	"vim.cursorStylePerMode.normal": "block",
-	"vim.easymotion": true,
-	"vim.handleKeys": {
-		"<C-d>": true,
-		"<C-w>": false
-	},
-	"vim.hlsearch": true,
-	"vim.insertModeKeyBindings": [
-		{
-			"before": [
-				"j",
-				"k"
-			],
-			"after": [
-				"<Esc>"
-			]
-		}
-	],
-	"vim.leader": ",",
-	"vim.normalModeKeyBindingsNonRecursive": [
-		{
-			"before": [
-				"s"
-			],
-			"commands": [
-				":w"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"1"
-			],
-			"commands": [
-				"editor.action.commentLine"
-			]
-		},
-		{
-			"before": [
-				"<leader>",
-				"n"
-			],
-			"commands": [
-				"workbench.action.quickOpen"
-			]
-		},
-		{
-			"before": [
-				"="
-			],
-			"commands": [
-				"workbench.action.tasks.build"
-			]
-		},
-		{
-			"before": [
-				"j"
-			],
-			"after": [
-				"g",
-				"j"
-			]
-		},
-		{
-			"before": [
-				"k"
-			],
-			"after": [
-				"g",
-				"k"
-			]
-		}
-	],
-	"vim.searchHighlightColor": "#ff7b00a1",
-	"vim.useSystemClipboard": true,
-	"window.zoomLevel": 1,
-	"wordcounter.count_chars": false,
-	"wordcounter.count_paragraphs": false,
-	"wordcounter.include_eol_chars": false,
-	"wordcounter.wpm": 110,
-	"workbench.colorCustomizations": {
-		"window.activeBorder": "#00ff00",
-		"window.inactiveBorder": "#ff0000",
-		"activityBarBadge.background": "#7CB342",
-		"activityBar.activeBorder": "#7CB342",
-		"list.activeSelectionForeground": "#7CB342",
-		"list.inactiveSelectionForeground": "#7CB342",
-		"list.highlightForeground": "#7CB342",
-		"scrollbarSlider.activeBackground": "#7CB34250",
-		"editorSuggestWidget.highlightForeground": "#7CB342",
-		"textLink.foreground": "#7CB342",
-		"progressBar.background": "#7CB342",
-		"pickerGroup.foreground": "#7CB342",
-		"tab.activeBorder": "#7CB342",
-		"notificationLink.foreground": "#7CB342",
-		"editorWidget.resizeBorder": "#7CB342",
-		"editorWidget.border": "#7CB342",
-		"settings.modifiedItemIndicator": "#7CB342",
-		"settings.headerForeground": "#7CB342",
-		"panelTitle.activeBorder": "#7CB342",
-		"breadcrumb.activeSelectionForeground": "#7CB342",
-		"menu.selectionForeground": "#7CB342",
-		"menubar.selectionForeground": "#7CB342",
-		"editor.findMatchBorder": "#7CB342",
-		"selection.background": "#7CB34240"
-	},
+    ],
+    "vim.cursorStylePerMode.insert": "block-outline",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.easymotion": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-w>": false
+    },
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "after": [
+                "<Esc>"
+            ],
+            "before": [
+                "j",
+                "k"
+            ]
+        }
+    ],
+    "vim.leader": ",",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s"
+            ],
+            "commands": [
+                ":w"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "="
+            ],
+            "commands": [
+                "workbench.action.tasks.build"
+            ]
+        },
+        {
+            "after": [
+                "g",
+                "j"
+            ],
+            "before": [
+                "j"
+            ]
+        },
+        {
+            "after": [
+                "g",
+                "k"
+            ],
+            "before": [
+                "k"
+            ]
+        }
+    ],
+    "vim.searchHighlightColor": "#ff7b00a1",
+    "vim.useSystemClipboard": true,
+    "window.zoomLevel": 1,
+    "wordcounter.count_chars": false,
+    "wordcounter.count_paragraphs": false,
+    "wordcounter.include_eol_chars": false,
+    "wordcounter.wpm": 110,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBorder": "#7CB342",
+        "activityBarBadge.background": "#7CB342",
+        "breadcrumb.activeSelectionForeground": "#7CB342",
+        "editor.findMatchBorder": "#7CB342",
+        "editorSuggestWidget.highlightForeground": "#7CB342",
+        "editorWidget.border": "#7CB342",
+        "editorWidget.resizeBorder": "#7CB342",
+        "list.activeSelectionForeground": "#7CB342",
+        "list.highlightForeground": "#7CB342",
+        "list.inactiveSelectionForeground": "#7CB342",
+        "menu.selectionForeground": "#7CB342",
+        "menubar.selectionForeground": "#7CB342",
+        "notificationLink.foreground": "#7CB342",
+        "panelTitle.activeBorder": "#7CB342",
+        "pickerGroup.foreground": "#7CB342",
+        "progressBar.background": "#7CB342",
+        "scrollbarSlider.activeBackground": "#7CB34250",
+        "selection.background": "#7CB34240",
+        "settings.headerForeground": "#7CB342",
+        "settings.modifiedItemIndicator": "#7CB342",
+        "tab.activeBorder": "#7CB342",
+        "textLink.foreground": "#7CB342",
+        "window.activeBorder": "#00ff00",
+        "window.inactiveBorder": "#ff0000"
+    },
     "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.pinnedTabSizing": "compact",
-	"workbench.fontAliasing": true,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.sideBar.location": "right",
-	"workbench.startupEditor": "newUntitledFile",
-	"zzzz_endmarker": 0,
+    "workbench.fontAliasing": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "newUntitledFile",
+    "zzzz_endmarker": 0
 }
