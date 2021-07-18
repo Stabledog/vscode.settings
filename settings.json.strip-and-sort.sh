@@ -4,6 +4,7 @@
 
 die() {
     echo "ERROR: $@" >&2
+    exit 1
 }
 
 Python=$(which python3.10 python3.9 python3.8 python3.7 | head -n 1)
@@ -31,6 +32,7 @@ EOF
 
 
 sort_json_py ./tmp/settings.json.10 | $Python - > ./tmp/settings.json.20
+[[ $? == 0 ]] || die Python filter failed
 
 [[ -f ./tmp/settings.json.20 ]] || fail step 20
 
