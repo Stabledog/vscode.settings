@@ -32,3 +32,9 @@ vimdiff keybindings.json master-keybindings.json
 cp master-keybindings.json keybindings.json 
 #1626864966
 gs
+#1626864986
+gpa Reconcile with origin/master
+#1626864992
+gco master
+#1626864993
+gs
