@@ -9,16 +9,24 @@ die() {
 
 Python=$(which python3.10 python3.9 python3.8 python3.7 | head -n 1)
 
-[[ -f settings.json ]] || die No settings.json in $PWD
+infile=settings.json
+
+if [[ -n $1 ]]; then
+    if [[ ! -f $1 ]]; then
+        die Can\'t find $1 in $PWD
+    fi
+    infile="$1"
+fi
+
 
 mkdir -p tmp
-bakfile=tmp/settings.json.$RANDOM
-cp settings.json $bakfile || die Failed making backup $bakfile
-echo "Backup of settings.json is $bakfile"
+bakfile=tmp/${infile}.$RANDOM
+cp ${infile} $bakfile || die Failed making backup $bakfile
+echo "Backup of ${infile} is $bakfile"
 
-rm tmp/settings.json.{10,20} &>/dev/null
+rm tmp/${infile}.{10,20} &>/dev/null
 
-< settings.json /usr/bin/tr -d '\r' > tmp/settings.json.10
+< ${infile} /usr/bin/tr -d '\r' > tmp/${infile}.10
 
 
 sort_json_py() {
@@ -31,13 +39,13 @@ EOF
 }
 
 
-sort_json_py ./tmp/settings.json.10 | $Python - > ./tmp/settings.json.20
+sort_json_py ./tmp/${infile}.10 | $Python - > ./tmp/${infile}.20
 [[ $? == 0 ]] || die Python filter failed
 
-[[ -f ./tmp/settings.json.20 ]] || fail step 20
+[[ -f ./tmp/${infile}.20 ]] || fail step 20
 
-mv tmp/settings.json.20 settings.json || die fail step 20b
+mv tmp/${infile}.20 ${infile} || die fail step 20b
 
-echo "settings.json reformat OK"
+echo "${infile} reformat OK"
 
 

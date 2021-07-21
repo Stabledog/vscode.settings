@@ -26,8 +26,8 @@
     "editor.parameterHints.enabled": false,
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "all",
-    "editor.tabSize": 4,
     "editor.semanticHighlighting.enabled": false,
+    "editor.tabSize": 4,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "files.associations": {
