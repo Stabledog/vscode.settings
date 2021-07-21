@@ -2,6 +2,14 @@
 // master:
 [
     {
+        "key": "ctrl+a .",
+        "command": "workbench.action.terminal.resizePaneUp"
+    },
+    {
+        "key": "ctrl+a ,",
+        "command": "workbench.action.terminal.resizePaneDown"
+    },
+    {
         "key": "ctrl+a b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
@@ -71,11 +79,13 @@
     },
     {
         "key": "ctrl+l",
-        "command": "workbench.action.nextEditorInGroup"
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.action.previousEditorInGroup"
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+m",
@@ -134,5 +144,21 @@
         "key": "ctrl+j",
         "command": "-extension.vim_ctrl+j",
         "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "workbench.debug.action.focusCallStackView"
+    },
+    {
+        "key": "ctrl+a -",
+        "command": "editor.action.commentLine"
+    },
+    {
+        "key": "ctrl+a w",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "ctrl+a f",
+        "command": "workbench.explorer.fileView.focus"
     }
-}
+]

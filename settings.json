@@ -1,6 +1,8 @@
 {
     "breadcrumbs.enabled": true,
     "cmake.configureOnOpen": false,
+    "debug.javascript.usePreview": false,
+    "debug.saveBeforeStart": "none",
     "diffEditor.renderSideBySide": true,
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
@@ -10,26 +12,21 @@
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "editor.cursorStyle": "block",
+    "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
     "editor.folding": false,
-    "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "400",
-    "editor.glyphMargin": true,
-    "editor.letterSpacing": 0.3,
-    "editor.lineHeight": 20,
-    "editor.lineNumbers": "relative",
+    "editor.fontFamily": "Consolas",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "all",
-    "editor.semanticHighlighting.enabled": false,
     "editor.tabSize": 4,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
+    "extensions.autoUpdate": false,
     "files.associations": {
         "*.jrnl": "markdown",
         "*taskrc": "shellscript"
@@ -37,30 +34,32 @@
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "git.confirmSync": false,
     "git.ignoreMissingGitWarning": true,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.annotations.changes": false,
-    "gitlens.hovers.annotations.enabled": false,
-    "gitlens.hovers.avatars": false,
-    "gitlens.hovers.currentLine.changes": false,
-    "gitlens.hovers.currentLine.details": false,
-    "gitlens.hovers.currentLine.enabled": false,
-    "gitlens.hovers.enabled": false,
-    "gitlens.mode.statusBar.enabled": false,
-    "gitlens.statusBar.enabled": false,
-    "latex-workshop.message.update.show": false,
+    "html.autoClosingTags": true,
+    "jupyter.alwaysTrustNotebooks": true,
+    "jupyter.interactiveWindowMode": "perFile",
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
+    "liveshare.anonymousGuestApproval": "reject",
+    "liveshare.connectionMode": "relay",
+    "logViewer.logLevel": "debug",
     "materialTheme.accent": "Orange",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
     "php.validate.enable": false,
     "python.jediEnabled": true,
     "python.languageServer": "Pylance",
     "remote.SSH.configFile": "c:/Users/lesma/.ssh/config",
+    "redhat.telemetry.enabled": false,
+    "remote.SSH.lockfilesInTmp": true,
+    "remote.SSH.path": "c:\\windows\\system32\\openssh\\ssh.exe",
     "remote.SSH.remotePlatform": {
         "stage.dreamhost": "linux"
     },
     "remote.WSL.debug": true,
+    "remote.WSL.fileWatcher.polling": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace",
         "ms-vscode-remote.remote-ssh": "ui"
@@ -91,10 +90,12 @@
             "username": "lmatheson4"
         }
     },
+    "security.workspace.trust.untrustedFiles": "open",
     "shellLauncher.shells.linux": [
         {
             "args": [
-                "-l"
+                "--rcfile",
+                "~/.wsl.rc"
             ],
             "label": "1. \ud83d\udd38wsl (local)",
             "launchName": "\ud83d\udd38Wsl (local)",
@@ -153,7 +154,8 @@
     "shellLauncher.shells.windows": [
         {
             "args": [
-                "-l"
+                "--rcfile",
+                "~/.wsl.rc"
             ],
             "label": "1. wsl (local)",
             "launchName": "wsl (local)",
@@ -183,20 +185,38 @@
             "shell": "C:\\Program Files\\Git\\bin\\bash.exe"
         }
     ],
+    "telemetry.enableTelemetry": false,
+    "terminal.explorerKind": "external",
+    "terminal.external.linuxExec": "/bin/bash",
+    "terminal.external.windowsExec": "c:\\cygwin\\Cygwin.bat",
+    "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.enablePersistentSessions": true,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
+    "terminal.integrated.flowControl": false,
+    "terminal.integrated.inheritEnv": true,
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "args": [
+                "--rcfile",
+                "/home/lmatheson4/.wsl.rc"
+            ],
+            "path": "/bin/bash"
+        }
+    },
+    "terminal.integrated.profiles.windows": {
+        "bash": {
+            "args": [
+                "-l"
+            ],
+            "path": "c:\\cygwin\\bin\\bash.exe"
+        }
+    },
+    "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 30000,
-    "terminal.integrated.shell.linux": "/bin/bash",
-    "terminal.integrated.shell.windows": "c:\\cygwin\\bin\\bash.exe",
-    "terminal.integrated.shellArgs.linux": [
-        "--rcfile",
-        "~/.wsl.rc"
-    ],
-    "terminal.integrated.shellArgs.windows": [
-        "-l"
-    ],
+    "terminal.integrated.tabs.hideCondition": "never",
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -303,8 +323,15 @@
         "window.inactiveBorder": "#ff0000"
     },
     "workbench.colorTheme": "Shades of Purple",
-    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.highlightModifiedTabs": false,
     "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.wrapTabs": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.md": "default"
+    },
     "workbench.fontAliasing": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
