@@ -18,7 +18,6 @@
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "editor.cursorStyle": "block",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
@@ -261,6 +260,7 @@
     "terminal.external.windowsExec": "c:\\cygwin\\Cygwin.bat",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.windows": "Cygwin",
     "terminal.integrated.enablePersistentSessions": true,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
@@ -277,6 +277,27 @@
         }
     },
     "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "args": [],
+            "icon": "terminal-cmd",
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ]
+        },
+        "Cygwin": {
+            "args": [
+                "--login"
+            ],
+            "path": "C:\\cygwin\\bin\\bash.exe"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "PowerShell": {
+            "icon": "terminal-powershell",
+            "source": "PowerShell"
+        },
         "bash": {
             "args": [
                 "-l"
@@ -369,7 +390,6 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
-    "workbench.activityBar.visible": false,
     "workbench.colorCustomizations": {
         "terminal.ansiBlack": "#090300",
         "terminal.ansiBlue": "#01A0E4",
@@ -394,11 +414,12 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Light High Contrast Theme",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
     "workbench.editor.pinnedTabSizing": "compact",
+    "workbench.editor.untitled.experimentalLanguageDetection": true,
     "workbench.editor.wrapTabs": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
