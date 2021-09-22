@@ -50,6 +50,7 @@
     ],
     "liveshare.anonymousGuestApproval": "reject",
     "liveshare.connectionMode": "relay",
+    "liveshare.presence": false,
     "logViewer.logLevel": "debug",
     "materialTheme.accent": "Orange",
     "notebook.cellToolbarLocation": {
@@ -69,7 +70,6 @@
         "stable.home": "linux"
     },
     "remote.WSL.debug": true,
-    "remote.WSL.fileWatcher.polling": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
@@ -265,14 +265,26 @@
         "CHERE_INVOKING": "1"
     },
     "terminal.integrated.flowControl": false,
+    "terminal.integrated.gpuAcceleration": "canvas",
     "terminal.integrated.inheritEnv": true,
     "terminal.integrated.profiles.linux": {
-        "bash": {
+        "wsl": {
             "args": [
                 "--rcfile",
                 "/home/lmatheson4/.wsl.rc"
             ],
             "path": "/bin/bash"
+        },
+        "wsl2": {
+            "args": [
+                "-d",
+                "ubuntu_1804_wsl2",
+                "--",
+                "/bin/bash",
+                "--rcfile",
+                "/home/lmatheson4/.wsl.rc"
+            ],
+            "path": "/c/WINDOWS/system32/wsl.exe"
         }
     },
     "terminal.integrated.profiles.windows": {
@@ -304,7 +316,6 @@
             "path": "c:\\cygwin\\bin\\bash.exe"
         }
     },
-    "terminal.integrated.rendererType": "dom",
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.tabs.hideCondition": "never",
     "vim.cursorStylePerMode.insert": "block-outline",
@@ -384,7 +395,7 @@
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
-    "window.zoomLevel": 3,
+    "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -413,7 +424,6 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
