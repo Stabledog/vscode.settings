@@ -361,6 +361,15 @@
         {
             "before": [
                 "<leader>",
+                "v"
+            ],
+            "commands": [
+                "open-in-vim.open"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
                 "n"
             ],
             "commands": [
@@ -427,7 +436,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Codesong",
+    "workbench.colorTheme": "Deep Purple",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
