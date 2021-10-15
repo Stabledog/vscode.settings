@@ -1,6 +1,9 @@
 {
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -13,6 +16,7 @@
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.accessibilitySupport": "off",
     "editor.autoClosingBrackets": "never",
@@ -45,6 +49,7 @@
     "files.trimTrailingWhitespace": true,
     "git.ignoreMissingGitWarning": true,
     "html.autoClosingTags": true,
+    "http.proxy": "http://proxy.bloomberg.com:81",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveshare.allowedDomains": [
@@ -255,20 +260,13 @@
             "shell": "C:\\Program Files\\Git\\bin\\bash.exe"
         }
     ],
-    "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.external.windowsExec": "c:\\cygwin\\Cygwin.bat",
-    "terminal.integrated.copyOnSelection": true,
-    "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.defaultProfile.windows": "Cygwin",
-    "terminal.integrated.enablePersistentSessions": true,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
-    "terminal.integrated.flowControl": false,
-    "terminal.integrated.gpuAcceleration": "canvas",
-    "terminal.integrated.inheritEnv": true,
     "terminal.integrated.profiles.linux": {
         "wsl": {
             "args": [
@@ -318,8 +316,6 @@
             "path": "c:\\cygwin\\bin\\bash.exe"
         }
     },
-    "terminal.integrated.scrollback": 30000,
-    "terminal.integrated.tabs.hideCondition": "never",
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -407,7 +403,7 @@
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -436,7 +432,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Deep Purple",
+    "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -448,7 +444,6 @@
         "*.md": "default"
     },
     "workbench.fontAliasing": true,
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
