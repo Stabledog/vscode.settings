@@ -49,7 +49,6 @@
     "files.trimTrailingWhitespace": true,
     "git.ignoreMissingGitWarning": true,
     "html.autoClosingTags": true,
-    "http.proxy": "http://proxy.bloomberg.com:81",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveshare.allowedDomains": [
