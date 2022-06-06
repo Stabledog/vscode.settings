@@ -1,17 +1,17 @@
 // Place key bindings in this file to override the defaults
+// master:
 [
     {
-        "key": "ctrl+a j",
-        "command": "workbench.action.terminal.focus"
+        "key": "ctrl+a .",
+        "command": "workbench.action.terminal.resizePaneUp"
     },
     {
-        "key": "ctrl+a k",
-        "command": "workbench.action.focusActiveEditorGroup"
+        "key": "ctrl+a ,",
+        "command": "workbench.action.terminal.resizePaneDown"
     },
     {
-        "key":"ctrl+a l",
-        "command": "workbench.action.focusPreviousGroup",
-        "when": "!terminalFocus"
+        "key": "ctrl+a b",
+        "command": "workbench.action.toggleSidebarVisibility"
     },
     {
         "key":"ctrl+a h",
@@ -24,9 +24,40 @@
         "when": "terminalFocus"
     },
     {
+        "key": "ctrl+a j",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+a k",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
         "key": "ctrl+a l",
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
+    },
+    {
+        "key":"ctrl+a l",
+        "command": "workbench.action.focusPreviousGroup",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "ctrl+a n",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+a p",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+a t",
+        "command": "shellLauncher.launch"
+    },
+    {
+        "key": "ctrl+a x",
+        "command": "workbench.action.terminal.kill"
     },
     {
         "key": "ctrl+a z",
@@ -48,11 +79,13 @@
     },
     {
         "key": "ctrl+l",
-        "command": "workbench.action.nextEditorInGroup"
+        "command": "workbench.action.nextEditorInGroup",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+h",
-        "command": "workbench.action.previousEditorInGroup"
+        "command": "workbench.action.previousEditorInGroup",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+m",
@@ -79,6 +112,53 @@
     { // Similar to the :![cmd]  in vim:, use the 'filter text' extension
         "key":"ctrl+/",
         "command": "extension.filterTextInplace"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "markdown.showPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "-extension.vim_ctrl+k",
+        "when": "editorTextFocus && vim.active && vim.use<C-k> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown-preview-enhanced.openPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-extension.vim_ctrl+j",
+        "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "workbench.debug.action.focusCallStackView"
+    },
+    {
+        "key": "ctrl+a -",
+        "command": "editor.action.commentLine"
+    },
+    {
+        "key": "ctrl+a w",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "ctrl+a f",
+        "command": "workbench.explorer.fileView.focus"
     }
-
 ]
