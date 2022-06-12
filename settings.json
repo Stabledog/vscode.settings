@@ -52,7 +52,6 @@
     "files.trimTrailingWhitespace": true,
     "git.ignoreMissingGitWarning": true,
     "html.autoClosingTags": true,
-    "http.proxy": "http://proxy.bloomberg.com:81",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveshare.allowedDomains": [
@@ -139,11 +138,12 @@
     "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
     "terminal.integrated.defaultProfile.osx": "bash",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
+    "terminal.integrated.fontFamily": "monospace",
     "terminal.integrated.profiles.linux": {
         "wsl": {
             "args": [
@@ -332,6 +332,5 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0,
-    "terminal.integrated.fontFamily": "monospace"
+    "zzzz--------------endmarker--------------------": 0
 }
