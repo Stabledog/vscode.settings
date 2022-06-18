@@ -15,6 +15,7 @@
     "breadcrumbs.enabled": true,
     "cSpell.enabled": false,
     "cmake.configureOnOpen": false,
+    "debug.console.acceptSuggestionOnEnter": "on",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
     "diffEditor.renderSideBySide": true,
