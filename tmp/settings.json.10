@@ -51,9 +51,6 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.ignoreMissingGitWarning": true,
-    "githubPullRequests.remotes": [
-        "origin"
-    ],
     "html.autoClosingTags": true,
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
@@ -141,19 +138,19 @@
     "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
-    "terminal.integrate.profiles.osx": {
-        "powershell": {
-            "args": [],
-            "path": "/usr/local/bin/pwsh-preview",
-            "title": "Powershell Preview"
-        }
-    },
     "terminal.integrated.defaultProfile.osx": "bash",
     "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
     "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrate.profiles.osx": {
+        "powershell": {
+            "path": "/usr/local/bin/pwsh-preview",
+            "title": "Powershell Preview",
+            "args":[]
+        }
+    },
     "terminal.integrated.profiles.linux": {
         "wsl": {
             "args": [
@@ -342,5 +339,8 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
+    "githubPullRequests.remotes": [
+        "origin"
+    ]
 }
