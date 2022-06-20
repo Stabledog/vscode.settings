@@ -88,30 +88,6 @@
         "ms-azuretools.vscode-docker": "workspace"
     },
     "remotefs.remote": {
-        "gnrl_bb": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/bb",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
-        "gnrl_home": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/home18/lmatheson4",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
-        "gnrl_mbig": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/bb/mbigd/mbig497",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
         "prod_dreamhost": {
             "host": "john-witherspoon.dreamhost.com",
             "port": 22,
@@ -127,27 +103,11 @@
             "rootPath": "/home/debweb_docker",
             "scheme": "sftp",
             "username": "debweb_docker"
-        },
-        "wsl_home": {
-            "host": "127.0.0.1",
-            "port": 2222,
-            "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
-            "rootPath": "/home/lmatheson4",
-            "scheme": "sftp",
-            "username": "lmatheson4"
         }
     },
     "security.workspace.trust.untrustedFiles": "open",
-    "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
-    "terminal.integrate.profiles.osx": {
-        "powershell": {
-            "args": [],
-            "path": "/usr/local/bin/pwsh-preview",
-            "title": "Powershell Preview"
-        }
-    },
     "terminal.integrated.defaultProfile.osx": "bash",
     "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
     "terminal.integrated.env.windows": {
@@ -172,6 +132,13 @@
                 "/home/lmatheson4/.wsl.rc"
             ],
             "path": "/c/WINDOWS/system32/wsl.exe"
+        }
+    },
+    "terminal.integrated.profiles.osx": {
+        "powershell": {
+            "args": [],
+            "path": "/usr/local/bin/pwsh-preview",
+            "title": "Powershell Preview"
         }
     },
     "terminal.integrated.profiles.windows": {
