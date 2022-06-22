@@ -53,6 +53,7 @@
     "git.ignoreMissingGitWarning": true,
     "html.autoClosingTags": true,
     "http.proxy": "http://proxy.bloomberg.com:81",
+    "https.proxy": "http://proxy.bloomberg.com:81",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveshare.allowedDomains": [
@@ -71,6 +72,7 @@
     "prettier.tabWidth": 4,
     "python.jediEnabled": true,
     "python.languageServer": "Jedi",
+    "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
     "remote.SSH.lockfilesInTmp": true,
@@ -139,7 +141,8 @@
     "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
@@ -176,7 +179,7 @@
             "args": [
                 "--login"
             ],
-            "path": "C:\\cygwin\\bin\\bash.exe"
+            "path": "C:\\cygwin64\\bin\\bash.exe"
         },
         "Git Bash": {
             "source": "Git Bash"
@@ -287,7 +290,6 @@
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -316,7 +318,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
