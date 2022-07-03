@@ -11,8 +11,13 @@
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "[vue]": {
+        "editor.defaultFormatter": "yoyo930021.vuter"
+    },
     "breadcrumbs.enabled": true,
+    "cSpell.enabled": false,
     "cmake.configureOnOpen": false,
+    "debug.console.acceptSuggestionOnEnter": "on",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
     "diffEditor.renderSideBySide": true,
