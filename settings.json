@@ -55,6 +55,7 @@
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
     "git.ignoreMissingGitWarning": true,
     "githubPullRequests.remotes": [
         "origin"
