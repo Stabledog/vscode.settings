@@ -1,4 +1,5 @@
-{
+
+ {
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
@@ -15,24 +16,28 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"newScript": {
-        "description": "Common basic elements of a new script: die(), main(), etc.",
-		"prefix": ["newScript","#!/bin/bash"],
+	"Create SFTP DEV push config": {
+		"scope": "json",
+		"prefix": "conf",
 		"body": [
-			"#!/bin/bash",
-            "# ${TM_FILENAME}",
-            "",
-            "die() {",
-            "    echo \"ERROR: $*\" >&2",
-			"    exit 1",
-			"}",
-            "",
-            "main() {",
-            "    echo \"args:[$*]\" ",
-            "}",
-            "",
-            "[[ -z \\${sourceMe} ]] || main \"$@\" ",
-            ""
-		]
+			"{",
+				"  \"name\": \"$1\",",
+				"  \"context\": \".\",",
+				"  \"host\": \"devsftp.bloomberg.com\",",
+				"  \"port\": 2222,",
+				"  \"username\": \"lmatheson4\",",
+				"  \"protocol\": \"sftp\",",
+				"  \"privateKeyPath\": \"/c/.ssh/id_rsa.openssh\",",
+				"  \"remotePath\": \"/home18/lmatheson4/$4\",",
+				"  \"uploadOnSave\": true,",
+				"  \"ignore\": [",
+					  "    \"**/.vscode/**\",",
+					  "    \"**/.DS_Store\",",
+					  "    \"**/.git\",",
+					  "    \"**/.sw?\"",
+				"  ]",
+			"}"
+		],
+		"description": "Create SFTP config file for sync to DEV"
 	}
 }
