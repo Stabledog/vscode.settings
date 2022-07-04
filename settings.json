@@ -88,6 +88,9 @@
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
+    "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
+    "remote.containers.dotfiles.repository": "https://github.com/Stabledog/remote-containers-dotfiles.git",
+    "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
