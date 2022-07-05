@@ -51,6 +51,7 @@
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
     "git.ignoreMissingGitWarning": true,
     "html.autoClosingTags": true,
     "http.proxy": "http://proxy.bloomberg.com:81",
