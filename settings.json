@@ -17,6 +17,7 @@
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
     "diffEditor.renderSideBySide": true,
+    "docker.containers.sortBy": "CreatedTime",
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -46,6 +47,7 @@
     "extensions.autoUpdate": false,
     "files.associations": {
         "*.jrnl": "markdown",
+        "*.prn": "tsv",
         "*taskrc": "shellscript"
     },
     "files.eol": "\n",
@@ -53,6 +55,7 @@
     "files.trimTrailingWhitespace": true,
     "git.confirmSync": false,
     "git.ignoreMissingGitWarning": true,
+    "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
     "http.proxy": "http://proxy.bloomberg.com:81",
     "https.proxy": "http://proxy.bloomberg.com:81",
@@ -86,7 +89,7 @@
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
     "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
-    "remote.containers.dotfiles.repository": "https://github.com/Stabledog/remote-containers-dotfiles.git",
+    "remote.containers.dotfiles.repository": "https://bbgithub.dev.bloomberg.com/lmatheson4/remote-containers-dotfiles.git",
     "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
@@ -295,6 +298,7 @@
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.restoreWindows": "none",
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
