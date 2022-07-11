@@ -11,7 +11,12 @@
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "[vue]": {
+        "editor.defaultFormatter": "yoyo930021.vuter"
+    },
+    "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
+    "cSpell.enabled": false,
     "cmake.configureOnOpen": false,
     "debug.console.acceptSuggestionOnEnter": "on",
     "debug.javascript.usePreview": false,
@@ -57,8 +62,6 @@
     "git.ignoreMissingGitWarning": true,
     "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
-    "http.proxy": "http://proxy.bloomberg.com:81",
-    "https.proxy": "http://proxy.bloomberg.com:81",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveshare.allowedDomains": [
@@ -89,12 +92,13 @@
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
     "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
-    "remote.containers.dotfiles.repository": "https://bbgithub.dev.bloomberg.com/lmatheson4/remote-containers-dotfiles.git",
     "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
+    "remote.containers.dotfiles.repository": "http://put-url-here",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
+    "remoteHub.gitProtocol": "ssh",
     "remotefs.remote": {
         "gnrl_bb": {
             "host": "devsftp.bloomberg.com",
@@ -146,7 +150,6 @@
         }
     },
     "security.workspace.trust.untrustedFiles": "open",
-    "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.defaultProfile.windows": "Cygwin",
@@ -187,7 +190,10 @@
             "args": [
                 "--login"
             ],
-            "path": "C:\\cygwin64\\bin\\bash.exe"
+            "path": "C:\\cygwin64\\bin\\bash.exe",
+            "env": {
+                "PATH": "/home/lesma/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
+            }
         },
         "Git Bash": {
             "source": "Git Bash"
@@ -197,17 +203,21 @@
             "source": "PowerShell"
         },
         "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
-                "Ubuntu-20.04"
-            ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe"
+                "Ubuntu-20.04",
+                "--",
+                "/bin/bash",
+                "--login"
+            ]
         },
         "bash": {
-            "args": [
-                "-l"
-            ],
-            "path": "c:\\cygwin\\bin\\bash.exe"
+            "path": "c:\\Windows\\system32\\wsl.exe"
+        },
+        "Powershell 7": {
+            "icon": "terminal-powershell",
+            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
         }
     },
     "vim.cursorStylePerMode.insert": "block-outline",
@@ -297,8 +307,7 @@
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.restoreWindows": "none",
-    "window.zoomLevel": 1,
+    "window.newWindowDimensions": "inherit",
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -327,10 +336,10 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Shades",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
+    "workbench.editor.labelFormat": "short",
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.untitled.experimentalLanguageDetection": true,
     "workbench.editor.wrapTabs": false,
