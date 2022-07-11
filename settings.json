@@ -142,6 +142,7 @@
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.external.windowsExec": "c:\\windows\\system\\cmd.exe",
     "terminal.integrated.defaultProfile.windows": "Cygwin",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
