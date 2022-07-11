@@ -5,6 +5,9 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     "[vue]": {
         "editor.defaultFormatter": "yoyo930021.vuter"
     },
@@ -45,6 +48,7 @@
     "extensions.autoUpdate": false,
     "files.associations": {
         "*.jrnl": "markdown",
+        "*.prn": "tsv",
         "*taskrc": "shellscript"
     },
     "files.eol": "\n",
