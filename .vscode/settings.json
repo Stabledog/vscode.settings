@@ -1,5 +1,5 @@
 {
-    "window.title":"VSCode User Settings",
+    "window.title":"VSCode Isolated Settings",
     "workbench.colorCustomizations": {
         "terminal.ansiBlack": "#090300",
         "terminal.ansiBlue": "#01A0E4",

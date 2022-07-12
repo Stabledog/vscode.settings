@@ -62,6 +62,8 @@
     "git.ignoreMissingGitWarning": true,
     "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
+    "http.proxy": "http://proxy.bloomberg.com:81",
+    "https.proxy": "http://proxy.bloomberg.com:81",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveshare.allowedDomains": [
@@ -92,8 +94,8 @@
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
     "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
+    "remote.containers.dotfiles.repository": "https://bbgithub.dev.bloomberg.com/lmatheson4/remote-containers-dotfiles",
     "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
-    "remote.containers.dotfiles.repository": "http://put-url-here",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
@@ -187,13 +189,7 @@
             ]
         },
         "Cygwin": {
-            "args": [
-                "--login"
-            ],
-            "path": "C:\\cygwin64\\bin\\bash.exe",
-            "env": {
-                "PATH": "/home/lesma/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
-            }
+            "path": "C:\\cygwin64\\bin\\bash.exe"
         },
         "Git Bash": {
             "source": "Git Bash"
@@ -202,22 +198,22 @@
             "icon": "terminal-powershell",
             "source": "PowerShell"
         },
+        "Powershell 7": {
+            "icon": "terminal-powershell",
+            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
+        },
         "Ubuntu-20.04 (WSL)": {
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
                 "Ubuntu-20.04",
                 "--",
                 "/bin/bash",
                 "--login"
-            ]
+            ],
+            "path": "C:\\WINDOWS\\System32\\wsl.exe"
         },
         "bash": {
             "path": "c:\\Windows\\system32\\wsl.exe"
-        },
-        "Powershell 7": {
-            "icon": "terminal-powershell",
-            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
         }
     },
     "vim.cursorStylePerMode.insert": "block-outline",
@@ -338,10 +334,6 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-<<<<<<< HEAD
-    "workbench.colorTheme": "Shades of Purple",
-=======
->>>>>>> d1c2babe7b700b0d9f8747334878815700543182
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
