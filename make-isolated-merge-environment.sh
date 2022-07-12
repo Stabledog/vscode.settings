@@ -21,24 +21,36 @@ script=$(basename -- $0)
 command -v git || die "No git available"
 
 readymsg() {
-    builtin echo "$tgtDir is open for business"
+    builtin echo "$tgtDir is open for business:
+    dir: $PWD
+    branch: ${branch}
+    parent: $(git  remote -v | grep parent | head -n 1)
+    "
 }
+
 statusmsg() {
     echo "====   Status of $tgtDir: ====" 
     git remote -v | sed 's/^/   /'
     git status | sed 's/^/   /' 
-
-    echo "You may safely do maintenance with 'code .' from $PWD.  Be sure to commit + push when done."
-    echo "====                      ===="
+    echo
+    echo "OK: You may now safely do maintenance with 'code .':"
+    echo "  cd $tgtDir"
+    echo "  code ." 
+    echo 
+    echo "  Be sure to commit + push when done."
 }
 
 [[ -f  $script ]] || die 101
+
+[[ -d .git ]] || die "No .git in this dir"
+branch=$(git symbolic-ref HEAD --short)
+
 
 command mkdir -p $tgtDir
 [[ -d $tgtDir ]] || die 102
 
 [[ -d $tgtDir/.git ]] && { 
-    builtin cd $tgtDir && git pull parent || die "Failed to pull remote 'parent' in $PWD"
+    builtin cd $tgtDir && git pull parent ${branch} || die "Failed to pull remote 'parent' in $PWD"
     readymsg; 
     exit 0; 
 }
@@ -62,6 +74,6 @@ branch=$(git symbolic-ref HEAD --short)
 
 statusmsg
 touch .ready
-
+readymsg
 
 
