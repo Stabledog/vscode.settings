@@ -152,6 +152,7 @@
         }
     },
     "security.workspace.trust.untrustedFiles": "open",
+    "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.defaultProfile.windows": "Cygwin",
@@ -305,7 +306,7 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -334,6 +335,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
+    "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
