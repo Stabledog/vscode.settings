@@ -7,7 +7,7 @@ die() {
     exit 1
 }
 
-Python=$(which python3.10 python3.9 python3.8 python3.7 | head -n 1)
+command -v python3 &>/dev/null || die "\python3 not set"
 
 infile=settings.json
 
@@ -39,7 +39,7 @@ EOF
 }
 
 
-sort_json_py ./tmp/${infile}.10 | $Python - > ./tmp/${infile}.20
+sort_json_py ./tmp/${infile}.10 | python3 > ./tmp/${infile}.20
 [[ $? == 0 ]] || die Python filter failed
 
 [[ -f ./tmp/${infile}.20 ]] || fail step 20

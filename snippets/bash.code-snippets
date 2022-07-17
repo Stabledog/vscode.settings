@@ -17,7 +17,7 @@
 	// }
 	"newScript": {
         "description": "Common basic elements of a new script: die(), main(), etc.",
-		"prefix": ["newScript","#!/bin/bash"],
+		"prefix": ["bashScript"],
 		"body": [
 			"#!/bin/bash",
             "# ${TM_FILENAME}",

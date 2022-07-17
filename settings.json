@@ -1,6 +1,6 @@
 {
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -14,6 +14,7 @@
     "[vue]": {
         "editor.defaultFormatter": "yoyo930021.vuter"
     },
+    "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
     "cSpell.enabled": false,
     "cmake.configureOnOpen": false,
@@ -21,6 +22,7 @@
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
     "diffEditor.renderSideBySide": true,
+    "docker.containers.sortBy": "CreatedTime",
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -50,6 +52,7 @@
     "extensions.autoUpdate": false,
     "files.associations": {
         "*.jrnl": "markdown",
+        "*.prn": "tsv",
         "*taskrc": "shellscript"
     },
     "files.eol": "\n",
@@ -119,6 +122,7 @@
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.defaultProfile.osx": "bash",
     "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
@@ -163,7 +167,10 @@
             "args": [
                 "--login"
             ],
-            "path": "C:\\cygwin\\bin\\bash.exe"
+            "path": "C:\\cygwin64\\bin\\bash.exe",
+            "env": {
+                "PATH": "/home/lesma/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
+            }
         },
         "Git Bash": {
             "source": "Git Bash"
@@ -173,17 +180,21 @@
             "source": "PowerShell"
         },
         "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
-                "Ubuntu-20.04"
-            ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe"
+                "Ubuntu-20.04",
+                "--",
+                "/bin/bash",
+                "--login"
+            ]
         },
         "bash": {
-            "args": [
-                "-l"
-            ],
-            "path": "c:\\cygwin\\bin\\bash.exe"
+            "path": "c:\\Windows\\system32\\wsl.exe"
+        },
+        "Powershell 7": {
+            "icon": "terminal-powershell",
+            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
         }
     },
     "vim.cursorStylePerMode.insert": "block-outline",
@@ -275,6 +286,7 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.restoreWindows": "none",
     "window.zoomLevel": 1,
+    "window.newWindowDimensions": "inherit",
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -303,10 +315,10 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
+    "workbench.editor.labelFormat": "short",
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.untitled.experimentalLanguageDetection": true,
     "workbench.editor.wrapTabs": false,
@@ -314,7 +326,7 @@
         "*.ipynb": "jupyter-notebook",
         "*.md": "default"
     },
-    "workbench.fontAliasing": true,
+    "workbench.fontAliasing": "auto",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,

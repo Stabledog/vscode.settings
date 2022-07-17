@@ -160,5 +160,11 @@
     {
         "key": "ctrl+a f",
         "command": "workbench.explorer.fileView.focus"
+    },
+    {
+        "key": "ctrl+v tab",
+        "command": "type",
+        "args": { "text": "\t" },
+        "when": "editorTextFocus"
     }
 ]
