@@ -92,8 +92,8 @@
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
     "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
-    "remote.containers.dotfiles.repository": "http://put-url-here",
     "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
+    "remote.containers.dotfiles.repository": "https://github.com/Stabledog/remote-containers-dotfiles",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
@@ -190,10 +190,10 @@
             "args": [
                 "--login"
             ],
+            "path": "C:\\cygwin64\\bin\\bash.exe",
             "env": {
                 "PATH": "/home/lesma/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
-            },
-            "path": "C:\\cygwin64\\bin\\bash.exe"
+            }
         },
         "Git Bash": {
             "source": "Git Bash"
@@ -202,22 +202,22 @@
             "icon": "terminal-powershell",
             "source": "PowerShell"
         },
-        "Powershell 7": {
-            "icon": "terminal-powershell",
-            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
-        },
         "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
                 "Ubuntu-20.04",
                 "--",
                 "/bin/bash",
                 "--login"
-            ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe"
+            ]
         },
         "bash": {
             "path": "c:\\Windows\\system32\\wsl.exe"
+        },
+        "Powershell 7": {
+            "icon": "terminal-powershell",
+            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
         }
     },
     "vim.cursorStylePerMode.insert": "block-outline",
