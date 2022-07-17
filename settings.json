@@ -3,7 +3,7 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
@@ -174,8 +174,7 @@
         },
         "Git Bash": {
             "source": "Git Bash"
-        },
-        "PowerShell": {
+        }, "PowerShell": {
             "icon": "terminal-powershell",
             "source": "PowerShell"
         },
