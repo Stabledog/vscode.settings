@@ -8,4 +8,4 @@ die() {
 
 [[ -f $HOME/bin/settings.json.strip-and-sort.sh ]] || die "Can't find ~/bin/settings.json.strip-and-sort.sh"
 
-source $HOME/bin/settings.json.strip-and-sort.sh
+source $HOME/bin/settings.json.strip-and-sort.sh "$@"

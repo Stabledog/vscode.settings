@@ -352,5 +352,6 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
+    "window.zoomLevel": 1
 }

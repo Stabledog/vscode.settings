@@ -19,7 +19,7 @@
         "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+a h",
+        "key": "ctrl+shift+l",
         "command": "workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
     },
@@ -166,5 +166,24 @@
         "command": "type",
         "args": { "text": "\t" },
         "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-addCursorsAtSearchResults",
+        "when": "fileMatchOrMatchFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "-selectAllSearchEditorMatches",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "-workbench.action.replaceInFiles"
     }
 ]
