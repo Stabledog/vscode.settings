@@ -152,7 +152,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
-    "terminal.integrated.defaultProfile.windows": "Cygwin",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
@@ -192,11 +192,14 @@
             ],
             "path": "C:\\cygwin64\\bin\\bash.exe",
             "env": {
-                "PATH": "/home/lesma/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
+                "PATH": "{env:HOME}/.local/bin:{env:HOME}/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
             }
         },
         "Git Bash": {
-            "source": "Git Bash"
+            "source": "Git Bash",
+			"args":[
+				"--login"
+			]
         },
         "PowerShell": {
             "icon": "terminal-powershell",
