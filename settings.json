@@ -22,7 +22,6 @@
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
     "diffEditor.renderSideBySide": true,
-    "docker.containers.sortBy": "CreatedTime",
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -93,7 +92,7 @@
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
     "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
-    "remote.containers.dotfiles.repository": "https://github.com/Stabledog/remote-containers-dotfiles.git",
+    "remote.containers.dotfiles.repository": "https://github.com/Stabledog/remote-containers-dotfiles",
     "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
@@ -121,7 +120,7 @@
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.defaultProfile.osx": "bash",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
@@ -167,33 +166,36 @@
             "args": [
                 "--login"
             ],
-            "path": "C:\\cygwin64\\bin\\bash.exe",
             "env": {
-                "PATH": "/home/lesma/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
-            }
+                "PATH": "{env:HOME}/.local/bin:{env:HOME}/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
+            },
+            "path": "C:\\cygwin64\\bin\\bash.exe"
         },
         "Git Bash": {
+            "args": [
+                "--login"
+            ],
             "source": "Git Bash"
         }, "PowerShell": {
             "icon": "terminal-powershell",
             "source": "PowerShell"
         },
+        "Powershell 7": {
+            "icon": "terminal-powershell",
+            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
+        },
         "Ubuntu-20.04 (WSL)": {
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
                 "Ubuntu-20.04",
                 "--",
                 "/bin/bash",
                 "--login"
-            ]
+            ],
+            "path": "C:\\WINDOWS\\System32\\wsl.exe"
         },
         "bash": {
             "path": "c:\\Windows\\system32\\wsl.exe"
-        },
-        "Powershell 7": {
-            "icon": "terminal-powershell",
-            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
         }
     },
     "vim.cursorStylePerMode.insert": "block-outline",
@@ -286,6 +288,7 @@
     "window.restoreWindows": "none",
     "window.zoomLevel": 1,
     "window.newWindowDimensions": "inherit",
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -314,6 +317,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
+    "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -323,7 +327,8 @@
     "workbench.editor.wrapTabs": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
-        "*.md": "default"
+        "*.md": "default",
+        "*.pdf": "latex-workshop-pdf-hook"
     },
     "workbench.fontAliasing": "auto",
     "workbench.sideBar.location": "right",
