@@ -176,7 +176,8 @@
                 "--login"
             ],
             "source": "Git Bash"
-        }, "PowerShell": {
+        },
+        "PowerShell": {
             "icon": "terminal-powershell",
             "source": "PowerShell"
         },
@@ -285,9 +286,8 @@
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "window.restoreWindows": "none",
-    "window.zoomLevel": 1,
     "window.newWindowDimensions": "inherit",
+    "window.restoreWindows": "none",
     "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
