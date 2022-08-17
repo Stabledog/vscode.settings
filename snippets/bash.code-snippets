@@ -1,4 +1,7 @@
 {
+    // Helper: use vscode-make-snippet.sh to format code for
+    //   the snippet json rules.
+    //
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
@@ -22,23 +25,46 @@
 			"#!/bin/bash",
             "# ${TM_FILENAME}",
             "",
-            "scriptName=\"$(command readlink -f $0)\"",
+            "scriptName=\"$(canonpath \"\\$0\")\"",
             "scriptDir=$(command dirname -- \"\\${scriptName}\")",
             "",
             "die() {",
-            "    builtin echo \"ERROR: $*\" >&2",
+            "    builtin echo \"ERROR(\\$(basename \\${scriptName}): \\$*\" >&2",
 			"    builtin exit 1",
 			"}",
             "",
             "stub() {",
-            "   builtin echo \"  <<< STUB[$*] >>> \" >&2",
+            "   builtin echo \"  <<< STUB[\\$*] >>> \" >&2",
             "}",
             "main() {",
-            "    builtin echo \"args:[$*]\" ",
+            "    builtin echo \"args:[\\$*]\" ",
             "}",
             "",
-            "[[ -z \\${sourceMe} ]] && main \"$@\" ",
+            "[[ -z \\${sourceMe} ]] && {",
+            "    main \"\\$@\" ",
+            "    exit",
+            "}",
+            "true",
             ""
 		]
-	}
+	},
+
+    "makeCanonpath": {
+        "description": "Create canonpath() definition",
+        "prefix": ["canonpath"],
+        "body": [
+            "canonpath() {",
+            "    type -t realpath.sh &>/dev/null && {",
+            "        realpath.sh -f \"\\$@\"",
+            "        return",
+            "    }",
+            "    type -t readlink &>/dev/null && {",
+            "        readlink -f \"\\$@\"",
+            "        return",
+            "    }",
+            "    # Fallback: Ok for rough work only, does not handle some corner cases:",
+            "    ( cd -L -- \"\\$(dirname -- \\$0)\"; echo \"\\$(pwd -P)/\\$(basename -- \\$0)\" )",
+            "}",
+        ]
+    },
 }
