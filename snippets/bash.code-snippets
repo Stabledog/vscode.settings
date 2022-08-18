@@ -42,9 +42,9 @@
             "",
             "[[ -z \\${sourceMe} ]] && {",
             "    main \"\\$@\" ",
-            "    exit",
+            "    builtin exit",
             "}",
-            "true",
+            "command true",
             ""
 		]
 	},
@@ -54,16 +54,16 @@
         "prefix": ["canonpath"],
         "body": [
             "canonpath() {",
-            "    type -t realpath.sh &>/dev/null && {",
+            "    builtin type -t realpath.sh &>/dev/null && {",
             "        realpath.sh -f \"\\$@\"",
             "        return",
             "    }",
-            "    type -t readlink &>/dev/null && {",
-            "        readlink -f \"\\$@\"",
+            "    builtin type -t readlink &>/dev/null && {",
+            "        command readlink -f \"\\$@\"",
             "        return",
             "    }",
             "    # Fallback: Ok for rough work only, does not handle some corner cases:",
-            "    ( cd -L -- \"\\$(dirname -- \\$0)\"; echo \"\\$(pwd -P)/\\$(basename -- \\$0)\" )",
+            "    ( builtin cd -L -- \"\\$(dirname -- \\$0)\"; builtin echo \"\\$(pwd -P)/\\$(basename -- \\$0)\" )",
             "}",
         ]
     },
