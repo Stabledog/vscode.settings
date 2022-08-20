@@ -35,6 +35,7 @@
     "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
+    "editor.experimental.stickyScroll.enabled": true,
     "editor.folding": false,
     "editor.fontFamily": "Consolas",
     "editor.guides.bracketPairs": true,
@@ -59,9 +60,7 @@
     "files.trimTrailingWhitespace": true,
     "git.confirmSync": false,
     "git.ignoreMissingGitWarning": true,
-    "githubPullRequests.remotes": [
-        "origin"
-    ],
+    "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
