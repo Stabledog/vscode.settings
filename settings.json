@@ -59,6 +59,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.confirmSync": false,
+    "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.views.branches.branches.layout": "list",
@@ -89,6 +90,9 @@
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "c:\\.ssh\\ssh.bat",
     "remote.SSH.remotePlatform": {
+        "gnrld-pw-104": "linux",
+        "gnrld-pw-553": "linux",
+        "gnrld-pw-705": "linux",
         "stable.burner": "linux",
         "stable.home": "linux"
     },
@@ -156,7 +160,8 @@
     "telemetry.enableTelemetry": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
-    "terminal.integrated.defaultProfile.windows": "Cygwin",
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
@@ -350,6 +355,7 @@
         "*.md": "default"
     },
     "workbench.fontAliasing": true,
+    "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
