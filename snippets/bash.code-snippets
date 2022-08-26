@@ -79,4 +79,28 @@
             "}",
         ]
     },
+    "stub-func": {
+        "description": "Define the stub() function",
+        "prefix": ["stub-func"],
+        "body": [
+            "stub() {",
+            "    # Print debug output to stderr.  Call like this:",
+            "    #   stub \\${FUNCNAME[0]}.\\$LINENO item item item",
+            "    #",
+            "    builtin echo -n \"  <<< STUB\" >&2",
+            "    for arg in \"\\$@\"; do",
+            "        echo -n \"[\\${arg}] \" >&2",
+            "    done",
+            "    echo \" >>> \" >&2",
+            "}",
+        ]
+    },
+    "stub-call": {
+        "description": "Call the stub() function with context and message",
+        "prefix": ["stub-call"],
+        "body": [
+            "    stub \"\\${FUNCNAME[0]}.\\${LINENO}\" \"\\$@\" \"<Put your message here>\"",
+        ]
+    },
 }
+
