@@ -77,7 +77,7 @@
             "    echo \"_DEBUG_ enabled, sourceMeRun.taskrc is loading.\" >&2",
             "    [[ -f ~/bin/sourceMeRun.taskrc ]] && source ~/bin/sourceMeRun.taskrc",
             "} || {",
-            "    bpoint() {} # no-op",
+            "    bpoint() { : ;} # no-op",
             "}",
             ""
         ]
