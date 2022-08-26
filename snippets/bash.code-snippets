@@ -67,4 +67,15 @@
             "}",
         ]
     },
+    "sourceMeRun": {
+        "description": "Include sourceMeRun.taskrc",
+        "prefix": ["bpoint", "sourceMeRun"],
+        "body": [
+            "# Defines bpoint():",
+            "[[ -n \\$_DEBUG_ ]] && {",
+            "    echo \"_DEBUG_ enabled, sourceMeRun.taskrc is loading.\" >&2",
+            "    [[ -f ~/bin/sourceMeRun.taskrc ]] && source ~/bin/sourceMeRun.taskrc",
+            "}",
+        ]
+    },
 }
