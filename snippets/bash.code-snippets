@@ -52,6 +52,7 @@
     "makeCanonpath": {
         "description": "Create canonpath() definition",
         "prefix": ["canonpath"],
+        "scope": "shellscript",
         "body": [
             "canonpath() {",
             "    builtin type -t realpath.sh &>/dev/null && {",
@@ -70,6 +71,7 @@
     "sourceMeRun": {
         "description": "Include sourceMeRun.taskrc",
         "prefix": ["bpoint", "sourceMeRun"],
+        "scope": "shellscript",
         "body": [
             "# Defines bpoint():",
             "_DEBUG_=\\${_DEBUG_:-0}",
@@ -85,6 +87,7 @@
     "stub-func": {
         "description": "Define the stub() function",
         "prefix": ["stub-func"],
+        "scope": "shellscript",
         "body": [
             "stub() {",
             "    # Print debug output to stderr.  Call like this:",
@@ -101,12 +104,14 @@
     "stub-call": {
         "description": "Call the stub() function with context and message",
         "prefix": ["stub-call"],
+        "scope": "shellscript",
         "body": [
             "stub \"\\${FUNCNAME[0]}.\\${LINENO}\" \"\\$@\" \"<Put your message here>\"",
         ]
     },
 	"die": {
 		"prefix": "die",
+        "scope": "shellscript",
 		"body": [
 			"die() {",
 			"    echo \"ERROR: $*\" >&2",
@@ -117,6 +122,7 @@
 	},
     "python3_detector": {
         "prefix": "python3",
+        "scope": "shellscript",
         "body": [
             "python3() {",
             "\t[[ -n ${BEST_PY3} ]] && { \"\\$BEST_PY3\" \"\\$@\" ; return; }",
@@ -137,6 +143,7 @@
     },
 	"parseArgs": {
 		"prefix": "parseArgs",
+        "scope": "shellscript",
 		"body": [
 			"parseArgs() {",
 			"    [[ $# -eq 0 ]] && die \"Expected arguments\"",

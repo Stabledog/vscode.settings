@@ -16,12 +16,19 @@
 	// 	"description": "Log output to console"
 	// }
     "realpath extraction": {
+        "scope": "makefile",
         "description": "Get the canonical dir for current Makefile",
         "prefix": ["realpath","readlink","abspath"],
-        "scope": "Makefile",
         "body": [
             "# See https://stackoverflow.com/a/73509979/237059",
             "absdir:=\\$(dir \\$(realpath \\$(lastword \\$(MAKEFILE_LIST))))",
         ]
     },
+    "phony targets declaration": {
+        "scope": "makefile",
+        "description": "Declare .PHONY target names",
+        "body":[
+            ".PHONY: phony1 phony2"
+        ]
+    }
 }
