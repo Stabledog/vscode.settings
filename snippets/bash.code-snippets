@@ -72,7 +72,7 @@
         "prefix": ["bpoint", "sourceMeRun"],
         "body": [
             "# Defines bpoint():",
-            "_DEBUG_=\\${_DEBUG_}:-0",
+            "_DEBUG_=\\${_DEBUG_:-0}",
             "[[ \\$_DEBUG_ -eq 1 ]] && {",
             "    echo \"_DEBUG_ enabled, sourceMeRun.taskrc is loading.\" >&2",
             "    [[ -f ~/bin/sourceMeRun.taskrc ]] && source ~/bin/sourceMeRun.taskrc",
