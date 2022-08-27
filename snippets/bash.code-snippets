@@ -67,4 +67,101 @@
             "}",
         ]
     },
+    "sourceMeRun": {
+        "description": "Include sourceMeRun.taskrc",
+        "prefix": ["bpoint", "sourceMeRun"],
+        "body": [
+            "# Defines bpoint():",
+            "_DEBUG_=1",
+            "[[ -n \\$_DEBUG_ ]] && {",
+            "    echo \"_DEBUG_ enabled, sourceMeRun.taskrc is loading.\" >&2",
+            "    [[ -f ~/bin/sourceMeRun.taskrc ]] && source ~/bin/sourceMeRun.taskrc",
+            "} || {",
+            "    bpoint() { : ;} # no-op",
+            "}",
+            ""
+        ]
+    },
+    "stub-func": {
+        "description": "Define the stub() function",
+        "prefix": ["stub-func"],
+        "body": [
+            "stub() {",
+            "    # Print debug output to stderr.  Call like this:",
+            "    #   stub \\${FUNCNAME[0]}.\\$LINENO item item item",
+            "    #",
+            "    builtin echo -n \"  <<< STUB\" >&2",
+            "    for arg in \"\\$@\"; do",
+            "        echo -n \"[\\${arg}] \" >&2",
+            "    done",
+            "    echo \" >>> \" >&2",
+            "}",
+        ]
+    },
+    "stub-call": {
+        "description": "Call the stub() function with context and message",
+        "prefix": ["stub-call"],
+        "body": [
+            "stub \"\\${FUNCNAME[0]}.\\${LINENO}\" \"\\$@\" \"<Put your message here>\"",
+        ]
+    },
+	"die": {
+		"prefix": "die",
+		"body": [
+			"die() {",
+			"    echo \"ERROR: $*\" >&2",
+			"    exit 1",
+			"}"
+		],
+		"description": "Terminate shell with error 1 and message"
+	},
+    "python3_detector": {
+        "prefix": "python3",
+        "body": [
+            "python3() {",
+            "\t[[ -n ${BEST_PY3} ]] && { \"\\$BEST_PY3\" \"\\$@\" ; return; }",
+            "\tlocal cand;",
+            "\tfor cand in python3.{10,9,8,7} python3; do",
+            "\t\tlocal py_cand=\"\\$( which ${cand} )\"",
+            "\t\t\"\\$py_cand\" -c 'import termios' &>/dev/null || \\",
+            "\t\t\tcontinue  # We don't want a dos/windows version",
+            "\t\tBEST_PY3=\"${py_cand}\"",
+            "\t\tbreak",
+            "\tdone",
+            "\t[[ -z \"\\$BEST_PY3\" ]] && { echo \"ERROR: no python3 on path\" >&2; return;  }",
+            "\t\"\\$BEST_PY3\" \"\\$@\"",
+            "}",
+            ""
+        ],
+        "description": "Detect installed version of python3 and then invoke it"
+    },
+	"parseArgs": {
+		"prefix": "parseArgs",
+		"body": [
+			"parseArgs() {",
+			"    [[ $# -eq 0 ]] && die \"Expected arguments\"",
+			"    local filename  # Declare arguments to be parsed as local",
+			"    while [[ -n \\$1 ]]; do",
+			"        case \\$1 in",
+			"            -h|--help)",
+			"                #  do_help $*",
+			"                exit 1",
+			"                ;;",
+			"            -f|--filename)",
+			"                filename=\\$2",
+			"                shift",
+			"                ;;",
+			"            *)",
+			"                unknown_args=\"\\$unknown_args \\$1\"",
+			"                ;;",
+			"        esac",
+			"        shift",
+			"    done",
+			"    # Validate that minimal args have been parsed:",
+			"    # ??",
+			"}"
+		],
+		"description": "Iterate args and interpret them"
+	}
 }
+
