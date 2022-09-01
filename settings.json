@@ -43,8 +43,8 @@
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
-    "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
     "editor.wordWrap": "bounded",
@@ -313,7 +313,6 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -355,9 +354,13 @@
         "*.md": "default"
     },
     "workbench.fontAliasing": true,
-    "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
+    "gitlens.currentLine.enabled": false,
+    "editor.codeLens": false,
+    "editor.renderControlCharacters": false,
+    "window.zoomLevel": 1,
+    "workbench.layoutControl.enabled": false
 }
