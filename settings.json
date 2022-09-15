@@ -21,7 +21,6 @@
     "debug.console.acceptSuggestionOnEnter": "on",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
-    "diffEditor.renderSideBySide": true,
     "docker.containers.sortBy": "CreatedTime",
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
@@ -224,6 +223,7 @@
             "path": "c:\\Windows\\system32\\wsl.exe"
         }
     },
+    "terminal.integrated.smoothScrolling": true,
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -339,7 +339,9 @@
         "terminalCursor.background": "#A5A2A2",
         "terminalCursor.foreground": "#A5A2A2",
         "window.activeBorder": "#00ff00",
-        "window.inactiveBorder": "#ff0000"
+        "window.inactiveBorder": "#52309b",
+        "tab.unfocusedActiveForeground": "#808080",
+        "tab.activeForeground": "#9272c2"
     },
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.decorations.colors": true,
@@ -360,7 +362,12 @@
     "zzzz--------------endmarker--------------------": 0,
     "gitlens.currentLine.enabled": false,
     "editor.codeLens": false,
-    "editor.renderControlCharacters": false,
+    "workbench.layoutControl.enabled": false,
     "window.zoomLevel": 1,
-    "workbench.layoutControl.enabled": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "docker.containers.description": [
+        "Status"
+    ],
+    "docker.containers.groupBy": "Status",
+    "terminal.integrated.defaultProfile.linux": "mylibs/bash",
 }
