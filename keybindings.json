@@ -42,12 +42,10 @@
     {
         "command": "workbench.action.terminal.focusNext",
         "key": "ctrl+a n",
-        "when": "terminalFocus"
     },
     {
         "command": "workbench.action.terminal.focusPrevious",
         "key": "ctrl+a p",
-        "when": "terminalFocus"
     },
     {
         "command": "shellLauncher.launch",
