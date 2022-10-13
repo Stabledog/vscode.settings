@@ -100,9 +100,9 @@
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
-    "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
-    "remote.containers.dotfiles.repository": "https://bbgithub.dev.bloomberg.com/lmatheson4/remote-containers-dotfiles",
-    "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
+    //"remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
+    //"remote.containers.dotfiles.repository": "https://bbgithub.dev.bloomberg.com/lmatheson4/remote-containers-dotfiles",
+    //"remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
@@ -151,23 +151,20 @@
         },
         "Git Bash": {
             "source": "Git Bash",
+        },
+        "PowerShell": {
+            "icon": "terminal-powershell",
+            "source": "PowerShell"
+        },
+        "Ubuntu-20.04 (WSL)": {
             "args": [
-                "-l"
+                "-d",
+                "Ubuntu-20.04",
+                "--",
+                "/bin/bash",
+                "--login"
             ],
-            "PowerShell": {
-                "icon": "terminal-powershell",
-                "source": "PowerShell"
-            },
-            "Ubuntu-20.04 (WSL)": {
-                "args": [
-                    "-d",
-                    "Ubuntu-20.04",
-                    "--",
-                    "/bin/bash",
-                    "--login"
-                ],
-                "path": "C:\\WINDOWS\\System32\\wsl.exe"
-            },
+            "path": "C:\\WINDOWS\\System32\\wsl.exe"
         },
     },
     "terminal.integrated.smoothScrolling": true,
@@ -290,7 +287,7 @@
         "tab.unfocusedActiveForeground": "#808080",
         "tab.activeForeground": "#9272c2"
     },
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -318,4 +315,5 @@
     "terminal.integrated.defaultProfile.linux": "mylibs/bash",
     "window.commandCenter": false,
     "window.zoomLevel": 2,
+    "explorer.confirmDelete": false,
 }
