@@ -21,6 +21,11 @@
     "debug.console.acceptSuggestionOnEnter": "on",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "docker.containers.description": [
+        "Status"
+    ],
+    "docker.containers.groupBy": "Status",
     "docker.containers.sortBy": "CreatedTime",
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
@@ -31,6 +36,7 @@
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "editor.bracketPairColorization.enabled": true,
+    "editor.codeLens": false,
     "editor.cursorStyle": "block",
     "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
@@ -48,6 +54,7 @@
     "editor.tabSize": 4,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
+    "explorer.confirmDelete": false,
     "extensions.autoUpdate": false,
     "files.associations": {
         "*.jrnl": "markdown",
@@ -61,10 +68,11 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    "gitlens.currentLine.enabled": false,
     "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
-    "http.proxyStrictSSL": false,
     "http.proxy": "http://proxy.bloomberg.com:81",
+    "http.proxyStrictSSL": false,
     "https.proxy": "http://proxy.bloomberg.com:81",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
@@ -82,10 +90,10 @@
     },
     "php.validate.enable": false,
     "prettier.tabWidth": 4,
-    "python.jediEnabled": true,
-    "python.languageServer": "Pylance",
     "python.analysis.completeFunctionParens": false,
     "python.autoComplete.addBrackets": false,
+    "python.jediEnabled": true,
+    "python.languageServer": "Pylance",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
@@ -100,9 +108,6 @@
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
-    //"remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
-    //"remote.containers.dotfiles.repository": "https://bbgithub.dev.bloomberg.com/lmatheson4/remote-containers-dotfiles",
-    //"remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
@@ -111,6 +116,7 @@
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.cwd": "${workspaceFolder}",
+    "terminal.integrated.defaultProfile.linux": "mylibs/bash",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
@@ -118,13 +124,6 @@
         "CHERE_INVOKING": "1"
     },
     "terminal.integrated.profiles.linux": {
-        "wslNew": {
-            "args": [
-                "--rcfile",
-                "/home/lmatheson4/.bashrc"
-            ],
-            "path": "/bin/bash"
-        },
         "wsl2": {
             "args": [
                 "-d",
@@ -135,6 +134,13 @@
                 "/home/lmatheson4/.wsl.rc"
             ],
             "path": "/c/WINDOWS/system32/wsl.exe"
+        },
+        "wslNew": {
+            "args": [
+                "--rcfile",
+                "/home/lmatheson4/.bashrc"
+            ],
+            "path": "/bin/bash"
         }
     },
     "terminal.integrated.profiles.windows": {
@@ -150,7 +156,7 @@
             "path": "C:\\cygwin64\\cygwin.bat"
         },
         "Git Bash": {
-            "source": "Git Bash",
+            "source": "Git Bash"
         },
         "PowerShell": {
             "icon": "terminal-powershell",
@@ -165,9 +171,10 @@
                 "--login"
             ],
             "path": "C:\\WINDOWS\\System32\\wsl.exe"
-        },
+        }
     },
     "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.tabs.enabled": true,
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -255,13 +262,17 @@
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.commandCenter": false,
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
+    "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
     "workbench.colorCustomizations": {
+        "tab.activeForeground": "#9272c2",
+        "tab.unfocusedActiveForeground": "#808080",
         "terminal.ansiBlack": "#090300",
         "terminal.ansiBlue": "#01A0E4",
         "terminal.ansiBrightBlack": "#5C5855",
@@ -283,11 +294,9 @@
         "terminalCursor.background": "#A5A2A2",
         "terminalCursor.foreground": "#A5A2A2",
         "window.activeBorder": "#00ff00",
-        "window.inactiveBorder": "#52309b",
-        "tab.unfocusedActiveForeground": "#808080",
-        "tab.activeForeground": "#9272c2"
+        "window.inactiveBorder": "#52309b"
     },
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -300,20 +309,9 @@
         "*.md": "default"
     },
     "workbench.fontAliasing": true,
+    "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0,
-    "gitlens.currentLine.enabled": false,
-    "editor.codeLens": false,
-    "workbench.layoutControl.enabled": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "docker.containers.description": [
-        "Status"
-    ],
-    "docker.containers.groupBy": "Status",
-    "terminal.integrated.defaultProfile.linux": "mylibs/bash",
-    "window.commandCenter": false,
-    "window.zoomLevel": 2,
-    "explorer.confirmDelete": false,
+    "zzzz--------------endmarker--------------------": 0
 }
