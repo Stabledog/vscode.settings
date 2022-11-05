@@ -21,7 +21,12 @@
     "debug.console.acceptSuggestionOnEnter": "on",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
-    "diffEditor.renderSideBySide": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "docker.containers.description": [
+        "Status"
+    ],
+    "docker.containers.groupBy": "Status",
+    "docker.containers.sortBy": "CreatedTime",
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -59,6 +64,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.confirmSync": false,
+    "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
@@ -86,52 +92,23 @@
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.remotePlatform": {
         "Macophile": "macOS",
-        "macophile": "macOS",
         "stable.burner": "linux",
         "stable.home": "linux",
         "stage.njasianmed.com": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
-    "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
-    "remote.containers.dotfiles.repository": "https://github.com/Stabledog/remote-containers-dotfiles",
-    "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
-    "remoteHub.gitProtocol": "ssh",
-    "remotefs.remote": {
-        "prod_dreamhost": {
-            "host": "john-witherspoon.dreamhost.com",
-            "port": 22,
-            "privateKeyPath": "/home/lmatheson4/.ssh/id_lesma",
-            "rootPath": "/home/debvap",
-            "scheme": "sftp",
-            "username": "debvap"
-        },
-        "stage_dreamhost": {
-            "host": "john-witherspoon.dreamhost.com",
-            "port": 22,
-            "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
-            "rootPath": "/home/debweb_docker",
-            "scheme": "sftp",
-            "username": "debweb_docker"
-        },
-        "wsl_home": {
-            "host": "127.0.0.1",
-            "port": 2222,
-            "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
-            "rootPath": "/home/lmatheson4",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        }
-    },
     "security.workspace.trust.untrustedFiles": "open",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
-    "terminal.integrated.defaultProfile.osx": "bash",
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "terminal.integrated.defaultProfile.linux": "wsl",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
@@ -144,17 +121,6 @@
             ],
             "path": "/bin/bash"
         },
-        "wsl2": {
-            "args": [
-                "-d",
-                "Ubuntu-20.04",
-                "--",
-                "/bin/bash",
-                "--rcfile",
-                "/home/lmatheson4/.wsl.rc"
-            ],
-            "path": "/c/WINDOWS/system32/wsl.exe"
-        }
     },
     "terminal.integrated.profiles.osx": {
         "bash": {
@@ -217,6 +183,8 @@
             "path": "c:\\Windows\\system32\\wsl.exe"
         }
     },
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.tabs.enabled": true,
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -304,6 +272,7 @@
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.commandCenter": false,
     "window.newWindowDimensions": "inherit",
     "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
@@ -348,6 +317,7 @@
         "*.pdf": "latex-workshop-pdf-hook"
     },
     "workbench.fontAliasing": true,
+    "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
