@@ -35,7 +35,6 @@
     "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
     "editor.emptySelectionClipboard": false,
-    "editor.experimental.stickyScroll.enabled": true,
     "editor.folding": false,
     "editor.fontFamily": "Consolas",
     "editor.guides.bracketPairs": true,
@@ -44,7 +43,8 @@
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
     "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
     "editor.wordWrap": "bounded",
@@ -84,12 +84,12 @@
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
     "remote.SSH.lockfilesInTmp": true,
-    "remote.SSH.path": "c:\\.ssh\\ssh.bat",
     "remote.SSH.remotePlatform": {
         "Macophile": "macOS",
         "macophile": "macOS",
         "stable.burner": "linux",
-        "stable.home": "linux"
+        "stable.home": "linux",
+        "stage.njasianmed.com": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
@@ -102,30 +102,6 @@
     },
     "remoteHub.gitProtocol": "ssh",
     "remotefs.remote": {
-        "gnrl_bb": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/bb",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
-        "gnrl_home": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/home18/lmatheson4",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
-        "gnrl_mbig": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/bb/mbigd/mbig497",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
         "prod_dreamhost": {
             "host": "john-witherspoon.dreamhost.com",
             "port": 22,
@@ -358,7 +334,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#ff0000"
     },
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
