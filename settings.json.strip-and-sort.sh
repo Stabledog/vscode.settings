@@ -1,1 +1,1 @@
-/home/lmatheson/bin/settings.json.strip-and-sort.sh
+/home/lmatheson4/bin/settings.json.strip-and-sort.sh
