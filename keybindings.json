@@ -48,10 +48,6 @@
         "key": "ctrl+a p",
     },
     {
-        "command": "shellLauncher.launch",
-        "key": "ctrl+a t"
-    },
-    {
         "command": "workbench.action.terminal.kill",
         "key": "ctrl+a x"
     },
@@ -183,5 +179,15 @@
     {
         "command": "-workbench.action.replaceInFiles",
         "key": "ctrl+shift+h"
+    },
+    {
+        "key": "ctrl+a t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     }
 ]
