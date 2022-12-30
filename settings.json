@@ -2,17 +2,11 @@
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[vue]": {
-        "editor.defaultFormatter": "yoyo930021.vuter"
     },
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
@@ -21,6 +15,7 @@
     "debug.console.acceptSuggestionOnEnter": "on",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
+    "dev.containers.executeInWSL": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.containers.description": [
         "Status"
@@ -102,19 +97,25 @@
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
     "remote.SSH.remotePlatform": {
+        "dev-10-34-26-101.pw1.bcc.bloomberg.com": "linux",
+        "dxspj-ob-388": "linux",
+        "dxspj-pw-575": "linux",
         "gnrld-pw-104": "linux",
         "gnrld-pw-553": "linux",
         "gnrld-pw-705": "linux",
+        "my-bcc-1": "linux",
         "stable.burner": "linux",
-        "stable.home": "linux"
+        "stable.home": "linux",
+        "traind-pw-177": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
-    "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
     "security.workspace.trust.untrustedFiles": "open",
+    "spaces.enableBergButton": true,
+    "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.cwd": "${workspaceFolder}",
@@ -163,7 +164,7 @@
             "path": "C:\\WINDOWS\\System32\\wsl.exe"
         }
     },
-    "terminal.integrated.scrollback": 20000,
+    "terminal.integrated.scrollback": 30000,
     "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.tabs.enabled": true,
@@ -257,7 +258,7 @@
     "window.commandCenter": false,
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -288,7 +289,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#52309b"
     },
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Default Light+",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,

@@ -8,6 +8,16 @@
         "key": "ctrl+a ,"
     },
     {
+        "command": "workbench.action.terminal.scrollPageDown",
+        "key": "pagedown",
+        "when": "terminalFocus"
+    },
+    {
+        "command": "workbench.action.terminal.scrollPageUp",
+        "key": "pageup",
+        "when": "terminalFocus"
+    },
+    {
         "command": "workbench.action.toggleSidebarVisibility",
         "key": "ctrl+a b"
     },
@@ -189,5 +199,13 @@
         "key": "ctrl+shift+`",
         "command": "-workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+backspace",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
     }
 ]
