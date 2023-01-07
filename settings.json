@@ -12,9 +12,10 @@
     "breadcrumbs.enabled": true,
     "cSpell.enabled": false,
     "cmake.configureOnOpen": false,
-    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.console.acceptSuggestionOnEnter": "off",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
+    "editor.lineNumbers": "on",
     "dev.containers.executeInWSL": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.containers.description": [
@@ -106,7 +107,10 @@
         "my-bcc-1": "linux",
         "stable.burner": "linux",
         "stable.home": "linux",
-        "traind-pw-177": "linux"
+        "traind-pw-177": "linux",
+        "traind-pw-679": "linux",
+        "devide-pw-295": "linux",
+        "trainx-pw-001": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
