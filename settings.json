@@ -1,9 +1,14 @@
 {
+    "C_Cpp.intelliSenseEngine": "disabled",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[python]": {
+        "editor.formatOnSave": false,
+        "editor.wordBasedSuggestions": false
     },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -15,7 +20,6 @@
     "debug.console.acceptSuggestionOnEnter": "off",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
-    "editor.lineNumbers": "on",
     "dev.containers.executeInWSL": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.containers.description": [
@@ -42,6 +46,7 @@
     "editor.folding": false,
     "editor.fontFamily": "Consolas",
     "editor.guides.bracketPairs": true,
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
@@ -61,6 +66,7 @@
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "git-graph.commitDetailsView.location": "Docked to Bottom",
     "git.confirmSync": false,
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
@@ -70,7 +76,6 @@
     "html.autoClosingTags": true,
     "http.proxy": "http://proxy.bloomberg.com:81",
     "http.proxyStrictSSL": false,
-    "https.proxy": "http://proxy.bloomberg.com:81",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveshare.allowedDomains": [
@@ -99,6 +104,7 @@
     "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
     "remote.SSH.remotePlatform": {
         "dev-10-34-26-101.pw1.bcc.bloomberg.com": "linux",
+        "devide-pw-295": "linux",
         "dxspj-ob-388": "linux",
         "dxspj-pw-575": "linux",
         "gnrld-pw-104": "linux",
@@ -109,7 +115,6 @@
         "stable.home": "linux",
         "traind-pw-177": "linux",
         "traind-pw-679": "linux",
-        "devide-pw-295": "linux",
         "trainx-pw-001": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
@@ -293,7 +298,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#52309b"
     },
-    "workbench.colorTheme": "Default Light+",
+    "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
