@@ -145,23 +145,15 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash"
+        },
+        "git-bash": {
+            "args": [
+                "--login"
+            ],
+            "path": "/mnt/c/Program Files/Git/bin/bash.exe"
         }
     },
     "terminal.integrated.profiles.windows": {
-        "Command Prompt": {
-            "args": [],
-            "icon": "terminal-cmd",
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ]
-        },
-        "Cygwin": {
-            "path": "C:\\cygwin64\\cygwin.bat"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
         "PowerShell": {
             "icon": "terminal-powershell",
             "source": "PowerShell"
@@ -305,7 +297,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#52309b"
     },
-    "workbench.colorTheme": "Shades Green II",
+    "workbench.colorTheme": "Shades Morita W",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
