@@ -1,5 +1,5 @@
 {
-    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.intelliSenseEngine": "default",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -73,8 +73,10 @@
     "git.confirmSync": false,
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
+    "git.openRepositoryInParentFolders": "never",
     "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.currentLine.enabled": false,
+    "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
     "http.proxy": "http://proxy.bloomberg.com:81",
@@ -263,13 +265,13 @@
     "window.commandCenter": false,
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
     "workbench.colorCustomizations": {
-        "activityBar.background": "#0F3428",
+        "activityBar.background": "#46c49c",
         "tab.activeForeground": "#9272c2",
         "tab.unfocusedActiveForeground": "#808080",
         "terminal.ansiBlack": "#090300",
@@ -288,7 +290,7 @@
         "terminal.ansiRed": "#DB2D20",
         "terminal.ansiWhite": "#A5A2A2",
         "terminal.ansiYellow": "#FDED02",
-        "terminal.background": "#323e40",
+        "terminal.background": "#141414",
         "terminal.foreground": "#A5A2A2",
         "terminalCursor.background": "#f8ec0a",
         "terminalCursor.foreground": "#f8ec0a",
@@ -297,7 +299,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#52309b"
     },
-    "workbench.colorTheme": "Shades Morita W",
+    "workbench.colorTheme": "Default Light+ Experimental",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
