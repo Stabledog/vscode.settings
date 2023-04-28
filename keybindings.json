@@ -278,5 +278,19 @@
         "key": "ctrl+shift+g",
         "command": "-workbench.view.scm",
         "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+l ctrl+o",
+        "command": "-l13Diff.action.output.show",
+        "when": "l13DiffFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+l ctrl+f",
+        "command": "-workbench.view.extension.l13Diff"
     }
 ]
