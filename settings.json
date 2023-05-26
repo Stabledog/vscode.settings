@@ -1,32 +1,37 @@
 {
+    "C_Cpp.intelliSenseEngine": "default",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[python]": {
+        "editor.formatOnSave": false,
+        "editor.wordBasedSuggestions": false
+    },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "[vue]": {
-        "editor.defaultFormatter": "yoyo930021.vuter"
-    },
+    "audioCues.volume": 0,
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
     "cSpell.enabled": false,
     "cmake.configureOnOpen": false,
-    "debug.console.acceptSuggestionOnEnter": "on",
+    "csv-edit.initiallyIsInReadonlyMode": true,
+    "csv-edit.readOption_hasHeader": "true",
+    "debug.console.acceptSuggestionOnEnter": "off",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
+    "dev.containers.executeInWSL": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.containers.description": [
         "Status"
     ],
-    "docker.containers.groupBy": "Status",
+    "docker.containers.groupBy": "Compose Project Name",
     "docker.containers.sortBy": "CreatedTime",
+    "docker.images.groupBy": "RepositoryNameAndTag",
+    "docker.volumes.groupBy": "None",
     "editWithShell.processEntireTextIfNoneSelected": true,
     "editWithShell.shell.linux": "/bin/bash",
     "editWithShell.shell.osx": "/bin/bash",
@@ -36,6 +41,7 @@
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "editor.bracketPairColorization.enabled": true,
+    "editor.codeLens": false,
     "editor.cursorStyle": "block",
     "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
@@ -43,17 +49,20 @@
     "editor.folding": false,
     "editor.fontFamily": "Consolas",
     "editor.guides.bracketPairs": true,
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
     "editor.renderControlCharacters": false,
     "editor.renderWhitespace": "all",
-    "editor.stickyScroll.enabled": true,
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
+    "explorer.confirmDelete": false,
     "extensions.autoUpdate": false,
     "files.associations": {
         "*.jrnl": "markdown",
@@ -63,11 +72,17 @@
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "git-graph.commitDetailsView.location": "Docked to Bottom",
     "git.confirmSync": false,
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
+    "git.openRepositoryInParentFolders": "never",
+    "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
+    "http.proxy": "http://proxy.bloomberg.com:81",
+    "http.proxyStrictSSL": false,
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
     "liveshare.allowedDomains": [
@@ -84,12 +99,16 @@
     },
     "php.validate.enable": false,
     "prettier.tabWidth": 4,
+    "python.analysis.completeFunctionParens": false,
+    "python.autoComplete.addBrackets": false,
     "python.jediEnabled": true,
-    "python.languageServer": "Jedi",
+    "python.languageServer": "Pylance",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
+    "remote.SSH.enableDynamicForwarding": false,
     "remote.SSH.lockfilesInTmp": true,
+    "remote.SSH.path": "c:\\.ssh\\ssh.bat",
     "remote.SSH.remotePlatform": {
         "Macophile": "macOS",
         "stable.burner": "linux",
@@ -98,43 +117,44 @@
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
+    "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
+    "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
+    "remote.containers.dotfiles.repository": "http://put-url-here",
     "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
     "security.workspace.trust.untrustedFiles": "open",
+    "spaces.enableBergButton": true,
+    "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
+    "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
-    "terminal.integrated.defaultProfile.linux": "wsl",
+    "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1"
     },
+    "terminal.integrated.localEchoEnabled": "on",
+    "terminal.integrated.localEchoStyle": "#C0C0C0",
     "terminal.integrated.profiles.linux": {
-        "wsl": {
+        "bash": {
+            "color": "terminal.ansiGreen",
+            "path": "/bin/bash"
+        },
+        "git-bash": {
             "args": [
+                "-d",
+                "Ubuntu-20.04",
+                "--",
+                "/bin/bash",
                 "--rcfile",
                 "/home/lmatheson4/.wsl.rc"
             ],
-            "path": "/bin/bash"
-        },
-    },
-    "terminal.integrated.profiles.osx": {
-        "bash": {
-            "args": [
-                "-l"
-            ],
-            "icon": "terminal-bash",
-            "path": "/usr/local/bin/bash"
-        },
-        "zsh": {
-            "args": [
-                "-l"
-            ],
-            "path": "zsh"
+            "path": "/c/WINDOWS/system32/wsl.exe"
         }
     },
     "terminal.integrated.profiles.windows": {
@@ -150,41 +170,36 @@
             "args": [
                 "--login"
             ],
+            "path": "C:\\cygwin64\\bin\\bash.exe",
             "env": {
-                "PATH": "{env:HOME}/.local/bin:{env:HOME}/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
-            },
-            "path": "C:\\cygwin64\\bin\\bash.exe"
+                "PATH": "/home/lesma/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
+            }
         },
         "Git Bash": {
-            "args": [
-                "--login"
-            ],
             "source": "Git Bash"
         },
         "PowerShell": {
             "icon": "terminal-powershell",
             "source": "PowerShell"
         },
-        "Powershell 7": {
-            "icon": "terminal-powershell",
-            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
-        },
         "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
                 "Ubuntu-20.04",
                 "--",
                 "/bin/bash",
                 "--login"
-            ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe"
+            ]
         },
         "bash": {
             "path": "c:\\Windows\\system32\\wsl.exe"
+        },
+        "Powershell 7": {
+            "icon": "terminal-powershell",
+            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
         }
     },
-    "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.tabs.enabled": true,
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -274,12 +289,17 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.commandCenter": false,
     "window.newWindowDimensions": "inherit",
+    "window.restoreWindows": "none",
     "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
     "workbench.colorCustomizations": {
+        "activityBar.background": "#caddd7",
+        "editorCursor.foreground": "#ff0000",
+        "tab.activeForeground": "#9272c2",
+        "tab.unfocusedActiveForeground": "#808080",
         "terminal.ansiBlack": "#090300",
         "terminal.ansiBlue": "#01A0E4",
         "terminal.ansiBrightBlack": "#5C5855",
@@ -296,12 +316,14 @@
         "terminal.ansiRed": "#DB2D20",
         "terminal.ansiWhite": "#A5A2A2",
         "terminal.ansiYellow": "#FDED02",
-        "terminal.background": "#090300",
+        "terminal.background": "#141414",
         "terminal.foreground": "#A5A2A2",
-        "terminalCursor.background": "#A5A2A2",
-        "terminalCursor.foreground": "#A5A2A2",
+        "terminalCursor.background": "#f8ec0a",
+        "terminalCursor.foreground": "#ff0000",
+        "titleBar.activeBackground": "#164839",
+        "titleBar.activeForeground": "#F3FCF9",
         "window.activeBorder": "#00ff00",
-        "window.inactiveBorder": "#ff0000"
+        "window.inactiveBorder": "#52309b"
     },
     "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.decorations.colors": true,
