@@ -81,7 +81,6 @@
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
     "html.autoClosingTags": true,
-    "http.proxy": "http://proxy.bloomberg.com:81",
     "http.proxyStrictSSL": false,
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.interactiveWindowMode": "perFile",
