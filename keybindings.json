@@ -292,5 +292,30 @@
     {
         "key": "ctrl+l ctrl+f",
         "command": "-workbench.view.extension.l13Diff"
+    },
+    {
+        "key": "alt+p",
+        "command": "-togglePreserveCase",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+p",
+        "command": "-toggleSearchPreserveCase",
+        "when": "searchViewletFocus"
+    },
+    {
+        "key": "alt+p",
+        "command": "-keybindings.editor.toggleSortByPrecedence",
+        "when": "inKeybindings"
+    },
+    {
+        "key": "alt+p",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "editorAreaVisible"
+    },
+    {
+        "key": "ctrl+k e",
+        "command": "-workbench.files.action.focusOpenEditorsView",
+        "when": "workbench.explorer.openEditorsView.active"
     }
 ]
