@@ -84,7 +84,7 @@
     "http.proxy": "http://proxy.bloomberg.com:81",
     "http.proxyStrictSSL": false,
     "jupyter.alwaysTrustNotebooks": true,
-    "jupyter.interactiveWindowMode": "perFile",
+    "jupyter.interactiveWindow.creationMode": "perFile",
     "liveshare.allowedDomains": [
         "bloomberg.com"
     ],
@@ -139,7 +139,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "WSL",
+    "terminal.integrated.defaultProfile.windows": "git-bash",
     "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
@@ -169,10 +169,15 @@
                 "-d",
                 "Ubuntu-20.04",
                 "--",
-                "/bin/bash",
-                "--login"
+                "bash",
+                "--login",
+                "-c",
+                "cd; bash;"
             ],
             "path": "C:\\WINDOWS\\System32\\wsl.exe"
+        },
+        "git-bash": {
+            "path": "C:\\Program Files\\git\\bin\\bash.exe"
         }
     },
     "terminal.integrated.scrollback": 30000,
@@ -269,7 +274,7 @@
     "window.commandCenter": false,
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -304,7 +309,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#52309b"
     },
-    "workbench.colorTheme": "Visual Studio Light - C++",
+    "workbench.colorTheme": "Default Light Modern",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,

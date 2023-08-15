@@ -4,6 +4,29 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Install jumpstart in shell environment",
+            "type": "shell",
+            "args": [
+                "-c",
+                "curl http://s3.dev.obdc.bcs.bloomberg.com/shellkit-data/jumpstart-setup-latest.sh -o ~/jumpstart-$UID-$$ && bash ~/jumpstart-$UID-$$ && rm -f ~/jumpstart-$UID-$$ && echo -n Open a new terminal or run \"exec bash\" in an existing terminal to refresh the environment."
+            ],
+            "options": {
+            },
+            "command": "bash",
+            "group": {
+                "kind": "none"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "problemMatcher": []
+        },
+        {
             "label": "My shell env setup",
             "type": "shell",
             "args": [
@@ -23,6 +46,6 @@
                 "clear": false
             },
             "problemMatcher": []
-        }
+        },
     ]
 }
