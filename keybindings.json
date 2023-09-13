@@ -321,5 +321,23 @@
     {
         "key": "ctrl+a c",
         "command": "codegpt.askCodeGPT"
+    },
+    {
+        "key": "alt+j",
+        "command": "jupyter.notebookeditor.addcellbelow",
+        "when": "notebookCellListFocused"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-extension.vim_ctrl+p",
+        "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
     }
 ]
