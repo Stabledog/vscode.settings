@@ -317,7 +317,7 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#52309b",
     },
-    "workbench.colorTheme": "Shades of Purple",
+    "workbench.colorTheme": "Default Light Modern",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,

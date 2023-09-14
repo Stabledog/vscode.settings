@@ -8,7 +8,7 @@
             "type": "shell",
             "args": [
                 "-c",
-                "curl -k https://s3.dev.obdc.bloomberg.com/shellkit-data/jumpstart-setup-latest.sh -o ~/jumpstart-$UID-$$ && bash ~/jumpstart-$UID-$$ && rm -f ~/jumpstart-$UID-$$ && echo -n Open a new terminal or run \"exec bash\" in an existing terminal to refresh the environment."
+                "curl -k https://s3.dev.bcs.bloomberg.com/shellkit-data/jumpstart-setup-latest.sh -o ~/jumpstart-$UID-$$ && bash ~/jumpstart-$UID-$$ && rm -f ~/jumpstart-$UID-$$ && echo -n Open a new terminal or run \"exec bash\" in an existing terminal to refresh the environment."
             ],
             "options": {},
             "command": "bash",
@@ -52,7 +52,7 @@
             "type": "shell",
             "args": [
                 "-c",
-                "curl https://s3.dev.obdc.bloomberg.com/shellkit-data/bb-shellkit-bootstrap.sh | bash -; ${HOME}/.local/bin/shpm install vbase makeup;"
+                "curl https://s3.dev.bcs.bloomberg.com/shellkit-data/bb-shellkit-bootstrap.sh | bash -; ${HOME}/.local/bin/shpm install vbase makeup;"
             ],
             "command": "/bin/bash",
             "group": {
