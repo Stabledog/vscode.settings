@@ -5,3 +5,7 @@ tmp
 History
 .ready
 snippets
+caches
+customBuiltinExtensionsCache.json
+machineid
+systemExtensionsCache.json
