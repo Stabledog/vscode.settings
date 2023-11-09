@@ -1,23 +1,29 @@
 {
-    "C_Cpp.intelliSenseEngine": "default",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+    },
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "vscode.html-language-features",
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features",
     },
     "[python]": {
         "editor.formatOnSave": false,
         "editor.wordBasedSuggestions": false,
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
     "audioCues.volume": 0,
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
+    "C_Cpp.intelliSenseEngine": "default",
+    "CodeGPT.model": "gpt-4",
+    "CodeGPT.maxTokens": 5000,
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
@@ -35,9 +41,6 @@
     "docker.containers.sortBy": "CreatedTime",
     "docker.images.groupBy": "RepositoryNameAndTag",
     "docker.volumes.groupBy": "None",
-    "editWithShell.processEntireTextIfNoneSelected": true,
-    "editWithShell.shell.linux": "/bin/bash",
-    "editWithShell.shell.osx": "/bin/bash",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.accessibilitySupport": "off",
@@ -83,8 +86,13 @@
     "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
-    "html.autoClosingTags": true,
-    "http.proxy": "http://proxy.bloomberg.com:81",
+    "gitlens.remotes": [
+        {
+            "domain": "bbgithub.dev.bloomberg.com",
+            "type": "GitHub",
+        },
+    ],
+    "html.autoClosingTags": false,
     "http.proxyStrictSSL": false,
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.askForKernelRestart": false,
@@ -138,7 +146,7 @@
         "ms-azuretools.vscode-docker": "workspace",
     },
     "security.allowedUNCHosts": [
-        "wsl.localhost"
+        "wsl.localhost",
     ],
     "security.workspace.trust.untrustedFiles": "open",
     "spaces.enableBergButton": true,
@@ -166,6 +174,9 @@
                 "--login",
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
+            "icon": "home",
+            "overrideName":true
+
         },
     },
     "terminal.integrated.profiles.windows": {
@@ -187,12 +198,15 @@
         },
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
+            "icon": "home",
+            "overrideName":true
         },
     },
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.tabs.enabled": true,
+    "typescript.autoClosingTags": false,
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
@@ -280,6 +294,8 @@
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.commandCenter": false,
+    "window.density.editorTabHeight": "compact",
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
     "window.zoomLevel": 1,
@@ -317,11 +333,12 @@
         "window.activeBorder": "#00ff00",
         "window.inactiveBorder": "#52309b",
     },
-    "workbench.colorTheme": "Default Light Modern",
+    "workbench.colorTheme": "Default Light+",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
     "workbench.editor.labelFormat": "short",
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.untitled.experimentalLanguageDetection": true,
     "workbench.editor.wrapTabs": false,
@@ -338,5 +355,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
 }
