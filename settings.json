@@ -1,37 +1,53 @@
 {
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
     },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features",
+    },
+    "[python]": {
+        "editor.formatOnSave": false,
+        "editor.wordBasedSuggestions": false,
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
-    "[vue]": {
-        "editor.defaultFormatter": "yoyo930021.vuter"
-    },
+    "accessibility.dimUnfocused.enabled": true,
+    "accessibility.dimUnfocused.opacity": 0.75,
+    "audioCues.volume": 0,
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
+    "C_Cpp.intelliSenseEngine": "default",
+    "CodeGPT.model": "gpt-4",
+    "CodeGPT.maxTokens": 5000,
     "cSpell.enabled": false,
+    "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
-    "debug.console.acceptSuggestionOnEnter": "on",
+    "csv-edit.initiallyIsInReadonlyMode": true,
+    "csv-edit.readOption_hasHeader": "true",
+    "debug.console.acceptSuggestionOnEnter": "off",
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
-    "diffEditor.renderSideBySide": true,
+    "dev.containers.executeInWSL": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "docker.containers.description": [
+        "Status",
+    ],
+    "docker.containers.groupBy": "Compose Project Name",
     "docker.containers.sortBy": "CreatedTime",
-    "editWithShell.processEntireTextIfNoneSelected": true,
-    "editWithShell.shell.linux": "/bin/bash",
-    "editWithShell.shell.osx": "/bin/bash",
+    "docker.images.groupBy": "RepositoryNameAndTag",
+    "docker.volumes.groupBy": "None",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
     "editor.accessibilitySupport": "off",
     "editor.autoClosingBrackets": "never",
     "editor.autoClosingQuotes": "never",
     "editor.bracketPairColorization.enabled": true,
+    "editor.codeLens": false,
     "editor.cursorStyle": "block",
     "editor.detectIndentation": false,
     "editor.dragAndDrop": false,
@@ -39,34 +55,42 @@
     "editor.folding": false,
     "editor.fontFamily": "Consolas",
     "editor.guides.bracketPairs": true,
+    "editor.lineNumbers": "on",
     "editor.minimap.enabled": false,
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
-    "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "none",
+    "editor.renderWhitespace": "all",
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
+    "explorer.confirmDelete": false,
     "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
     "files.associations": {
         "*.jrnl": "markdown",
         "*.prn": "tsv",
-        "*taskrc": "shellscript"
+        "*taskrc": "shellscript",
     },
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "git-graph.commitDetailsView.location": "Docked to Bottom",
     "git.confirmSync": false,
+    "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
+    "git.openRepositoryInParentFolders": "never",
+    "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
-    "html.autoClosingTags": true,
+    "html.autoClosingTags": false,
+    "http.proxyStrictSSL": false,
     "jupyter.alwaysTrustNotebooks": true,
-    "jupyter.interactiveWindowMode": "perFile",
-    "liveshare.allowedDomains": [
-        "bloomberg.com"
-    ],
+    "jupyter.askForKernelRestart": false,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "liveshare.anonymousGuestApproval": "reject",
     "liveshare.connectionMode": "relay",
     "liveshare.presence": false,
@@ -74,282 +98,202 @@
     "materialTheme.accent": "Orange",
     "notebook.cellToolbarLocation": {
         "default": "right",
-        "jupyter-notebook": "left"
+        "jupyter-notebook": "left",
     },
+    "notebook.lineNumbers": "on",
     "php.validate.enable": false,
     "prettier.tabWidth": 4,
+    "python.analysis.completeFunctionParens": false,
+    "python.autoComplete.addBrackets": false,
     "python.jediEnabled": true,
-    "python.languageServer": "Jedi",
+    "python.languageServer": "Pylance",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
+    "remote.SSH.enableDynamicForwarding": false,
     "remote.SSH.lockfilesInTmp": true,
-    "remote.SSH.path": "c:\\.ssh\\ssh.bat",
-    "remote.SSH.remotePlatform": {
+    "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
         "stable.burner": "linux",
-        "stable.home": "linux"
+        "stable.home": "linux",
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
-    "remote.containers.dotfiles.installCommand": "~/remote-containers-dotfiles/install.sh",
-    "remote.containers.dotfiles.targetPath": "~/remote-containers-dotfiles",
-    "remote.containers.dotfiles.repository": "http://put-url-here",
-    "remote.containers.executeInWSL": true,
     "remote.extensionKind": {
-        "ms-azuretools.vscode-docker": "workspace"
+        "ms-azuretools.vscode-docker": "workspace",
     },
-    "remoteHub.gitProtocol": "ssh",
-    "remotefs.remote": {
-        "gnrl_bb": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/bb",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
-        "gnrl_home": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/home18/lmatheson4",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
-        "gnrl_mbig": {
-            "host": "devsftp.bloomberg.com",
-            "port": 2222,
-            "privateKeyPath": "/c/Users/MathesonLes/.ssh/id_rsa.openssh",
-            "rootPath": "/bb/mbigd/mbig497",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        },
-        "prod_dreamhost": {
-            "host": "john-witherspoon.dreamhost.com",
-            "port": 22,
-            "privateKeyPath": "/home/lmatheson4/.ssh/id_lesma",
-            "rootPath": "/home/debvap",
-            "scheme": "sftp",
-            "username": "debvap"
-        },
-        "stage_dreamhost": {
-            "host": "john-witherspoon.dreamhost.com",
-            "port": 22,
-            "privateKeyPath": "/c/Projects/equilibrium-ac-web/.ssh/debweb_docker",
-            "rootPath": "/home/debweb_docker",
-            "scheme": "sftp",
-            "username": "debweb_docker"
-        },
-        "wsl_home": {
-            "host": "127.0.0.1",
-            "port": 2222,
-            "privateKeyPath": "c:\\cygwin\\home\\MathesonLes\\.ssh\\id_rsa",
-            "rootPath": "/home/lmatheson4",
-            "scheme": "sftp",
-            "username": "lmatheson4"
-        }
-    },
+    "security.allowedUNCHosts": [
+        "wsl.localhost",
+    ],
     "security.workspace.trust.untrustedFiles": "open",
+    "spaces.enableBergButton": true,
+    "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
-    "terminal.integrated.defaultProfile.windows": "Cygwin",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.defaultProfile.windows": "git-bash",
+    "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
-        "CHERE_INVOKING": "1"
+        "CHERE_INVOKING": "1",
     },
+    "terminal.integrated.localEchoEnabled": "on",
+    "terminal.integrated.localEchoStyle": "#C0C0C0",
     "terminal.integrated.profiles.linux": {
-        "wsl": {
-            "args": [
-                "--rcfile",
-                "/home/lmatheson4/.wsl.rc"
-            ],
-            "path": "/bin/bash"
+        "bash": {
+            "color": "terminal.ansiGreen",
+            "path": "/bin/bash",
         },
-        "wsl2": {
+        "git-bash": {
             "args": [
-                "-d",
-                "Ubuntu-20.04",
-                "--",
-                "/bin/bash",
-                "--rcfile",
-                "/home/lmatheson4/.wsl.rc"
+                "--login",
             ],
-            "path": "/c/WINDOWS/system32/wsl.exe"
-        }
+            "path": "/mnt/c/Program Files/Git/bin/bash.exe",
+            "icon": "home",
+            "overrideName":true
+
+        },
     },
     "terminal.integrated.profiles.windows": {
-        "Command Prompt": {
-            "args": [],
-            "icon": "terminal-cmd",
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ]
-        },
-        "Cygwin": {
-            "args": [
-                "--login"
-            ],
-            "path": "C:\\cygwin64\\bin\\bash.exe",
-            "env": {
-                "PATH": "/home/lesma/bin:/usr/local/bin:/usr/bin:/bin:${env:PATH}"
-            }
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
         "PowerShell": {
             "icon": "terminal-powershell",
-            "source": "PowerShell"
+            "source": "PowerShell",
         },
-        "Ubuntu-20.04 (WSL)": {
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+        "WSL": {
             "args": [
                 "-d",
                 "Ubuntu-20.04",
                 "--",
-                "/bin/bash",
-                "--login"
-            ]
+                "bash",
+                "--login",
+                "-c",
+                "cd; bash;",
+            ],
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
         },
-        "bash": {
-            "path": "c:\\Windows\\system32\\wsl.exe"
+        "git-bash": {
+            "path": "C:\\Program Files\\git\\bin\\bash.exe",
+            "icon": "home",
+            "overrideName":true
         },
-        "Powershell 7": {
-            "icon": "terminal-powershell",
-            "path": "c:\\Program Files\\PowerShell\\7\\pwsh.exe"
-        }
     },
+    "terminal.integrated.scrollback": 30000,
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.tabs.enabled": true,
+    "typescript.autoClosingTags": false,
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
     "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-d>": true,
-        "<C-w>": false
+        "<C-w>": false,
     },
     "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [
         {
             "after": [
-                "<Esc>"
+                "<Esc>",
             ],
             "before": [
                 "j",
-                "k"
-            ]
-        }
+                "k",
+            ],
+        },
     ],
     "vim.leader": ",",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "s"
+                "s",
             ],
             "commands": [
-                ":w"
-            ]
+                ":w",
+            ],
         },
         {
             "before": [
                 "<leader>",
-                "1"
+                "1",
             ],
             "commands": [
-                "editor.action.commentLine"
-            ]
+                "editor.action.commentLine",
+            ],
         },
         {
             "before": [
                 "<leader>",
-                "v"
+                "v",
             ],
             "commands": [
-                "open-in-vim.open"
-            ]
+                "open-in-vim.open",
+            ],
         },
         {
             "before": [
                 "<leader>",
-                "n"
+                "n",
             ],
             "commands": [
-                "workbench.action.quickOpen"
-            ]
+                "workbench.action.quickOpen",
+            ],
         },
         {
             "before": [
-                "="
+                "=",
             ],
             "commands": [
-                "workbench.action.tasks.build"
-            ]
+                "workbench.action.tasks.build",
+            ],
         },
         {
             "after": [
                 "g",
-                "j"
+                "j",
             ],
             "before": [
-                "j"
-            ]
+                "j",
+            ],
         },
         {
             "after": [
                 "g",
-                "k"
+                "k",
             ],
             "before": [
-                "k"
-            ]
-        }
+                "k",
+            ],
+        },
     ],
     "vim.searchHighlightColor": "#ff7b00a1",
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimPath": "c:\\tools\\neovim\\Neovim\\bin\\nvim.exe",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "window.commandCenter": false,
+    "window.density.editorTabHeight": "compact",
     "window.newWindowDimensions": "inherit",
+    "window.restoreWindows": "none",
+    "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
-    "workbench.colorCustomizations": {
-        "terminal.ansiBlack": "#090300",
-        "terminal.ansiBlue": "#01A0E4",
-        "terminal.ansiBrightBlack": "#5C5855",
-        "terminal.ansiBrightBlue": "#01A0E4",
-        "terminal.ansiBrightCyan": "#B5E4F4",
-        "terminal.ansiBrightGreen": "#01A252",
-        "terminal.ansiBrightMagenta": "#A16A94",
-        "terminal.ansiBrightRed": "#DB2D20",
-        "terminal.ansiBrightWhite": "#F7F7F7",
-        "terminal.ansiBrightYellow": "#FDED02",
-        "terminal.ansiCyan": "#B5E4F4",
-        "terminal.ansiGreen": "#01A252",
-        "terminal.ansiMagenta": "#A16A94",
-        "terminal.ansiRed": "#DB2D20",
-        "terminal.ansiWhite": "#A5A2A2",
-        "terminal.ansiYellow": "#FDED02",
-        "terminal.background": "#090300",
-        "terminal.foreground": "#A5A2A2",
-        "terminalCursor.background": "#A5A2A2",
-        "terminalCursor.foreground": "#A5A2A2",
-        "window.activeBorder": "#00ff00",
-        "window.inactiveBorder": "#ff0000"
-    },
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
     "workbench.editor.labelFormat": "short",
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
     "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.untitled.experimentalLanguageDetection": true,
     "workbench.editor.wrapTabs": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
-        "*.md": "default"
+        "*.md": "default",
     },
     "workbench.fontAliasing": true,
+    "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0
 }
