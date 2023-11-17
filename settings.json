@@ -168,6 +168,7 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
+            "args": ["-l"]
         },
         "git-bash": {
             "args": [
