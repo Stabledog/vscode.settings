@@ -27,6 +27,7 @@
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
+    "cmake.showOptionsMovedNotification": false,
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
@@ -325,5 +326,4 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
-    "cmake.showOptionsMovedNotification": false,
 }
