@@ -83,8 +83,15 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
+    "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
+    "gitlens.remotes": [
+        {
+            "domain": "bbgithub.dev.bloomberg.com",
+            "type": "GitHub",
+        },
+    ],
     "html.autoClosingTags": false,
     "http.proxyStrictSSL": false,
     "jupyter.alwaysTrustNotebooks": true,
@@ -113,9 +120,6 @@
     "remote.SSH.enableDynamicForwarding": false,
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
-        "stable.burner": "linux",
-        "stable.home": "linux",
-    },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
     "remote.extensionKind": {
@@ -296,4 +300,5 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
+    "zzzz--------------endmarker--------------------": 0
 }
