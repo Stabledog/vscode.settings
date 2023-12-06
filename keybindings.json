@@ -314,9 +314,12 @@
         "when": "editorAreaVisible"
     },
     {
-        "key": "ctrl+k e",
+        "key": "ctrl+e k",
         "command": "-workbench.files.action.focusOpenEditorsView",
-        "when": "workbench.explorer.openEditorsView.active"
+    },
+    {
+        "key": "alt+p",
+        "command": "workbench.files.action.focusOpenEditorsView",
     },
     {
         "key": "ctrl+a c",
