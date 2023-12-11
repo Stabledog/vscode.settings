@@ -10,7 +10,7 @@
     },
     "[python]": {
         "editor.formatOnSave": false,
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
         "editor.defaultFormatter": "ms-python.black-formatter",
     },
     "[typescript]": {
@@ -151,6 +151,7 @@
     ],
     "security.workspace.trust.untrustedFiles": "open",
     "spaces.enableBergButton": true,
+    "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
@@ -176,8 +177,7 @@
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
             "icon": "home",
-            "overrideName":true
-
+            "overrideName": true,
         },
     },
     "terminal.integrated.profiles.windows": {
@@ -200,7 +200,7 @@
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "home",
-            "overrideName":true
+            "overrideName": true,
         },
     },
     "terminal.integrated.scrollback": 30000,
@@ -299,7 +299,7 @@
     "window.density.editorTabHeight": "compact",
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
