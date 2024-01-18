@@ -23,7 +23,7 @@
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
     "CodeGPT.model": "gpt-4",
-    "CodeGPT.maxTokens": 5000,
+    "CodeGPT.maxTokens": 6000,
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
@@ -158,7 +158,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "git-bash",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
     "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
@@ -182,8 +182,19 @@
     },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
-            "icon": "terminal-powershell",
             "source": "PowerShell",
+            "icon": "terminal-powershell",
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe",
+            ],
+            "args": [],
+            "icon": "terminal-cmd",
+        },
+        "Git Bash": {
+            "source": "Git Bash",
         },
         "WSL": {
             "args": [
@@ -201,6 +212,13 @@
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "home",
             "overrideName": true,
+        },
+        "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-20.04",
+            ],
         },
     },
     "terminal.integrated.scrollback": 30000,
@@ -299,7 +317,7 @@
     "window.density.editorTabHeight": "compact",
     "window.newWindowDimensions": "inherit",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
