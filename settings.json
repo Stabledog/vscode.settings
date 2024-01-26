@@ -149,16 +149,16 @@
     "security.allowedUNCHosts": [
         "wsl.localhost",
     ],
-    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.untrustedFiles":"open",
     "spaces.enableBergButton": true,
     "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
-    "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-20.04 (WSL)",
+    "terminal.integrated.defaultProfile.windows":"git-bash",
     "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.env.windows": {
@@ -183,18 +183,18 @@
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "source": "PowerShell",
-            "icon": "terminal-powershell",
+            "icon": "terminal-powershell"
         },
         "Command Prompt": {
             "path": [
                 "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
             ],
             "args": [],
-            "icon": "terminal-cmd",
+            "icon": "terminal-cmd"
         },
         "Git Bash": {
-            "source": "Git Bash",
+            "source": "Git Bash"
         },
         "WSL": {
             "args": [
@@ -204,22 +204,41 @@
                 "bash",
                 "--login",
                 "-c",
-                "cd; bash;",
+                "cd; bash;"
             ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "path": "C:\\WINDOWS\\System32\\wsl.exe"
+        },
+        "WSL22": {
+            "args": [
+                "-d",
+                "Ubuntu-22.04",
+                "--",
+                "bash",
+                "--login",
+                "-c",
+                "cd; bash;"
+            ],
+            "path": "C:\\WINDOWS\\System32\\wsl.exe"
         },
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "home",
-            "overrideName": true,
+            "overrideName": true
         },
         "Ubuntu-20.04 (WSL)": {
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
-                "Ubuntu-20.04",
-            ],
+                "Ubuntu-20.04"
+            ]
         },
+        "Ubuntu-22.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-22.04"
+            ]
+        }
     },
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.shellIntegration.enabled": false,
@@ -316,12 +335,15 @@
     "window.commandCenter": false,
     "window.density.editorTabHeight": "compact",
     "window.newWindowDimensions": "inherit",
+    "window.openFoldersInNewWindow": "off",
+    "window.openFilesInNewWindow": "off",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
+    "workbench.colorTheme": "Catppuccin Macchiato",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
