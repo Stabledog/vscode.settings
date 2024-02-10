@@ -1,5 +1,7 @@
 {
     "workbench.sideBar.location": "right",
     "editor.autoClosingQuotes": "never",
-    "CodeGPT.apiKey": "CodeGPT Plus"
+    "CodeGPT.apiKey": "CodeGPT Plus",
+    "window.zoomPerWindow": true,
+    "window.zoomLevel": 2
 }
