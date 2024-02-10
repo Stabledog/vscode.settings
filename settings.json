@@ -9,7 +9,7 @@
         "editor.defaultFormatter": "vscode.json-language-features",
     },
     "[python]": {
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": true,
         "editor.wordBasedSuggestions": "off",
         "editor.defaultFormatter": "ms-python.black-formatter",
     },
@@ -80,6 +80,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git-graph.commitDetailsView.location": "Docked to Bottom",
+    "git.autofetch": true,
     "git.confirmSync": false,
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
@@ -339,7 +340,6 @@
     "window.openFoldersInNewWindow": "off",
     "window.openFilesInNewWindow": "off",
     "window.restoreWindows": "none",
-    "window.zoomLevel": 1,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
@@ -366,5 +366,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
 }
