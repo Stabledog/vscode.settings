@@ -10,7 +10,7 @@
     },
     "[python]": {
         "editor.formatOnSave": false,
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
         "editor.defaultFormatter": "ms-python.black-formatter",
     },
     "[typescript]": {
@@ -23,10 +23,11 @@
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
     "CodeGPT.model": "gpt-4",
-    "CodeGPT.maxTokens": 5000,
+    "CodeGPT.maxTokens": 6000,
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
+    "cmake.showOptionsMovedNotification": false,
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
@@ -84,6 +85,7 @@
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
     "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
     "gitlens.remotes": [
@@ -98,6 +100,9 @@
     "jupyter.askForKernelRestart": false,
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "liveshare.allowedDomains": [
+        "bloomberg.com",
+    ],
     "liveshare.anonymousGuestApproval": "reject",
     "liveshare.connectionMode": "relay",
     "liveshare.presence": false,
@@ -120,16 +125,35 @@
     "remote.SSH.enableDynamicForwarding": false,
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
+    "remote.SSH.remotePlatform": {
+        "dev-10-34-26-101.pw1.bcc.bloomberg.com": "linux",
+        "devide-pw-295": "linux",
+        "dxspj-ob-388": "linux",
+        "dxspj-pw-575": "linux",
+        "dxspj-rr-036": "linux",
+        "gnrld-pw-104": "linux",
+        "gnrld-pw-553": "linux",
+        "gnrld-pw-705": "linux",
+        "my-bcc-1": "linux",
+        "stable.burner": "linux",
+        "stable.home": "linux",
+        "traind-pw-177": "linux",
+        "traind-pw-679": "linux",
+        "trainx-ob-001": "linux",
+        "trainx-pw-001": "linux",
+    },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace",
     },
     "security.allowedUNCHosts": [
-        "wsl.localhost",
+        "wsl.localhost"
     ],
-    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.untrustedFiles":"open",
     "spaces.enableBergButton": true,
+    "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
@@ -155,14 +179,25 @@
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
             "icon": "home",
-            "overrideName":true
-
+            "overrideName": true,
         },
     },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "icon": "terminal-powershell",
             "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
         },
         "WSL": {
             "args": [
@@ -172,15 +207,41 @@
                 "bash",
                 "--login",
                 "-c",
-                "cd; bash;",
+                "cd; bash;"
             ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "path": "C:\\WINDOWS\\System32\\wsl.exe"
+        },
+        "WSL22": {
+            "args": [
+                "-d",
+                "Ubuntu-22.04",
+                "--",
+                "bash",
+                "--login",
+                "-c",
+                "cd; bash;"
+            ],
+            "path": "C:\\WINDOWS\\System32\\wsl.exe"
         },
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "home",
-            "overrideName":true
+            "overrideName": true
         },
+        "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-20.04"
+            ]
+        },
+        "Ubuntu-22.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-22.04"
+            ]
+        }
     },
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.shellIntegration.enabled": false,
@@ -277,6 +338,8 @@
     "window.commandCenter": false,
     "window.density.editorTabHeight": "compact",
     "window.newWindowDimensions": "inherit",
+    "window.openFoldersInNewWindow": "off",
+    "window.openFilesInNewWindow": "off",
     "window.restoreWindows": "none",
     "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
@@ -300,5 +363,9 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
+    "yaml.schemas": {
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
+    },
     "zzzz--------------endmarker--------------------": 0
 }
