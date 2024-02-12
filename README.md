@@ -8,8 +8,11 @@
    - Tasks (json in git)
    - Snippets ( snippets/ subdir )
 4.  To select the desired profile on launch, you must add `--profile <name>` to the vscode command line
+
+## DevX Spaces
+
+## Codespaces
+
+## TODO:
 4.  (TODO) tooling for synchronizing variations 
-5.  Continue to use git push/pull to share a single git tree with all profiles
-6.  (TODO) how to deal with browser environments?
-   - Codespaces
-   - DevX Spaces
+
