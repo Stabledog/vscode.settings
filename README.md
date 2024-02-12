@@ -10,6 +10,10 @@
 4.  To select the desired profile on launch, you must add `--profile <name>` to the vscode command line
 
 ## DevX Spaces
+1. Environment always uses `/root/.local/share/code-server/User/settings.json`
+2. We can map that using dotmake, so DevX Spaces is detected and contents
+   of the appropriate profile are applied. *(todo: need tooling to propagate
+   changes upstream from spaces to github)*
 
 ## Codespaces
 
