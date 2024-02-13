@@ -11,8 +11,11 @@
 
 ## DevX Spaces
 1. Environment always uses `/root/.local/share/code-server/User/settings.json`
-2. We can map that using dotmake, so DevX Spaces is detected and contents
-   of the appropriate profile are applied. *(todo: need tooling to propagate
+2. We map that using dotmake, so DevX Spaces is detected and contents
+   of the appropriate profile are applied.  *(Beware of naive upstreaming on
+   changes to settings -- you must apply changes to ./profiles/devx-spaces and
+   commit there, because that is the source of data when dotmake runs)*
+4. *(todo: need tooling to propagate
    changes upstream from spaces to github)*
 
 ## Codespaces
