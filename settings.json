@@ -27,6 +27,7 @@
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
+    "cmake.showOptionsMovedNotification": false,
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
@@ -148,6 +149,7 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
+            "args": ["-l"]
         },
         "git-bash": {
             "args": [
@@ -300,5 +302,9 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0
+    "yaml.schemas": {
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
+    },
+    "zzzz--------------endmarker--------------------": 0,
 }
