@@ -27,6 +27,7 @@
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
+    "cmake.showOptionsMovedNotification": false,
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
@@ -283,6 +284,7 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
+    "workbench.colorTheme": "Catppuccin Macchiato",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -300,5 +302,9 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0
+    "yaml.schemas": {
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
+    },
+    "zzzz--------------endmarker--------------------": 0,
 }
