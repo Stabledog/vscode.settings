@@ -18,7 +18,10 @@
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
-    "audioCues.volume": 0,
+    "accessibility.signals.sounds.volume": 0,
+    "accessibility.signals.terminalBell": {
+        "sound": "off",
+    },
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
@@ -69,7 +72,7 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "explorer.confirmDelete": false,
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": "onlySelectedExtensions",
     "extensions.ignoreRecommendations": true,
     "files.associations": {
         "*.jrnl": "markdown",
@@ -127,6 +130,7 @@
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
     "remote.SSH.remotePlatform": {
+        "*.spaces": "linux",
         "dev-10-34-26-101.pw1.bcc.bloomberg.com": "linux",
         "devide-pw-295": "linux",
         "dxspj-ob-388": "linux",
@@ -149,20 +153,19 @@
         "ms-azuretools.vscode-docker": "workspace",
     },
     "security.allowedUNCHosts": [
-        "wsl.localhost"
+        "wsl.localhost",
+        "wsl$"
     ],
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.untrustedFiles":"open",
     "spaces.enableBergButton": true,
-    "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.defaultProfile.windows": "git-bash",
-    "terminal.integrated.enableBell": false,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1",
     },
@@ -172,6 +175,9 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
+            "args": [
+                "-l",
+            ],
         },
         "git-bash": {
             "args": [
@@ -225,14 +231,7 @@
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "home",
-            "overrideName": true
-        },
-        "Ubuntu-20.04 (WSL)": {
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
-            "args": [
-                "-d",
-                "Ubuntu-20.04"
-            ]
+            "overrideName": true,
         },
         "Ubuntu-22.04 (WSL)": {
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
@@ -246,6 +245,7 @@
     "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.enableVisualBell": false,
     "typescript.autoClosingTags": false,
     "vim.cursorStylePerMode.insert": "block-outline",
     "vim.cursorStylePerMode.normal": "block",
@@ -366,5 +366,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
-    "zzzz--------------endmarker--------------------": 0,
+    "zzzz--------------endmarker--------------------": 0
 }
