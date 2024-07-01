@@ -18,6 +18,10 @@
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
+    "accessibility.signals.sounds.volume": 0,
+    "accessibility.signals.terminalBell": {
+        "sound": "off"
+    },
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
@@ -77,7 +81,7 @@
     },
     "files.eol": "\n",
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": false,
     "git-graph.commitDetailsView.location": "Docked to Bottom",
     "git.confirmSync": false,
     "git.ignoreLegacyWarning": true,
@@ -137,7 +141,9 @@
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.defaultProfile.windows": "git-bash",
+    "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1",
     },
@@ -283,6 +289,7 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
+    "workbench.colorTheme": "Catppuccin Macchiato",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -305,9 +312,4 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
-    "accessibility.signals.sounds.volume": 0,
-    "accessibility.signals.terminalBell": {
-        "sound": "off"
-    },
-    "terminal.integrated.enableVisualBell": false,
 }
