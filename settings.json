@@ -79,12 +79,12 @@
         "*.prn": "tsv",
         "*taskrc": "shellscript",
     },
-    
+
     "files.autoSave": "afterDelay" ,
     "files.autoSaveDelay": 1000,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": false,
     "git-graph.commitDetailsView.location": "Docked to Bottom",
     "git.autofetch": true,
     "git.confirmSync": false,
@@ -175,7 +175,7 @@
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
             "icon": "home",
-            "overrideName": true,
+            "overrideName":true,
         },
     },
     "terminal.integrated.profiles.windows": {
@@ -334,7 +334,7 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Default Light+",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
