@@ -127,6 +127,7 @@
     "python.jediEnabled": true,
     "python.languageServer": "Pylance",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
+    "rapid.typeGeneration.enabled": true,
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
     "remote.SSH.enableDynamicForwarding": false,
