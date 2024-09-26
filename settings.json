@@ -67,7 +67,6 @@
     "editor.stickyScroll.enabled": false,
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
-
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.wordWrap": "bounded",
@@ -149,8 +148,8 @@
         "ms-azuretools.vscode-docker": "workspace",
     },
     "security.allowedUNCHosts": [
-        "wsl.localhost",
         "wsl$",
+        "wsl.localhost",
     ],
     "security.promptForRemoteFileProtocolHandling": false,
     "security.workspace.trust.enabled": false,
@@ -202,40 +201,16 @@
         "Git Bash": {
             "source": "Git Bash",
         },
-        "WSL": {
-            "args": [
-                "-d",
-                "Ubuntu-20.04",
-                "--",
-                "bash",
-                "--login",
-                "-c",
-                "cd; bash;",
-            ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
-        },
-        "WSL22": {
-            "args": [
-                "-d",
-                "Ubuntu-22.04",
-                "--",
-                "bash",
-                "--login",
-                "-c",
-                "cd; bash;",
-            ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
-        },
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "home",
             "overrideName": true,
         },
-        "Ubuntu-22.04 (WSL)": {
+        "Ubuntu-24.04 (WSL)": {
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "args": [
                 "-d",
-                "Ubuntu-22.04",
+                "Ubuntu-24.04",
             ],
         },
     },
