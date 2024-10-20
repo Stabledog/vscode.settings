@@ -26,7 +26,7 @@
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
     "CodeGPT.model": "gpt-4",
-    "CodeGPT.maxTokens": 5000,
+    "CodeGPT.maxTokens": 6000,
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
@@ -79,15 +79,19 @@
         "*.prn": "tsv",
         "*taskrc": "shellscript",
     },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": false,
     "git-graph.commitDetailsView.location": "Docked to Bottom",
+    "git.autofetch": true,
     "git.confirmSync": false,
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
     "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
     "gitlens.remotes": [
@@ -124,12 +128,16 @@
     "remote.SSH.enableDynamicForwarding": false,
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
+    "remote.SSH.remotePlatform": {
+        "*.spaces": "linux",
+    },
     "remote.SSH.showLoginTerminal": true,
     "remote.WSL.debug": true,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace",
     },
     "security.allowedUNCHosts": [
+        "wsl$",
         "wsl.localhost",
     ],
     "security.workspace.trust.untrustedFiles": "open",
@@ -165,8 +173,8 @@
     },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
-            "icon": "terminal-powershell",
             "source": "PowerShell",
+            "icon": "terminal-powershell",
         },
         "WSL": {
             "args": [
@@ -281,6 +289,8 @@
     "window.commandCenter": false,
     "window.density.editorTabHeight": "compact",
     "window.newWindowDimensions": "inherit",
+    "window.openFoldersInNewWindow": "off",
+    "window.openFilesInNewWindow": "off",
     "window.restoreWindows": "none",
     "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
