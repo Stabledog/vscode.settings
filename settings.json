@@ -9,7 +9,11 @@
         "editor.defaultFormatter": "vscode.json-language-features",
     },
     "[python]": {
+<<<<<<< HEAD
         "editor.formatOnSave": true,
+=======
+        "editor.formatOnSave": false,
+>>>>>>> ghssh/_reference_
         "editor.wordBasedSuggestions": "off",
         "editor.defaultFormatter": "ms-python.black-formatter",
     },
@@ -18,8 +22,14 @@
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
+<<<<<<< HEAD
     "accessibility.signals.terminalBell": {
         "sound": "off",
+=======
+    "accessibility.signals.sounds.volume": 0,
+    "accessibility.signals.terminalBell": {
+        "sound": "off"
+>>>>>>> ghssh/_reference_
     },
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
@@ -129,7 +139,7 @@
     "python.analysis.completeFunctionParens": false,
     "python.autoComplete.addBrackets": false,
     "python.jediEnabled": true,
-    "python.languageServer": "Pylance",
+    "python.languageServer": "Jedi",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
     "rapid.typeGeneration.enabled": true,
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
@@ -163,6 +173,10 @@
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.defaultProfile.windows": "git-bash",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
+<<<<<<< HEAD
+=======
+    "terminal.integrated.enableVisualBell": false,
+>>>>>>> ghssh/_reference_
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1",
     },
@@ -317,7 +331,11 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
+<<<<<<< HEAD
     "workbench.colorTheme": "Default Light+",
+=======
+    "workbench.colorTheme": "Catppuccin Macchiato",
+>>>>>>> ghssh/_reference_
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -340,4 +358,8 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
+<<<<<<< HEAD
+=======
+    "accessibility.signalOptions.volume": 0,
+>>>>>>> ghssh/_reference_
 }
