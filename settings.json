@@ -18,6 +18,7 @@
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
+    "accessibility.signalOptions.volume": 0,
     "accessibility.signals.terminalBell": {
         "sound": "off"
     },
@@ -116,7 +117,7 @@
     "python.analysis.completeFunctionParens": false,
     "python.autoComplete.addBrackets": false,
     "python.jediEnabled": true,
-    "python.languageServer": "Pylance",
+    "python.languageServer": "Jedi",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
@@ -140,7 +141,7 @@
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.defaultProfile.windows": "git-bash",
-    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1",
@@ -151,7 +152,6 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
-            "args": ["-l"]
         },
         "git-bash": {
             "args": [
@@ -310,5 +310,4 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
-    "accessibility.signalOptions.volume": 0,
 }
