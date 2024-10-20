@@ -18,7 +18,6 @@
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
-    "accessibility.signals.sounds.volume": 0,
     "accessibility.signals.terminalBell": {
         "sound": "off"
     },
@@ -141,7 +140,6 @@
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
     "terminal.integrated.defaultProfile.windows": "git-bash",
-    "terminal.integrated.enableBell": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
@@ -312,4 +310,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
+    "accessibility.signalOptions.volume": 0,
 }
