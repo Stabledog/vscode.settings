@@ -19,7 +19,6 @@
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
-    "accessibility.signals.sounds.volume": 0,
     "accessibility.signals.terminalBell": {
         "sound": "off"
     },
@@ -342,4 +341,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
+    "accessibility.signalOptions.volume": 0,
 }

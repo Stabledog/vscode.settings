@@ -1,13 +1,6 @@
-.ready
-Backups
-caches
-customBuiltinExtensionsCache.json
-extensions.json
-globalStorage
-History
-machineid
+profiles
 snippets
-sync
-systemExtensionsCache.json
-tmp
+globalStorage
 workspaceStorage
+tmp
+History
