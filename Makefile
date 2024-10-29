@@ -12,7 +12,6 @@ Python = $(shell { which python3.{12..8} ; echo no-python; } | head -n 1 )
 Config:
 	@cat <<-EOF
 	absdir=$(absdir)
-	ProfileDirs="$(ProfileDirs)"
 	Python=$(Python)
 	EOF
 
@@ -22,20 +21,6 @@ Config:
 		exit 19
 	}
 
-profiles-list: .py-available
-	@
-	for prof in $(ProfileDirs); do
-		cat <<-EOF | cut -c 2- | $(Python) -
-			.import json
-			.import os
-			.infile=open("globalStorage/storage.json")
-			.dd = json.loads(infile.read())
-			.for vv in dd['userDataProfiles']:
-			.  if vv['location'] == "$$prof":
-			.    print(f"{vv['name']} profiles/$$prof")
-		EOF
-
-	done
 
 Makefile: ;
 
