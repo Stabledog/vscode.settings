@@ -64,6 +64,7 @@
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
     "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
     "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -89,7 +90,7 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    //"github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -147,7 +148,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "git-bash",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
@@ -159,6 +160,15 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
+            "args": [
+                "-l",
+            ],
+        },
+        "PowerShell": {
+            "path": "wsl.exe",
+            "args": [ "-e", "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe"],
+            "icon": "terminal-powershell",
+            "overrideName": true
         },
         "git-bash": {
             "args": [
@@ -166,7 +176,7 @@
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
             "icon": "home",
-            "overrideName":true
+            "overrideName": true
 
         },
     },
@@ -175,22 +185,25 @@
             "source": "PowerShell",
             "icon": "terminal-powershell",
         },
-        "WSL": {
-            "args": [
-                "-d",
-                "Ubuntu-20.04",
-                "--",
-                "bash",
-                "--login",
-                "-c",
-                "cd; bash;",
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe",
             ],
-            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [],
+            "icon": "terminal-cmd",
         },
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "home",
-            "overrideName":true
+            "overrideName": true,
+        },
+        "Ubuntu-24.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-24.04",
+            ],
         },
     },
     "terminal.integrated.scrollback": 30000,
