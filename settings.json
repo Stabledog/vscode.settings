@@ -91,7 +91,7 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    //"github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -178,6 +178,12 @@
                 "-l",
             ],
         },
+        "PowerShell": {
+            "path": "wsl.exe",
+            "args": [ "-e", "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe"],
+            "icon": "terminal-powershell",
+            "overrideName": true
+        },
         "git-bash": {
             "args": [
                 "--login",
@@ -186,6 +192,7 @@
             "icon": "home",
             "overrideName": true,
         },
+
     },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -341,5 +348,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
-    "accessibility.signalOptions.volume": 0,
+    "accessibility.signalOptions.volume": 0
 }
