@@ -163,6 +163,7 @@
             "args": [
                 "-l",
             ],
+            "icon": "terminal-ubuntu"
         },
         "PowerShell": {
             "path": "wsl.exe",
@@ -175,7 +176,7 @@
                 "--login",
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
-            "icon": "home",
+            "icon": "terminal-bash",
             "overrideName": true
 
         },
@@ -204,7 +205,7 @@
                 "-d",
                 "Ubuntu-24.04",
             ],
-            "icon":"terminal-ubuntu"
+            "icon":"terminal-debian"
         },
     },
     "terminal.integrated.scrollback": 30000,
