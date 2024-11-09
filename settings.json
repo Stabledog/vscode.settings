@@ -195,7 +195,7 @@
         },
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
-            "icon": "home",
+            "icon": "terminal-bash",
             "overrideName": true,
         },
         "Ubuntu-24.04 (WSL)": {
@@ -204,6 +204,7 @@
                 "-d",
                 "Ubuntu-24.04",
             ],
+            "icon":"terminal-ubuntu"
         },
     },
     "terminal.integrated.scrollback": 30000,

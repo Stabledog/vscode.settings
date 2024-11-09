@@ -1,5 +1,13 @@
 [
     {
+
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "name": "quiet-mode"
+        },
+        "key": "ctrl+alt+q"
+    },
+    {
         "command": "workbench.action.terminal.resizePaneUp",
         "key": "ctrl+a ."
     },
