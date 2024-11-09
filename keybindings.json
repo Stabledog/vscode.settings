@@ -354,5 +354,9 @@
     {
         "key": "ctrl+a /",
         "command": "workbench.action.selectTheme"
+    },
+    {
+        "key": "ctrl+alt+w",
+        "command": "editor.debug.action.selectionToWatch"
     }
 ]
