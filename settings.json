@@ -132,6 +132,7 @@
         "wsl.localhost",
     ],
     "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.enable": false,
     "spaces.enableBergButton": true,
     "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "external",
