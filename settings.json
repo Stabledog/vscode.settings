@@ -11,7 +11,6 @@
     "[python]": {
         "editor.formatOnSave": false,
         "editor.wordBasedSuggestions": "off",
-        "editor.wordBasedSuggestions": "off",
         "editor.defaultFormatter": "ms-python.black-formatter",
     },
     "[typescript]": {
@@ -91,7 +90,6 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    //"github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -155,6 +153,7 @@
     "security.promptForRemoteFileProtocolHandling": false,
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.enable": false,    
     "spaces.enableBergButton": true,
     "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
@@ -174,14 +173,14 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
-            "args": [
-                "-l",
-            ],
             "icon": "terminal-ubuntu"
         },
         "PowerShell": {
             "path": "wsl.exe",
-            "args": [ "-e", "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe"],
+            "args": [
+                "-e",
+                "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe"
+            ],
             "icon": "terminal-powershell",
             "overrideName": true
         },
@@ -191,9 +190,8 @@
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
             "icon": "terminal-bash",
-            "overrideName": true,
+            "overrideName": true
         },
-
     },
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
@@ -351,5 +349,10 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
-    "accessibility.signalOptions.volume": 0
+    "accessibility.signalOptions.volume": 0,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+ 
 }
