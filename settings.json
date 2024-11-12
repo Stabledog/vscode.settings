@@ -177,6 +177,7 @@
             "args": [
                 "-l",
             ],
+            "icon": "terminal-ubuntu"
         },
         "PowerShell": {
             "path": "wsl.exe",
@@ -189,7 +190,7 @@
                 "--login",
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
-            "icon": "home",
+            "icon": "terminal-bash",
             "overrideName": true,
         },
 
@@ -209,10 +210,11 @@
         },
         "Git Bash": {
             "source": "Git Bash",
+            "icon": "terminal-bash"
         },
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
-            "icon": "home",
+            "icon": "terminal-bash",
             "overrideName": true,
         },
         "Ubuntu-24.04 (WSL)": {
@@ -221,6 +223,7 @@
                 "-d",
                 "Ubuntu-24.04",
             ],
+            "icon": "terminal-ubuntu",
         },
     },
     "terminal.integrated.scrollback": 30000,
