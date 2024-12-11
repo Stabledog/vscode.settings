@@ -149,6 +149,7 @@
     "terminal.integrated.localEchoEnabled": "on",
     "terminal.integrated.localEchoStyle": "#C0C0C0",
     "terminal.integrated.profiles.linux": {
+    
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
@@ -161,6 +162,46 @@
             "icon": "home",
             "overrideName":true
 
+        },
+        "sundev1": {
+            // How to open a VS Code integrated terminal on a sun machine:
+            "path": "/usr/bin/ssh",
+            "args": [
+                // Tell ssh that we want a pseudo-terminal for the shell we're starting:
+                "-t",
+                // Servername:
+                "sundev1",
+                // I like bash 4.4, so I built my own.  Not essential; /bin/bash or 
+                //      /opt/bb/bin/bash works for most folks. Or another shell if
+                //      you're inclined that way.
+                "/home/lmatheson4/mylibs/sun/bin/bash",
+                // We want an interactive login shell (i.e. run all the login scripts):
+                "-il"
+            ],
+            "title": "sundev1",
+            "icon": "terminal-bash",
+            // Suppress the annoying popup when you exit the shell:
+            "terminal.integrated.confirmOnExit": false,
+        },
+        "traind-pw-679": {
+            // How to open a VS Code integrated terminal on a sun machine:
+            "path": "/usr/bin/ssh",
+            "args": [
+                // Tell ssh that we want a pseudo-terminal for the shell we're starting:
+                "-t",
+                // Servername:
+                "traind-pw-679",
+                // I like bash 4.4, so I built my own.  Not essential; /bin/bash or 
+                //      /opt/bb/bin/bash works for most folks. Or another shell if
+                //      you're inclined that way.
+                "/home/lmatheson4/mylibs/linux/bin/bash",
+                // We want an interactive login shell (i.e. run all the login scripts):
+                "-il"
+            ],
+            "title": "traind-pw-679",
+            "icon": "terminal-bash",
+            // Suppress the annoying popup when you exit the shell:
+            "terminal.integrated.confirmOnExit": false,
         },
     },
     "terminal.integrated.profiles.windows": {
