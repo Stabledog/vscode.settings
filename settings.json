@@ -134,6 +134,7 @@
     "security.workspace.trust.untrustedFiles": "open",
     "settingsSync.enable": false,
     "spaces.enableBergButton": true,
+    "spaces.commitReminder.enable": false,
     "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
