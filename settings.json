@@ -179,7 +179,8 @@
                 // We want an interactive login shell (i.e. run all the login scripts):
                 "-il"
             ],
-            "title": "sundev1",
+            "name": "sundev1",
+            "overrideName": true,
             "icon": "terminal-bash",
             // Suppress the annoying popup when you exit the shell:
             "terminal.integrated.confirmOnExit": false,
@@ -199,8 +200,9 @@
                 // We want an interactive login shell (i.e. run all the login scripts):
                 "-il"
             ],
-            "title": "sundev1",
             "icon": "terminal-bash",
+            "overrideName": true,
+            "name": "sundev13",
             // Suppress the annoying popup when you exit the shell:
             "terminal.integrated.confirmOnExit": false,
         },
@@ -219,7 +221,8 @@
                 // We want an interactive login shell (i.e. run all the login scripts):
                 "-il"
             ],
-            "title": "traind-pw-679",
+            "name": "traind-pw-679",
+            "overrideName": true,
             "icon": "terminal-bash",
             // Suppress the annoying popup when you exit the shell:
             "terminal.integrated.confirmOnExit": false,
