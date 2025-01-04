@@ -354,5 +354,13 @@
     {
         "key": "ctrl+a /",
         "command": "workbench.action.selectTheme"
+    },
+    {
+        "key": "ctrl+alt+u",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args":{
+            "name": "quiet-mode"
+        }
     }
 ]
