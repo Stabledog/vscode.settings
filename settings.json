@@ -21,6 +21,7 @@
     "accessibility.signals.terminalBell": {
         "sound": "off"
     },
+    "accessibility.signalOptions.volume": 0,
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
@@ -97,6 +98,8 @@
     ],
     "html.autoClosingTags": false,
     "http.proxyStrictSSL": false,
+    "json.format.enable": true,
+    "json.format.trailingCommas": "none",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.askForKernelRestart": false,
     "jupyter.interactiveWindow.creationMode": "perFile",
@@ -150,7 +153,6 @@
     "terminal.integrated.localEchoEnabled": "on",
     "terminal.integrated.localEchoStyle": "#C0C0C0",
     "terminal.integrated.profiles.linux": {
-    
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
@@ -161,8 +163,7 @@
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
             "icon": "home",
-            "overrideName":true
-
+            "overrideName": true
         },
         "sundev1": {
             // How to open a VS Code integrated terminal on a sun machine:
@@ -248,7 +249,7 @@
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "home",
-            "overrideName":true
+            "overrideName": true
         },
     },
     "terminal.integrated.scrollback": 30000,
@@ -372,8 +373,7 @@
     "workbench.tree.indent": 16,
     "yaml.schemas": {
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
-        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
     },
-    "zzzz--------------endmarker--------------------": 0,
-    "accessibility.signalOptions.volume": 0,
+    "zzzz--------------endmarker--------------------": 0
 }
