@@ -164,6 +164,7 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
+            "icon": "terminal-debian"
         },
         "PowerShell": {
             "path": "wsl.exe",
@@ -176,7 +177,7 @@
                 "--login",
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
-            "icon": "home",
+            "icon": "terminal-bash",
             "overrideName": true
         },
         "sundev1": {
@@ -268,6 +269,7 @@
             ],
             "overrideName":true,
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "icon": "terminal-debian"
         },
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
