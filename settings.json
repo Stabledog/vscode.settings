@@ -64,6 +64,7 @@
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
     "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
     "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -89,7 +90,7 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    //"github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -163,6 +164,12 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
+        },
+        "PowerShell": {
+            "path": "wsl.exe",
+            "args": [ "-e", "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe"],
+            "icon": "terminal-powershell",
+            "overrideName": true
         },
         "git-bash": {
             "args": [
@@ -241,6 +248,14 @@
             "source": "PowerShell",
             "icon": "terminal-powershell",
         },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe",
+            ],
+            "args": [],
+            "icon": "terminal-cmd",
+        },
         "WSL": {
             "args": [
                 "-d",
@@ -251,6 +266,7 @@
                 "-c",
                 "cd; bash;",
             ],
+            "overrideName":true,
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
         },
         "git-bash": {
