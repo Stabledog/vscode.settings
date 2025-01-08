@@ -67,6 +67,32 @@
                 "clear": false
             },
             "problemMatcher": []
+        },
+        {
+            "label": "Generic workspace-launch",
+            "type": "process",
+            "command": "/bin/bash",
+            "args": [
+                "-c",
+                "${HOME}/.dotmake mega; echo Generic workspace launch completed"
+            ],
+            "options": {},
+            
+            "group": {
+                "kind": "none"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "problemMatcher": []
         }
     ]
 }
