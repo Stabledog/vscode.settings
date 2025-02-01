@@ -127,7 +127,7 @@
     "redhat.telemetry.enabled": false,
     "remote.SSH.enableDynamicForwarding": false,
     "remote.SSH.lockfilesInTmp": true,
-    "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
+    //"remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",  DO NOT DO THIS ON PERSONAL MACHINE
     "remote.SSH.remotePlatform": {
         "*.spaces": "linux",
     },
