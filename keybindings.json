@@ -356,6 +356,14 @@
         "command": "workbench.action.selectTheme"
     },
     {
+        "key": "ctrl+alt+u",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args":{
+            "name": "quiet-mode"
+        }
+    },
+    {
         "key": "ctrl+alt+w",
         "command": "editor.debug.action.selectionToWatch"
     }
