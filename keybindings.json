@@ -366,5 +366,9 @@
     {
         "key": "ctrl+alt+w",
         "command": "editor.debug.action.selectionToWatch"
+    },
+    {
+        "key": "ctrl+a c",
+        "command": "github.copilot.toggleCopilot"
     }
 ]
