@@ -161,7 +161,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
+    "terminal.integrated.defaultProfile.windows": "git-bash",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
