@@ -71,10 +71,10 @@
         {
             "label": "Generic workspace-launch",
             "type": "process",
-            "command": "/bin/bash",
+            "command": "bash",
             "args": [
                 "-c",
-                "${HOME}/.dotmake mega; echo Generic workspace launch completed"
+                "[[ -e ${HOME}/.dotmake ]] && ${HOME}/.dotmake mega; echo Generic workspace launch completed"
             ],
             "options": {},
             

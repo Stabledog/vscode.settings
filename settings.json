@@ -206,10 +206,10 @@
             "args": [],
             "icon": "terminal-cmd",
         },
-        "Git Bash": {
+/*         "Git Bash": {
             "source": "Git Bash",
             "icon": "terminal-bash"
-        },
+        }, */
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "terminal-bash",
