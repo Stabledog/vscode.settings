@@ -370,5 +370,10 @@
     {
         "key": "ctrl+a c",
         "command": "github.copilot.toggleCopilot"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "github.copilot.completions.toggle",
+        "when": "github.copilot.activated"
     }
 ]
