@@ -59,11 +59,11 @@
     },
     {
         "command": "workbench.action.terminal.focusNext",
-        "key": "ctrl+a n",
-    },
+        "key": "ctrl+a n"
+    }
     {
         "command": "workbench.action.terminal.focusPrevious",
-        "key": "ctrl+a p",
+        "key": "ctrl+a p"
     },
     {
         "command": "workbench.action.terminal.kill",
@@ -356,7 +356,25 @@
         "command": "workbench.action.selectTheme"
     },
     {
-        "key": "ctrl+k ctrl+t",
-        "command": "-workbench.action.selectTheme"
+        "key": "ctrl+alt+u",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args":{
+            "name": "quiet-mode"
+        }
+        
+    },
+    {
+        "key": "ctrl+alt+w",
+        "command": "editor.debug.action.selectionToWatch"
+    },
+    {
+        "key": "ctrl+a c",
+        "command": "github.copilot.toggleCopilot"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "github.copilot.completions.toggle",
+        "when": "github.copilot.activated"
     }
 ]
