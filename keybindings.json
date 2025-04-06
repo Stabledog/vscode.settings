@@ -60,7 +60,7 @@
     {
         "command": "workbench.action.terminal.focusNext",
         "key": "ctrl+a n"
-    }
+    },
     {
         "command": "workbench.action.terminal.focusPrevious",
         "key": "ctrl+a p"
@@ -362,7 +362,7 @@
         "args":{
             "name": "quiet-mode"
         }
-        
+
     },
     {
         "key": "ctrl+alt+w",
