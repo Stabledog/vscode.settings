@@ -59,11 +59,11 @@
     },
     {
         "command": "workbench.action.terminal.focusNext",
-        "key": "ctrl+a n",
-    },
+        "key": "ctrl+a n"
+    }
     {
         "command": "workbench.action.terminal.focusPrevious",
-        "key": "ctrl+a p",
+        "key": "ctrl+a p"
     },
     {
         "command": "workbench.action.terminal.kill",
@@ -366,10 +366,6 @@
     {
         "key": "ctrl+alt+w",
         "command": "editor.debug.action.selectionToWatch"
-    },
-    {
-        "key": "ctrl+a c",
-        "command": "github.copilot.toggleCopilot"
     },
     {
         "key": "shift+alt+i",
