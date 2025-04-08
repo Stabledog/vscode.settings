@@ -30,6 +30,7 @@
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
     "cmake.showOptionsMovedNotification": false,
+
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
@@ -91,6 +92,7 @@
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
     //"github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    "github.copilot.inlineSuggest.enable": false,
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
