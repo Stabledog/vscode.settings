@@ -371,5 +371,10 @@
         "key": "shift+alt+i",
         "command": "github.copilot.completions.toggle",
         "when": "github.copilot.activated"
+    },
+    {
+        "key": "ctrl+a r",
+        "command": "workbench.action.terminal.runSelectedText",
+        "when": "terminalProcessSupported"
     }
 ]
