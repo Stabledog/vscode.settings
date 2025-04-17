@@ -73,6 +73,7 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "explorer.confirmDelete": false,
+    "explorer.confirmPasteNative": false,
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
     "files.associations": {
@@ -406,5 +407,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
     },
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
 }
