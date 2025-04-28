@@ -94,7 +94,10 @@
     "git.openRepositoryInParentFolders": "never",
     //"github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "github.copilot.inlineSuggest.enable": false,
-    "github.copilot.advanced": {"showInSearch": false},
+    "github.copilot.advanced": {
+        "showInSearch": false,
+        "authProvider": "github-enterprise"
+    },
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
