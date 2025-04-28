@@ -376,5 +376,9 @@
         "key": "ctrl+a r",
         "command": "workbench.action.terminal.runSelectedText",
         "when": "terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+i t",
+        "command": "github.copilot.terminal.explainTerminalSelection"
     }
 ]
