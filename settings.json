@@ -21,14 +21,18 @@
     "accessibility.signals.terminalBell": {
         "sound": "off"
     },
+    "accessibility.signalOptions.volume": 0,
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
     "CodeGPT.model": "gpt-4",
-    "CodeGPT.maxTokens": 6000,
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
     "cmake.showOptionsMovedNotification": false,
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
@@ -63,8 +67,8 @@
     "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "alt",
     "editor.parameterHints.enabled": false,
-    "editor.renderWhitespace": "none",
-    "editor.stickyScroll.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
     "editor.suggestSelection": "first",
     "editor.tabSize": 4,
     "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -72,6 +76,7 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "explorer.confirmDelete": false,
+    "explorer.confirmPasteNative": false,
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
     "files.associations": {
@@ -90,6 +95,12 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
+    "github.copilot.inlineSuggest.enable": false,
+    "github.copilot.advanced": {
+        "showInSearch": false,
+        "authProvider": "github-enterprise"
+    },
+    "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -104,8 +115,10 @@
         ".dx.bloomberg.com",
         ".dev.bloomberg.com",
     ],
-    "http.proxyStrictSSL": false,
     "http.proxy": "http://proxy.bloomberg.com:81",
+    "http.proxyStrictSSL": false,
+    "json.format.enable": true,
+    "json.format.trailingCommas": "none",
     "jupyter.alwaysTrustNotebooks": true,
     "jupyter.askForKernelRestart": false,
     "jupyter.interactiveWindow.creationMode": "perFile",
@@ -154,6 +167,7 @@
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "settingsSync.enable": false,    
+    "spaces.commitReminder.enable": false,
     "spaces.enableBergButton": true,
     "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
@@ -348,13 +362,8 @@
     "workbench.tree.indent": 16,
     "yaml.schemas": {
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
-        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
     },
     "zzzz--------------endmarker--------------------": 0,
-    "accessibility.signalOptions.volume": 0,
-    "cmake.pinnedCommands": [
-        "workbench.action.tasks.configureTaskRunner",
-        "workbench.action.tasks.runTask"
-    ],
  
 }

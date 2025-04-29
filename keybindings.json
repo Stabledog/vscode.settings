@@ -8,6 +8,14 @@
         "key": "ctrl+alt+q"
     },
     {
+
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "name": "quiet-mode"
+        },
+        "key": "ctrl+alt+q"
+    },
+    {
         "command": "workbench.action.terminal.resizePaneUp",
         "key": "ctrl+a ."
     },
@@ -362,24 +370,23 @@
         "args":{
             "name": "quiet-mode"
         }
-
     },
     {
         "key": "ctrl+alt+w",
         "command": "editor.debug.action.selectionToWatch"
     },
     {
-        "key": "ctrl+a c",
-        "command": "github.copilot.toggleCopilot"
-    },
-    {
         "key": "shift+alt+i",
         "command": "github.copilot.completions.toggle",
         "when": "github.copilot.activated"
     },
     {
-        "key": "shift+alt+i",
-        "command": "github.copilot.completions.toggle",
-        "when": "github.copilot.activated"
+        "key": "ctrl+a r",
+        "command": "workbench.action.terminal.runSelectedText",
+        "when": "terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+i t",
+        "command": "github.copilot.terminal.explainTerminalSelection"
     }
 ]
