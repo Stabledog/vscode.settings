@@ -95,12 +95,19 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": true,
+    },
     "github.copilot.inlineSuggest.enable": false,
     "github.copilot.advanced": {
         "showInSearch": false,
-        "authProvider": "github-enterprise"
+	"authProvider": "github-enterprise"
     },
     "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -151,6 +158,7 @@
     "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
     "remote.SSH.remotePlatform": {
         "*.spaces": "linux",
+        "lmatheson4-414dd6.spaces": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.SSH.useCurlAndWgetConfigurationFiles": true,
