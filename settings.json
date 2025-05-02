@@ -96,10 +96,14 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    "github.copilot.inlineSuggest.enable": false,
+    "github.copilot.advanced": {
+        "showInSearch": false
+    },
+    "github.copilot.editor.enableAutoCompletions": false
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
+	"scminput": false,
         "markdown": false,
         "javascript": false,
         "makefile": false,
@@ -108,9 +112,7 @@
         "cpp": false,
         // Add any other languages you use
     },
-    "github.copilot.advanced": {
-        "showInSearch": false
-    },
+    "github.copilot.inlineSuggest.enable": false,
 
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
