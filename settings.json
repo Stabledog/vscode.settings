@@ -34,6 +34,7 @@
         "workbench.action.tasks.runTask"
     ],
     "cmake.showOptionsMovedNotification": false,
+
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
@@ -95,18 +96,21 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": true,
-        "markdown": true,
-        "scminput": true,
-    },
     "github.copilot.inlineSuggest.enable": false,
-    "github.copilot.advanced": {
-        "showInSearch": false,
-	"authProvider": "github-enterprise"
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "javascript": false,
+        "makefile": false,
+        "shell": false,
+        "python": false,
+        "cpp": false,
+        // Add any other languages you use
     },
-    "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
+    "github.copilot.advanced": {
+        "showInSearch": false
+    },
 
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
