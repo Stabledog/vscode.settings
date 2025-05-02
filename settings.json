@@ -121,6 +121,8 @@
     "http.noProxy": [
         ".dx.bloomberg.com",
         ".dev.bloomberg.com",
+        ".bdns.bloomberg.com",
+        ".bcs.bloomberg.com",
     ],
     "http.proxy": "http://proxy.bloomberg.com:81",
     "http.proxyStrictSSL": false,
@@ -153,20 +155,22 @@
     "rapid.typeGeneration.enabled": true,
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace",
+    },
+    "remote.SSH.configFile": "C:\\Users\\lmatheson4\\.ssh\\config",
     "remote.SSH.enableDynamicForwarding": false,
     "remote.SSH.lockfilesInTmp": true,
-    "remote.SSH.path": "C:\\.ssh\\ssh-wsl.bat",
+    "remote.SSH.path": "C:\\Windows\\System32\\OpenSSH\\ssh.exe",
     "remote.SSH.remotePlatform": {
         "*.spaces": "linux",
+        "traind-pw-679": "linux",
         "lmatheson4-414dd6.spaces": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.SSH.useCurlAndWgetConfigurationFiles": true,
     "remote.SSH.useExecServer": false,
     "remote.WSL.debug": true,
-    "remote.extensionKind": {
-        "ms-azuretools.vscode-docker": "workspace",
-    },
     "security.allowedUNCHosts": [
         "wsl$",
         "wsl.localhost",
@@ -201,10 +205,10 @@
             "path": "wsl.exe",
             "args": [
                 "-e",
-                "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe"
+                "/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/powershell.exe",
             ],
             "icon": "terminal-powershell",
-            "overrideName": true
+            "overrideName": true,
         },
         "git-bash": {
             "args": [
@@ -212,7 +216,7 @@
             ],
             "path": "/mnt/c/Program Files/Git/bin/bash.exe",
             "icon": "terminal-bash",
-            "overrideName": true
+            "overrideName": true,
         },
     },
     "terminal.integrated.profiles.windows": {
@@ -228,10 +232,6 @@
             "args": [],
             "icon": "terminal-cmd",
         },
-/*         "Git Bash": {
-            "source": "Git Bash",
-            "icon": "terminal-bash"
-        }, */
         "git-bash": {
             "path": "C:\\Program Files\\git\\bin\\bash.exe",
             "icon": "terminal-bash",
@@ -370,8 +370,7 @@
     "workbench.tree.indent": 16,
     "yaml.schemas": {
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
-        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
- 
 }
