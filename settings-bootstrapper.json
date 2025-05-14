@@ -1,38 +1,32 @@
 {
-    "remote.downloadExtensionsLocally": true,
-    "remote.SSH.defaultExtensions": [],
-    "extensions.autoUpdate": false,
+    "dev.containers.executeInWSL": true,
     "extensions.ignoreRecommendations": true,
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000,
     "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "http.proxy": "http://proxy.bloomberg.com:81",
     "http.noProxy": [
         ".dx.bloomberg.com",
         ".dev.bloomberg.com",
         ".bdns.bloomberg.com",
-        ".bcs.bloomberg.com",
+        ".bcs.bloomberg.com"
     ],
-    "http.proxy": "http://proxy.bloomberg.com:81",
-    "http.proxyStrictSSL": false,
-    "remote.SSH.configFile": "C:\\Users\\lmatheson4\\.ssh\\config",
-    "remote.SSH.enableDynamicForwarding": false,
-    "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "C:\\Windows\\System32\\OpenSSH\\ssh.exe",
-    "remote.SSH.remotePlatform": {
-        "*.spaces": "linux",
-        "tpdevx-ob-082": "linux"
-    },
+    "remote.SSH.configFile": "C:\\Users\\lmatheson4\\.ssh\\config",
     "remote.SSH.showLoginTerminal": true,
-    "remote.SSH.useCurlAndWgetConfigurationFiles": true,
+    "remote.SSH.enableDynamicForwarding": false,
+    "remote.SSH.remotePlatform": {
+        "*.spaces": "linux"
+    },
     "remote.SSH.useExecServer": false,
-    "remote.SSH.verbose": true,
-    "remote.WSL.debug": true,
+    "remote.SSH.useCurlAndWgetConfigurationFiles": true,
     "security.allowedUNCHosts": [
         "wsl$",
-        "wsl.localhost",
+        "wsl.localhost"
     ],
-    "security.promptForRemoteFileProtocolHandling": false,
-    "security.workspace.trust.enabled": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "settingsSync.enable": false,
+    "telemetry.enableTelemetry": false,
+    "yaml.schemas": {
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
+    }
 }
