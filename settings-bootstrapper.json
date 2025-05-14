@@ -1,0 +1,38 @@
+{
+    "remote.downloadExtensionsLocally": true,
+    "remote.SSH.defaultExtensions": [],
+    "extensions.autoUpdate": false,
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.eol": "\n",
+    "http.noProxy": [
+        ".dx.bloomberg.com",
+        ".dev.bloomberg.com",
+        ".bdns.bloomberg.com",
+        ".bcs.bloomberg.com",
+    ],
+    "http.proxy": "http://proxy.bloomberg.com:81",
+    "http.proxyStrictSSL": false,
+    "remote.SSH.configFile": "C:\\Users\\lmatheson4\\.ssh\\config",
+    "remote.SSH.enableDynamicForwarding": false,
+    "remote.SSH.lockfilesInTmp": true,
+    "remote.SSH.path": "C:\\Windows\\System32\\OpenSSH\\ssh.exe",
+    "remote.SSH.remotePlatform": {
+        "*.spaces": "linux",
+        "tpdevx-ob-082": "linux"
+    },
+    "remote.SSH.showLoginTerminal": true,
+    "remote.SSH.useCurlAndWgetConfigurationFiles": true,
+    "remote.SSH.useExecServer": false,
+    "remote.SSH.verbose": true,
+    "remote.WSL.debug": true,
+    "security.allowedUNCHosts": [
+        "wsl$",
+        "wsl.localhost",
+    ],
+    "security.promptForRemoteFileProtocolHandling": false,
+    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "settingsSync.enable": false,
+}

@@ -1,20 +1,23 @@
 {
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[csv]": {
+        "editor.inlayHints.maximumLength": 0
     },
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[python]": {
         "editor.formatOnSave": false,
         "editor.wordBasedSuggestions": "off",
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
@@ -33,8 +36,9 @@
         "workbench.action.tasks.configureTaskRunner",
         "workbench.action.tasks.runTask"
     ],
+    "cmake.showConfigureWithDebuggerNotification": false,
     "cmake.showOptionsMovedNotification": false,
-
+    "csv.treatFirstRowAsHeader": true,
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
@@ -43,7 +47,7 @@
     "dev.containers.executeInWSL": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.containers.description": [
-        "Status",
+        "Status"
     ],
     "docker.containers.groupBy": "Compose Project Name",
     "docker.containers.sortBy": "CreatedTime",
@@ -89,7 +93,7 @@
     "files.autoSaveDelay": 1000,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": false,
+    "files.trimTrailingWhitespace": true,
     "git-graph.commitDetailsView.location": "Docked to Bottom",
     "git.autofetch": true,
     "git.confirmSync": false,
@@ -97,23 +101,21 @@
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.advanced": {
-        "showInSearch": false
+        "showInSearch": false,
     },
     "github.copilot.editor.enableAutoCompletions": false,
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
-	"scminput": false,
+        "scminput": false,
         "markdown": false,
         "javascript": false,
         "makefile": false,
         "shell": false,
         "python": false,
         "cpp": false,
-        // Add any other languages you use
     },
     "github.copilot.inlineSuggest.enable": false,
-
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -161,30 +163,32 @@
     "rapid.typeGeneration.enabled": true,
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
+    "remote.downloadExtensionsLocally": true,
     "remote.extensionKind": {
-        "ms-azuretools.vscode-docker": "workspace",
+        "ms-azuretools.vscode-docker": "workspace"
     },
     "remote.SSH.configFile": "C:\\Users\\lmatheson4\\.ssh\\config",
+    "remote.SSH.defaultExtensions": [],
     "remote.SSH.enableDynamicForwarding": false,
     "remote.SSH.lockfilesInTmp": true,
     "remote.SSH.path": "C:\\Windows\\System32\\OpenSSH\\ssh.exe",
     "remote.SSH.remotePlatform": {
         "*.spaces": "linux",
-        "traind-pw-679": "linux",
-        "lmatheson4-414dd6.spaces": "linux"
+        "tpdev*": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.SSH.useCurlAndWgetConfigurationFiles": true,
     "remote.SSH.useExecServer": false,
+    "remote.SSH.verbose": true,
     "remote.WSL.debug": true,
     "security.allowedUNCHosts": [
         "wsl$",
-        "wsl.localhost",
+        "wsl.localhost"
     ],
     "security.promptForRemoteFileProtocolHandling": false,
     "security.workspace.trust.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
-    "settingsSync.enable": false,    
+    "settingsSync.enable": false,
     "spaces.commitReminder.enable": false,
     "spaces.enableBergButton": true,
     "telemetry.enableTelemetry": false,
@@ -193,7 +197,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "git-bash",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
@@ -205,7 +209,7 @@
         "bash": {
             "color": "terminal.ansiGreen",
             "path": "/bin/bash",
-            "icon": "terminal-ubuntu"
+            "icon": "terminal-ubuntu",
         },
         "PowerShell": {
             "path": "wsl.exe",
@@ -356,7 +360,7 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Solarized Dark",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -367,7 +371,7 @@
     "workbench.editor.wrapTabs": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
-        "*.md": "default",
+        "*.md": "default"
     },
     "workbench.fontAliasing": true,
     "workbench.layoutControl.enabled": false,
@@ -376,7 +380,7 @@
     "workbench.tree.indent": 16,
     "yaml.schemas": {
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
-        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
     },
-    "zzzz--------------endmarker--------------------": 0,
+    "zzzz--------------endmarker--------------------": 0
 }
