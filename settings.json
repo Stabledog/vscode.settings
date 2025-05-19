@@ -92,11 +92,10 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
-    //"github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
-    "github.copilot.inlineSuggest.enable": false,
+    "github.copilot.chat.search.semanticTextResults": false,
     "github.copilot.advanced": {
+        
         "showInSearch": false,
-        "authProvider": "github-enterprise"
     },
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
