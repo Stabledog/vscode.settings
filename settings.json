@@ -93,7 +93,7 @@
     "files.autoSaveDelay": 1000,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": false,
     "git-graph.commitDetailsView.location": "Docked to Bottom",
     "git.autofetch": true,
     "git.confirmSync": false,
@@ -174,7 +174,7 @@
     "remote.SSH.path": "C:\\Windows\\System32\\OpenSSH\\ssh.exe",
     "remote.SSH.remotePlatform": {
         "*.spaces": "linux",
-        "tpdev*": "linux"
+        "lmatheson4-*.spaces": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.SSH.useCurlAndWgetConfigurationFiles": true,
@@ -360,7 +360,7 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
-    "workbench.colorTheme": "Solarized Dark",
+    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
