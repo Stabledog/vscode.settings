@@ -380,5 +380,9 @@
     {
         "key": "ctrl+i t",
         "command": "github.copilot.terminal.explainTerminalSelection"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "spaces.sync-dotfiles"
     }
 ]
