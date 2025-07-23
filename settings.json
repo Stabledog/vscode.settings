@@ -102,6 +102,7 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
+    "github.copilot.chat.search.semanticTextResults": false,
     "github.copilot.advanced": {
         "showInSearch": false
     },
@@ -140,7 +141,7 @@
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "liveshare.allowedDomains": [
-        "bloomberg.com",
+        "bloomberg.com"
     ],
     "liveshare.anonymousGuestApproval": "reject",
     "liveshare.connectionMode": "relay",
@@ -179,12 +180,15 @@
     "remote.SSH.useExecServer": false,
     "remote.SSH.verbose": true,
     "remote.WSL.debug": true,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace",
+    },
     "security.allowedUNCHosts": [
         "wsl$",
         "wsl.localhost"
     ],
     "security.promptForRemoteFileProtocolHandling": false,
-    "security.workspace.trust.enabled": false,
+    "security.workspace.trust.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
     "settingsSync.enable": false,
     "spaces.commitReminder.enable": false,
@@ -377,7 +381,7 @@
     "workbench.tree.indent": 16,
     "yaml.schemas": {
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
-        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
     },
     "zzzz--------------endmarker--------------------": 0
 }
