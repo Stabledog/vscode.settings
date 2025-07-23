@@ -42,6 +42,7 @@
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
+    "debug.console.collapseIdenticalLines": false,
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
     "dev.containers.executeInWSL": true,
@@ -88,6 +89,7 @@
         "*.jrnl": "markdown",
         "*.prn": "tsv",
         "*taskrc": "shellscript",
+        "*bml": "xml"
     },
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
@@ -101,21 +103,18 @@
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.advanced": {
-        "showInSearch": false,
+        "showInSearch": false
     },
+    "github.copilot.chat.agent.autoFix": false,
+    "github.copilot.chat.copilotDebugCommand.enabled": false,
+    "github.copilot.chat.reviewSelection.enabled": false,
+    "github.copilot.chat.startDebugging.enabled": false,
     "github.copilot.editor.enableAutoCompletions": false,
     "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "scminput": false,
-        "markdown": false,
-        "javascript": false,
-        "makefile": false,
-        "shell": false,
-        "python": false,
-        "cpp": false,
+        "*": false
     },
     "github.copilot.inlineSuggest.enable": false,
+    "github.copilot.renameSuggestions.triggerAutomatically": false,
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
@@ -165,7 +164,7 @@
     "redhat.telemetry.enabled": false,
     "remote.downloadExtensionsLocally": true,
     "remote.extensionKind": {
-        "ms-azuretools.vscode-docker": "workspace"
+        "ms-azuretools.vscode-docker": "workspace",
     },
     "remote.SSH.configFile": "C:\\Users\\lmatheson4\\.ssh\\config",
     "remote.SSH.defaultExtensions": [],
@@ -174,7 +173,6 @@
     "remote.SSH.path": "C:\\Windows\\System32\\OpenSSH\\ssh.exe",
     "remote.SSH.remotePlatform": {
         "*.spaces": "linux",
-        "lmatheson4-*.spaces": "linux"
     },
     "remote.SSH.showLoginTerminal": true,
     "remote.SSH.useCurlAndWgetConfigurationFiles": true,
@@ -197,7 +195,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu-24.04 (WSL)",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
@@ -360,7 +358,6 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
-    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -380,7 +377,7 @@
     "workbench.tree.indent": 16,
     "yaml.schemas": {
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
-        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0
 }
