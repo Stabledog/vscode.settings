@@ -29,8 +29,16 @@
             "label": "Copy jumpstart install command to clipboard",
             "type": "shell",
             "args": [
-                "-ci",
-                "source ~/.bashrc; jumpstart -s | xclip && echo Ok - paste from clipboard into another terminal to install jumpstart. "
+                "-ic",
+                "for arg; do eval \"$arg\"; done",
+                "_", // Everything below is evaluated one line at a time in the host shell
+                "source ~/.bashrc",
+                "set -x",
+                "setPS4",
+                "Okmsg='Jumpstart install command copied to clipboard.'",
+                "command which code-server && { code-server -c < <( jumpstart -s ); echo \"$OKmsg\"; exit 0; } || :",
+                "jumpstart -s | xclip",
+                "echo \"$OKmsg\""
             ],
             "options": {},
             "command": "bash",

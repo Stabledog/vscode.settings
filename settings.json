@@ -1,20 +1,23 @@
 {
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[csv]": {
+        "editor.inlayHints.maximumLength": 0
     },
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[python]": {
         "editor.formatOnSave": false,
         "editor.wordBasedSuggestions": "off",
-        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
@@ -29,16 +32,23 @@
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
     "cmake.configureOnOpen": false,
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "cmake.showConfigureWithDebuggerNotification": false,
     "cmake.showOptionsMovedNotification": false,
+    "csv.treatFirstRowAsHeader": true,
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.readOption_hasHeader": "true",
     "debug.console.acceptSuggestionOnEnter": "off",
+    "debug.console.collapseIdenticalLines": false,
     "debug.javascript.usePreview": false,
     "debug.saveBeforeStart": "none",
     "dev.containers.executeInWSL": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.containers.description": [
-        "Status",
+        "Status"
     ],
     "docker.containers.groupBy": "Compose Project Name",
     "docker.containers.sortBy": "CreatedTime",
@@ -72,12 +82,14 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "explorer.confirmDelete": false,
+    "explorer.confirmPasteNative": false,
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
     "files.associations": {
         "*.jrnl": "markdown",
         "*.prn": "tsv",
         "*taskrc": "shellscript",
+        "*bml": "xml"
     },
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
@@ -90,9 +102,28 @@
     "git.ignoreLegacyWarning": true,
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
+    "github.copilot.chat.search.semanticTextResults": false,
+    "github.copilot.advanced": {
+        "showInSearch": false
+    },
+    "github.copilot.chat.agent.autoFix": false,
+    "github.copilot.chat.copilotDebugCommand.enabled": false,
+    "github.copilot.chat.reviewSelection.enabled": false,
+    "github.copilot.chat.startDebugging.enabled": false,
+    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.enable": {
+        "*": false
+    },
+    "github.copilot.renameSuggestions.triggerAutomatically": false,
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
+    "gitlens.remotes": [
+        {
+            "domain": "bbgithub.dev.bloomberg.com",
+            "type": "GitHub",
+        },
+    ],
     "html.autoClosingTags": false,
     "http.proxyStrictSSL": false,
     "json.format.enable": true,
@@ -101,6 +132,9 @@
     "jupyter.askForKernelRestart": false,
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "liveshare.allowedDomains": [
+        "bloomberg.com"
+    ],
     "liveshare.anonymousGuestApproval": "reject",
     "liveshare.connectionMode": "relay",
     "liveshare.presence": false,
@@ -118,6 +152,7 @@
     "python.jediEnabled": true,
     "python.languageServer": "Jedi",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
+    "rapid.typeGeneration.enabled": true,
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
     "remote.SSH.enableDynamicForwarding": false,
@@ -133,12 +168,15 @@
     },
     "security.allowedUNCHosts": [
         "wsl$",
-        "wsl.localhost",
+        "wsl.localhost"
     ],
+    "security.promptForRemoteFileProtocolHandling": false,
+    "security.workspace.trust.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
     "settingsSync.enable": false,
-    "spaces.enableBergButton": true,
     "spaces.commitReminder.enable": false,
+    "spaces.enableBergButton": true,
+    "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "/bin/bash",
@@ -209,6 +247,7 @@
     },
     "terminal.integrated.scrollback": 30000,
     "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.showExitAlert": false,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.tabs.enabled": true,
     "typescript.autoClosingTags": false,
@@ -321,12 +360,16 @@
     "workbench.editor.wrapTabs": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
-        "*.md": "default",
+        "*.md": "default"
     },
     "workbench.fontAliasing": true,
     "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
+    "yaml.schemas": {
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
+    },
     "zzzz--------------endmarker--------------------": 0
 }
