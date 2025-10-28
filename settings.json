@@ -28,6 +28,18 @@
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
+    "chat.mcp.serverSampling": {
+        "Global in Code: BBGitHub": {
+            "allowedModels": [
+                "copilot/gpt-4.1",
+                "copilot/claude-3.7-sonnet",
+                "copilot/gpt-5"
+            ]
+        }
+    },
+    "chat.tools.terminal.autoApprove": {
+        "/.*/": true
+    },
     "CodeGPT.model": "gpt-4",
     "cSpell.enabled": false,
     "clangd.detectExtensionConflicts": false,
@@ -103,6 +115,10 @@
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.chat.search.semanticTextResults": false,
+    "github.copilot.chat.terminal.autoApprove": {
+        "/.*/": true
+    },
+
     "github.copilot.advanced": {
         "showInSearch": false
     },
@@ -164,9 +180,6 @@
     "rapid.typeGeneration.implementation": "@rapid/typescript-project",
     "redhat.telemetry.enabled": false,
     "remote.downloadExtensionsLocally": true,
-    "remote.extensionKind": {
-        "ms-azuretools.vscode-docker": "workspace",
-    },
     "remote.SSH.configFile": "C:\\Users\\lmatheson4\\.ssh\\config",
     "remote.SSH.defaultExtensions": [],
     "remote.SSH.enableDynamicForwarding": false,
@@ -193,7 +206,6 @@
     "settingsSync.enable": false,
     "spaces.commitReminder.enable": false,
     "spaces.enableBergButton": true,
-    "telemetry.enableTelemetry": false,
     "telemetry.telemetryLevel": "off",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.cursorBlinking": true,
@@ -383,5 +395,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
     },
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
 }
