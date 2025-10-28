@@ -1,0 +1,29 @@
+{
+	"servers": {
+		"BBGitHub": {
+			"type": "stdio",
+			"command": "forge-mcp-proxy",
+			"args": [
+				"--server",
+				"https://bbgithub.forge-tools.dev.bloomberg.com/"
+			]
+		},
+		"IDK": {
+			"type": "stdio",
+			"command": "forge-mcp-proxy",
+			"args": [
+				"--server",
+				"https://idk-prod.forge-tools.dev.bloomberg.com/"
+			]
+		},
+		"DRQS": {
+			"type": "stdio",
+			"command": "forge-mcp-proxy",
+			"args": [
+				"--server",
+				"https://drqs-prod.forge-tools.dev.bloomberg.com/"
+			]
+		}
+	},
+	"inputs": []
+}
