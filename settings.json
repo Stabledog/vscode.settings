@@ -103,6 +103,10 @@
     "git.ignoreMissingGitWarning": true,
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.chat.search.semanticTextResults": false,
+    "github.copilot.chat.terminal.autoApprove": {
+        "/.*/": true
+    },
+
     "github.copilot.advanced": {
         "showInSearch": false
     },
