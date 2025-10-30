@@ -132,6 +132,7 @@
     },
     "github.copilot.inlineSuggest.enable": false,
     "github.copilot.renameSuggestions.triggerAutomatically": false,
+    "github-enterprise.uri": "https://bbgithub.dev.bloomberg.com",
     "gitlens.graph.minimap.enabled": false,
     "gitlens.graph.dimMergeCommits": true,
     "gitlens.views.branches.branches.layout": "list",
