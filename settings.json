@@ -1,44 +1,35 @@
 {
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
+        "editor.defaultFormatter": "xaver.clang-format",
     },
     "[csv]": {
-        "editor.inlayHints.maximumLength": 0
+        "editor.inlayHints.maximumLength": 0,
     },
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "vscode.html-language-features",
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features",
     },
     "[python]": {
         "editor.formatOnSave": false,
         "editor.wordBasedSuggestions": "off",
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
     "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.typescript-language-features",
     },
     "accessibility.dimUnfocused.enabled": true,
     "accessibility.dimUnfocused.opacity": 0.75,
     "accessibility.signals.terminalBell": {
-        "sound": "off"
+        "sound": "off",
     },
     "accessibility.signalOptions.volume": 0,
     "bracketPairColorizer.depreciation-notice": false,
     "breadcrumbs.enabled": true,
     "C_Cpp.intelliSenseEngine": "default",
-    "chat.mcp.serverSampling": {
-        "Global in Code: BBGitHub": {
-            "allowedModels": [
-                "copilot/gpt-4.1",
-                "copilot/claude-3.7-sonnet",
-                "copilot/gpt-5"
-            ]
-        }
-    },
     "chat.tools.terminal.autoApprove": {
-        "/.*/": true
+        "/.*/": true,
     },
     "CodeGPT.model": "gpt-4",
     "cSpell.enabled": false,
@@ -46,7 +37,7 @@
     "cmake.configureOnOpen": false,
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
-        "workbench.action.tasks.runTask"
+        "workbench.action.tasks.runTask",
     ],
     "cmake.showConfigureWithDebuggerNotification": false,
     "cmake.showOptionsMovedNotification": false,
@@ -60,7 +51,7 @@
     "dev.containers.executeInWSL": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "docker.containers.description": [
-        "Status"
+        "Status",
     ],
     "docker.containers.groupBy": "Compose Project Name",
     "docker.containers.sortBy": "CreatedTime",
@@ -94,6 +85,7 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 200,
     "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     "explorer.confirmPasteNative": false,
     "extensions.autoUpdate": false,
     "extensions.ignoreRecommendations": true,
@@ -116,11 +108,10 @@
     "git.openRepositoryInParentFolders": "never",
     "github.copilot.chat.search.semanticTextResults": false,
     "github.copilot.chat.terminal.autoApprove": {
-        "/.*/": true
+        "/.*/": true,
     },
-
     "github.copilot.advanced": {
-        "showInSearch": false
+        "showInSearch": false,
     },
     "github.copilot.chat.agent.autoFix": false,
     "github.copilot.chat.copilotDebugCommand.enabled": false,
@@ -128,7 +119,7 @@
     "github.copilot.chat.startDebugging.enabled": false,
     "github.copilot.editor.enableAutoCompletions": false,
     "github.copilot.enable": {
-        "*": false
+        "*": false,
     },
     "github.copilot.inlineSuggest.enable": false,
     "github.copilot.renameSuggestions.triggerAutomatically": false,
@@ -144,13 +135,14 @@
     ],
     "html.autoClosingTags": false,
     "http.noProxy": [
+        ".bdns.bloomberg.com",
         ".dx.bloomberg.com",
         ".dev.bloomberg.com",
-        ".bdns.bloomberg.com",
         ".bcs.bloomberg.com",
     ],
     "http.proxy": "http://proxy.bloomberg.com:81",
     "http.proxyStrictSSL": false,
+    "http.proxySupport": "override",
     "json.format.enable": true,
     "json.format.trailingCommas": "none",
     "jupyter.alwaysTrustNotebooks": true,
@@ -158,7 +150,7 @@
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "liveshare.allowedDomains": [
-        "bloomberg.com"
+        "bloomberg.com",
     ],
     "liveshare.anonymousGuestApproval": "reject",
     "liveshare.connectionMode": "relay",
@@ -174,6 +166,7 @@
     "prettier.tabWidth": 4,
     "python.analysis.completeFunctionParens": false,
     "python.autoComplete.addBrackets": false,
+    "python.createEnvironment.trigger": "off",
     "python.jediEnabled": true,
     "python.languageServer": "Jedi",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
@@ -197,22 +190,24 @@
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace",
     },
+    "search.searchEditor.doubleClickBehaviour": "openLocationToSide",
     "security.allowedUNCHosts": [
+        "wsl.localhost",
         "wsl$",
-        "wsl.localhost"
     ],
     "security.promptForRemoteFileProtocolHandling": false,
-    "security.workspace.trust.enabled": true,
+    "security.workspace.trust.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
     "settingsSync.enable": false,
     "spaces.commitReminder.enable": false,
     "spaces.enableBergButton": true,
+
     "telemetry.telemetryLevel": "off",
     "terminal.external.linuxExec": "/bin/bash",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.windows": "git-bash",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
@@ -371,10 +366,13 @@
     "window.openFoldersInNewWindow": "off",
     "window.openFilesInNewWindow": "off",
     "window.restoreWindows": "none",
+    "window.zoomLevel": 2,
     "wordcounter.count_chars": false,
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
+
+    "workbench.colorTheme": "Calamity",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -385,16 +383,17 @@
     "workbench.editor.wrapTabs": false,
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
-        "*.md": "default"
+        "*.md": "default",
     },
     "workbench.fontAliasing": true,
     "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
+
     "yaml.schemas": {
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
-        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
+        "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml",
     },
     "zzzz--------------endmarker--------------------": 0,
 }
