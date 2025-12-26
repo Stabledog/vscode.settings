@@ -59,11 +59,11 @@
     },
     {
         "command": "workbench.action.terminal.focusNext",
-        "key": "ctrl+a n",
+        "key": "ctrl+a n"
     },
     {
         "command": "workbench.action.terminal.focusPrevious",
-        "key": "ctrl+a p",
+        "key": "ctrl+a p"
     },
     {
         "command": "workbench.action.terminal.kill",
@@ -366,5 +366,23 @@
     {
         "key": "ctrl+alt+w",
         "command": "editor.debug.action.selectionToWatch"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "github.copilot.completions.toggle",
+        "when": "github.copilot.activated"
+    },
+    {
+        "key": "ctrl+a r",
+        "command": "workbench.action.terminal.runSelectedText",
+        "when": "terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+i t",
+        "command": "github.copilot.terminal.explainTerminalSelection"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "spaces.sync-dotfiles"
     }
 ]
