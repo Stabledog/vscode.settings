@@ -92,7 +92,19 @@
                 "showReuseMessage": false,
                 "clear": false
             },
-            "problemMatcher": []
+            "problemMatcher": [],
+            // Qualify by platform:
+            "linux": {
+                "command": "/bin/bash",
+                "args": [
+                    "-c",
+                    "${HOME}/.dotmake mega; echo Generic workspace launch completed"
+                ]
+            },
+            "windows": {
+                "command": "echo",
+                "args": ["Skipping workspace launch on Windows"]
+            }
         }
     ]
 }

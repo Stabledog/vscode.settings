@@ -79,7 +79,6 @@
         "*.prn": "tsv",
         "*taskrc": "shellscript",
     },
-    "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
@@ -145,7 +144,7 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.windows": "git-bash",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
     "terminal.integrated.enableMultiLinePasteWarning": "never",
     "terminal.integrated.enableVisualBell": false,
     "terminal.integrated.env.windows": {
@@ -177,15 +176,22 @@
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
             "source": "PowerShell",
-            "icon": "terminal-powershell",
+            "icon": "terminal-powershell"
         },
         "Command Prompt": {
             "path": [
                 "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
             ],
             "args": [],
-            "icon": "terminal-cmd",
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [
+                "--login",
+                "-i"
+            ]
         },
         "WSL": {
             "args": [
@@ -195,19 +201,18 @@
                 "bash",
                 "--login",
                 "-c",
-                "cd; bash;",
+                "cd; bash;"
             ],
-            "overrideName":true,
+            "overrideName": true,
             "path": "C:\\WINDOWS\\System32\\wsl.exe",
             "icon": "terminal-debian"
         },
         "git-bash": {
-            "path": "C:\\Program Files\\git\\bin\\bash.exe",
-            "icon": "home",
-            "overrideName": true
-        },
+            "path": "C:\\Program Files\\git\\bin\\bash.exe"
+        }
     },
-    "terminal.integrated.scrollback": 30000,
+    "terminal.integrated.rightClickBehavior":"default",
+    "terminal.integrated.scrollback": 100000,
     "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.tabs.enabled": true,
@@ -328,5 +333,39 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "files.autoSave": "afterDelay",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "chat.tools.urls.autoApprove": {
+        "https://docs.github.com/en/site-policy/privacy-policies/github-copilot-privacy-statement": true,
+        "https://docs.github.com/en/site-policy/privacy-policies": true,
+        "https://docs.github.com/en/site-policy": true,
+        "https://docs.github.com/en": true,
+        "https://docs.github.com": true,
+        "https://*.github.com": true,
+        "https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-for-individuals": true,
+        "https://docs.github.com/en/copilot/overview-of-github-copilot": true,
+        "https://docs.github.com/en/copilot": true,
+        "https://privacy.microsoft.com/en-us/privacystatement": true,
+        "https://privacy.microsoft.com/en-us": true,
+        "https://privacy.microsoft.com": true,
+        "https://*.microsoft.com": true,
+        "https://*.visualstudio.com": true,
+        "https://github.com": true,
+        "https://pypi.org": true
+    },
+    "chat.viewSessions.enabled": false,
+    "claudeCode.preferredLocation": "sidebar",
+    "chat.tools.terminal.autoApprove": {
+        "/^Test-Path \"\\$env:ProgramFiles\\\\nodejs\\\\node\\.exe\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }
