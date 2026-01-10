@@ -149,6 +149,10 @@
     "prettier.tabWidth": 4,
     "python.analysis.completeFunctionParens": false,
     "python.autoComplete.addBrackets": false,
+    "python.createEnvironment.trigger": "off",
+    "python.experiments.optOutFrom": [
+        "pythonTerminalEnvVarActivation"
+    ],
     "python.jediEnabled": true,
     "python.languageServer": "Jedi",
     "rapid.cliRoot": "C:\\Users\\lmatheson4\\AppData\\Roaming\\npm\\node_modules\\rde-cli",
@@ -349,7 +353,7 @@
     "wordcounter.count_paragraphs": false,
     "wordcounter.include_eol_chars": false,
     "wordcounter.wpm": 110,
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Shades of Purple",
     "workbench.editor.decorations.colors": true,
     "workbench.editor.enablePreview": true,
     "workbench.editor.highlightModifiedTabs": false,
@@ -371,5 +375,5 @@
         "https://schemaservice-dev.dx.bloomberg.com/schemas/devise.yaml": "devise.yaml",
         "https://schemaservice-dev.dx.bloomberg.com/schemas/build.yaml": "build.yaml"
     },
-    "zzzz--------------endmarker--------------------": 0
+    "zzzz--------------endmarker--------------------": 0,
 }
