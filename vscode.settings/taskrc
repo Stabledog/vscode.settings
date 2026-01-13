@@ -1,0 +1,17 @@
+# taskrc for User
+# vim: filetype=sh :
+
+# If someone does a raw "source taskrc", we ensure that $taskrc_dir gets defined anyway
+[[ -z $taskrc_dir && -f taskrc ]] && export taskrc_dir=$PWD
+
+settings_sort_and_commit() {
+    #Help Sort settings.json and then run code --diff on the changes before commit prompt
+    test $(git diff settings.json 2> /dev/null | wc -l) -eq 0 && return $(die settings.json has no changes)
+    cat settings.json | python3.8 -m json.tool --sort > settings.json.tmp
+    code --diff settings.json settings.json.tmp
+    read -ei "sync" -p "Enter commit change message or Ctrl+C: "
+    mv settings.json.tmp settings.json
+    git add settings.json
+    git commit -m "$REPLY"
+    git push
+}

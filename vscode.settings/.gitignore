@@ -1,0 +1,14 @@
+.ready
+Backups
+caches
+customBuiltinExtensionsCache.json
+extensions.json
+globalStorage
+History
+machineid
+snippets
+sync
+systemExtensionsCache.json
+tmp
+workspaceStorage
+Workspaces
